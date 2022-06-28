@@ -1,0 +1,781 @@
+﻿<UserControl x:Class="AllTech.FacturationModule.Views.DatarefInvoice"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+              xmlns:controlsPane="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+             xmlns:expand="clr-namespace:WpfMyexpander;assembly=WpfMyexpander"
+               xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+             xmlns:validation="clr-namespace:AllTech.FrameWork.ValidationRules;assembly=AllTech.FrameWork"
+              xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+               xmlns:ig="http://schemas.infragistics.com/xaml"
+                mc:Ignorable="d" 
+               Height="auto"  Width="auto"   >
+    <UserControl.Resources >
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <validation:NumericValidationRule x:Key="validationnumeric"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="myxtemoxnumericStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="#333333"/>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={StaticResource Self}, Path=(Validation.Errors)[0].ErrorContent}" >
+                        
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid Width="auto" Height="auto">
+        <GroupBox Header="Information De Facture"  FontSize="12"    Margin="0,0,-1,0" Style="{DynamicResource GroupBoxStyle1}">
+            <Grid >
+
+                <TabControl Margin="0,0" Width="auto" Height="auto">
+                    <TabItem Header="Objet Facture">
+                        <Grid>
+                            
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <DockPanel  Grid.Row="0" Grid.Column="0">
+                                <Border DockPanel.Dock="Bottom" Width="Auto">
+                                    <Grid  >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" >
+                                            <ToolBarTray>
+                                                <ToolBar x:Name="toolbarMain" Width="auto">
+                                                    <Button Background="Transparent" Commands:Click.Command="{Binding NewObjCommand}" Width="30" Height="30" Visibility="{Binding BtnNewVisible,Converter={StaticResource visibled}}" ToolTip="Nouveau">
+                                                        <Button.Style>
+                                                            <Style TargetType="{x:Type Button}">
+                                                                <Setter Property="Cursor" Value="Arrow"/>
+
+                                                            </Style>
+                                                        </Button.Style>
+                                                        <Image Source="{StaticResource new}" />
+                                                    </Button>
+                                                    <Separator/>
+                                                    <Button ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveObjCommand}" Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}" Width="30" Height="30">
+                                                        <Button.Style>
+                                                            <Style TargetType="{x:Type Button}">
+                                                                <Setter Property="Cursor" Value="Arrow" />
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                        <Setter Property="Cursor" Value="Wait" />
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Button.Style>
+                                                        <Image Source="{StaticResource save}">
+                                                            <Image.Style>
+                                                                <Style TargetType="Image">
+                                                                    <Style.Triggers>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter Property="Opacity" Value="0.5" />
+                                                                        </Trigger>
+                                                                    </Style.Triggers>
+                                                                </Style>
+                                                            </Image.Style>
+                                                        </Image>
+                                                    </Button>
+                                                    <Separator/>
+                                                    <Button ToolTip="Supprimer" Width="30" Height="30" Visibility="{Binding BtnDeleteVisible,Converter={StaticResource visibled}}" Commands:Click.Command="{Binding DeleteObjCommand}">
+                                                        <Button.Style>
+                                                            <Style TargetType="{x:Type Button}">
+                                                                <Setter Property="Cursor" Value="Arrow" />
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                        <Setter Property="Cursor" Value="Wait" />
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Button.Style>
+                                                        <Image Source="{StaticResource delete}">
+                                                            <Image.Style>
+                                                                <Style TargetType="Image">
+                                                                    <Style.Triggers>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter Property="Opacity" Value="0.5" />
+                                                                        </Trigger>
+                                                                    </Style.Triggers>
+                                                                </Style>
+                                                            </Image.Style>
+                                                        </Image>
+                                                    </Button>
+                                                </ToolBar>
+                                            </ToolBarTray>
+                                        </Border>
+                                        <Border Grid.Row="1">
+                                            <controlsPane:OptionsPanel   HorizontalAlignment="Left"  x:Name="optionEntete">
+                                                <Grid >
+                                                    <Grid.RowDefinitions >
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions >
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Content="Langue :" FontSize="13" Foreground="Green" HorizontalAlignment="Left" FontWeight="Bold" Height="28" Margin="10,0" VerticalAlignment="Top" />
+                                                    <ig:XamComboEditor IsEditable="True" Width="134" Height="25"  Grid.Column="1" Grid.Row="0"  x:Name="cmblangueSelect"
+                                                  ItemsSource="{Binding LanguagedisplayList}"  Margin="0,0" HorizontalAlignment="Left" SelectedIndex="{Binding LangueIndex}"
+                                                  SelectedItem="{Binding LanguageDisplaySelected}" DisplayMemberPath="Libelle" SelectionChanged="cmblangueSelect_SelectionChanged" />
+
+                                                    <Label Content="Désignation objet :" FontSize="13" Foreground="Green" Grid.Column="0" Grid.Row="1" FontWeight="Bold" Height="28" Margin="10,0" />
+                                                    <TextBox BorderBrush="Black" Height="25" x:Name="txtObjet" FontSize="14" 
+                                                 Text="{Binding Objetselected.Libelle, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" Width="300" Margin="3,3" />
+                                                   
+                                                </Grid>
+                                            </controlsPane:OptionsPanel>
+                                           
+                                        </Border>
+
+                                        <Border Grid.Row="2" Height="auto" >
+
+                                            <controls:SortableListView x:Name="lstObjet" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="0,0,0,0" 
+                                                  Height="220"  Width="auto"
+                                                  IsSynchronizedWithCurrentItem="True"
+                                                   ItemContainerStyle="{StaticResource myItemStyle}"
+                                                   MouseDoubleClick="lstObjet_MouseDoubleClick"
+                                                  ItemsSource="{Binding ObjetList}">
+
+                                                <controls:SortableListView.View>
+                                                    <GridView>
+                                                        <GridView.Columns>
+                                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}" Header="Désignation"   />
+                                                           
+                                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Langue.Libelle}" Header="Langue" Width="100" />
+                                                        </GridView.Columns>
+                                                    </GridView>
+                                                </controls:SortableListView.View>
+                                            </controls:SortableListView>
+                                        </Border>
+                                    </Grid>
+                                </Border>
+                            </DockPanel>
+                            <Border Grid.Column="1" Margin="10,0" >
+                              
+                            </Border>
+                            
+                          
+                        </Grid>
+                      
+                    </TabItem>
+
+                    <TabItem Header="Langue" x:Name="objFacturreLangue" >
+                        <Grid>
+                            <controlsPane:OptionsPanel HeaderText="langue"  x:Name="optionLangue" >
+                                <DockPanel   >
+                                <ToolBarTray DockPanel.Dock="Top" Margin="0,0,0,0" >
+                                    <ToolBar Width="auto">
+                                        <Button Background="Transparent" Width="30" Height="30" Commands:Click.Command="{Binding NewLCommand}">
+                                            <Image Source="{StaticResource  new}" />
+                                        </Button>
+                                        <Button Background="Transparent" ToolTip="Sauvegarder" Commands:Click.Command="{Binding SaveLCommand}" Width="30" Height="30">
+                                            <Image Source="{StaticResource  save}" />
+                                        </Button>
+                                        <Button Background="Transparent" ToolTip="Supprimer" Width="30" Height="30" Commands:Click.Command="{Binding DeleteLCommand}">
+                                            <Image Source="{StaticResource  delete}" />
+                                        </Button>
+                                    </ToolBar>
+                                </ToolBarTray>
+                                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Background="White" Margin="5" >
+                                        <Label Foreground="Green"  Margin="5,0,0,0" Height="25" FontWeight="Bold"  Content="Libellé langue :" Width="100" />
+                                    <TextBox Text="{Binding Path=LanguageSelected.Libelle, UpdateSourceTrigger=PropertyChanged}" 
+                                         Width="150" Margin="3" BorderBrush="LightGray" BorderThickness="1" />
+                                        <Label Foreground="Green"  Margin="5,0,0,0" Height="25" FontWeight="Bold"  Content="Court Libellé :" Width="100" />
+                                    <TextBox Width="150" Height="25" BorderBrush="LightGray" BorderThickness="1" 
+                                         Text="{Binding Path=LanguageSelected.Shortname, UpdateSourceTrigger=PropertyChanged}" />
+                                </StackPanel>
+                                <controls:SortableListView DockPanel.Dock="Bottom" x:Name="LanguageView" VerticalAlignment="Top"   
+                                      HorizontalAlignment="Left"  Height="280" 
+                                      IsSynchronizedWithCurrentItem="True" Margin="30,0"
+                                      ItemContainerStyle="{StaticResource myItemStyle}"
+                                      MouseDoubleClick="LanguageView_MouseDoubleClick"
+                                      ItemsSource="{Binding LanguageList}" AlternationCount="2">
+
+                                    <controls:SortableListView.View>
+                                        <GridView>
+                                            <GridView.Columns>
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}" Header="Libellé" Width="200" />
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Shortname}" Header="Court libéllé" Width="200" />
+                                            </GridView.Columns>
+                                        </GridView>
+                                    </controls:SortableListView.View>
+                                </controls:SortableListView>
+                            </DockPanel>
+                            </controlsPane:OptionsPanel>
+                        </Grid>
+                     
+                    </TabItem>
+                    
+                    <TabItem Header="Statuts Facture" Visibility="Collapsed" >
+                        <Grid >
+                            <controlsPane:OptionsPanel IsMovable="False" >
+                                <DockPanel >
+                                    <ToolBarTray Grid.Row="0"  DockPanel.Dock="Top"  >
+                                        <ToolBar >
+                                            <Button Background="Transparent" Width="30" Height="30" ToolTip="New " Visibility="{Binding BtnStatutNewVisible,Converter={StaticResource visibled}}"
+                                            Commands:Click.Command="{Binding NewsCommand}">
+                                                <Image Source="{StaticResource new}" />
+                                            </Button>
+                                            <Button Background="Transparent" ToolTip="Save " Commands:Click.Command="{Binding SavesCommand}" Width="30" Height="30">
+                                                <Image Source="{StaticResource save}" />
+                                            </Button>
+                                            <Button Background="Transparent" Width="30" Height="30" ToolTip="Delete " 
+                                            Visibility="{Binding BtnStatutDeleteVisible,Converter={StaticResource visibled}}"
+                                            Commands:Click.Command="{Binding DeletesCommand}">
+                                                <Image Source="{StaticResource delete}" />
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+
+                                    <StackPanel Orientation="Horizontal"  DockPanel.Dock="Top" Background="White"  >
+
+                                        <TextBlock Foreground="Green" FontWeight="Bold"  Text="Designation" Width="100" Height="25"  Margin="0,0"/>
+                                        <TextBox Margin="2,0,0,3" Text="{Binding StatutSelected.Libelle}"  BorderBrush="Blue" Height="25"  Width="300" />
+                                        <TextBlock Foreground="Green" Text="langue"  Margin="0,0,10,3" />
+                                        <!--<ig:XamComboEditor ItemsSource="{Binding LanguageStatList}" IsEditable="True"  x:Name="cmblanguestat"
+                                                      BorderBrush="Blue" Width="120" Height="25"   DisplayMemberPath="Libelle "
+                                                       Margin="0,0,2,3" SelectedItem="{Binding LanguageStatSelected}" SelectionChanged="cmblanguestat_SelectionChanged">
+
+                                        </ig:XamComboEditor>-->
+
+
+                                    </StackPanel>
+
+                                    <controls:SortableListView Grid.Row="2" x:Name="DetailView" Height="280" HorizontalAlignment="Left"  DockPanel.Dock="Bottom"  
+                              VerticalAlignment="Top"  IsSynchronizedWithCurrentItem="True" AlternationCount="2"
+                                     
+                                        ItemContainerStyle="{StaticResource myItemStyle}"
+                                      MouseDoubleClick="DetailView_MouseDoubleClick_1"
+                                      ItemsSource="{Binding StatutList}" Margin="20,5,0,0">
+                                        <!--<ListView.Resources>
+                                    <Style TargetType="{x:Type ListViewItem}">
+                                        <EventSetter Event="MouseDoubleClick" Handler="DetailView_MouseDoubleClick" />
+                                    </Style>
+                                </ListView.Resources>-->
+                                        <controls:SortableListView.GroupStyle>
+                                            <GroupStyle>
+                                                <GroupStyle.ContainerStyle>
+                                                    <Style TargetType="{x:Type GroupItem}">
+                                                        <Setter Property="Margin" Value="0,0,0,5" />
+                                                    </Style>
+                                                </GroupStyle.ContainerStyle>
+                                            </GroupStyle>
+                                        </controls:SortableListView.GroupStyle>
+                                        <controls:SortableListView.View>
+                                            <GridView>
+                                                <GridView.Columns>
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}" Header="Designation" Width="300" />
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Langues .Libelle }" Header="langue" Width="150" />
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=CourtDesc }" Header="Indexe" Width="50" />
+                                                </GridView.Columns>
+                                            </GridView>
+                                        </controls:SortableListView.View>
+                                    </controls:SortableListView>
+
+                                </DockPanel>
+                            </controlsPane:OptionsPanel>
+                        </Grid>
+                        
+                    </TabItem>
+                    
+                    <TabItem x:Name="objFacturedepartment" Header=" Departements" GotFocus="objFacturedepartment_GotFocus" >
+                        <Grid >
+                            <controlsPane:OptionsPanel HeaderText="" IsMovable="False" x:Name="optionDepartement">
+                                <DockPanel >
+                                    <Border  DockPanel.Dock="Top" >
+                                        <ToolBarTray>
+                                            <ToolBar Width="auto">
+                                                <Button Background="Transparent" Commands:Click.Command="{Binding NewDCommand}" Width="30" Height="30" Visibility="{Binding BtnNewVisible,Converter={StaticResource visibled}}" ToolTip="Nouveau">
+                                                    <Image Source="{StaticResource new}" />
+                                                </Button>
+                                                <Button ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveDCommand}" Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}" Width="30" Height="30">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource save}">
+                                                        <Image.Style>
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5" />
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                                <Button ToolTip="Supprimer" Width="30" Height="30" Visibility="{Binding BtnDeleteVisible,Converter={StaticResource visibled}}" Commands:Click.Command="{Binding DeleteDCommand}">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource delete}">
+                                                        <Image.Style>
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5" />
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                            </ToolBar>
+                                        </ToolBarTray>
+                                    </Border>
+                                    <Border DockPanel.Dock="Bottom" >
+                                        <Grid >
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.Row="0" Background="White" >
+                                                <Grid >
+                                                    <Grid.RowDefinitions >
+                                                        <RowDefinition Height=" auto"/>
+                                                        <RowDefinition Height=" auto"/>
+                                                        <RowDefinition Height=" auto"/>
+                                                        <RowDefinition Height=" auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions >
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock Foreground="Green" FontWeight="Bold" Text="Nom Département" Width="100" Height="25" Margin="0,2,0,0" VerticalAlignment="Top" />
+                                                    <TextBox Margin="0,0,0,3" Text="{Binding DepSelected.Libelle, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Row="0" 
+                                                     Height="25" Grid.Column="1" Width="auto" MaxWidth="300" MinWidth="200" />
+                                                    <TextBlock Foreground="Green" FontWeight="Bold" Text="Courte description" Width="100" Height="25" Grid.Row="1" Grid.Column="0" />
+                                                    <TextBox Margin="0,0,0,3" Text="{Binding DepSelected.CourtLibelle, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" 
+                                                     Height="25" Grid.Column="1" Width="200" HorizontalAlignment="Left" />
+                                                    <TextBlock Foreground="Green" FontWeight="Bold" Text="Autres" Width="100" Height="25" Grid.Row="2" Grid.Column="0" />
+                                                    <TextBox Margin="0,0,0,3" Text="{Binding DepSelected.Autre, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" 
+                                                     Height="25" Grid.Column="1" Width="200" />
+                                                </Grid>
+                                            </Border>
+                                            <Border Grid.Row="3">
+                                                <controls:SortableListView  x:Name="DetailViewDep" Height="auto" MinHeight="50" HorizontalAlignment="Left"   
+                                          VerticalAlignment="Top"  IsSynchronizedWithCurrentItem="True" AlternationCount="2"
+                                                    MouseDoubleClick="DetailViewDep_MouseDoubleClick"
+                                         ItemContainerStyle="{StaticResource myItemStyle}"
+                                      ItemsSource="{Binding DepartementList}" Margin="20,5,0,0">
+                                                    <!--<ListView.Resources>
+                                                <Style TargetType="{x:Type ListViewItem}">
+                                                    <EventSetter Event="MouseDoubleClick" Handler="DetailViewDep_MouseDoubleClick" />
+                                                </Style>
+                                            </ListView.Resources>-->
+                                                    <controls:SortableListView.GroupStyle>
+                                                        <GroupStyle>
+                                                            <GroupStyle.ContainerStyle>
+                                                                <Style TargetType="{x:Type GroupItem}">
+                                                                    <Setter Property="Margin" Value="0,0,0,5" />
+                                                                </Style>
+                                                            </GroupStyle.ContainerStyle>
+                                                        </GroupStyle>
+                                                    </controls:SortableListView.GroupStyle>
+                                                    <controls:SortableListView.View>
+                                                        <GridView>
+                                                            <GridView.Columns>
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}" Header="Nom Departement" Width="300" />
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=CourtLibelle }" Header="Courte description" Width="200" />
+                                                            </GridView.Columns>
+                                                        </GridView>
+                                                    </controls:SortableListView.View>
+                                                </controls:SortableListView>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                </DockPanel>
+                            </controlsPane:OptionsPanel>
+                        </Grid>
+                       
+                    </TabItem>
+
+                    <TabItem Header="Terme Paiement" x:Name="objFactureterme"   >
+                        <Grid>
+                            <controlsPane:OptionsPanel IsMovable="False" x:Name="optionterme">
+                                <DockPanel >
+                                    <Border DockPanel.Dock="Top" >
+                                        <ToolBarTray>
+                                            <ToolBar Width="auto">
+                                                <Button Background="Transparent" Commands:Click.Command="{Binding NewsTermeCommand}" Width="30" Height="30" Visibility="{Binding BtnTermeNewVisible,Converter={StaticResource visibled}}" ToolTip="Nouveau">
+                                                    <Image Source="{StaticResource new}" />
+                                                </Button>
+                                                <Button ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveTermeCommand}" Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}" Width="30" Height="30">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource save}">
+                                                        <Image.Style>
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5" />
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                                <Button ToolTip="Supprimer" Width="30" Height="30" Visibility="{Binding BtnTermeDeleteVisible,Converter={StaticResource visibled}}" Commands:Click.Command="{Binding DeleteTermeCommand}">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource delete}">
+                                                        <Image.Style>
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5" />
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                            </ToolBar>
+                                        </ToolBarTray>
+                                    </Border>
+
+                                    <Border DockPanel.Dock="Bottom" >
+                                        <Grid >
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <Border Grid.Row="0" Background="White" >
+
+                                                <StackPanel Orientation="Vertical"  Margin="0,0" HorizontalAlignment="Left"  >
+                                                    <StackPanel Orientation="Horizontal" >
+
+                                                        <Label  Content="Désignation terme" Margin="5,0" Foreground="Green" FontWeight="Bold" />
+                                                        <TextBox  BorderBrush="Black" Height="30" Width="400"
+                                                       Text="{Binding TermeSelected.Desciption, UpdateSourceTrigger=PropertyChanged}"/>
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal" >
+                                                        <Label  Content="Langue" Margin="5,0" Foreground="Green" FontWeight="Bold"/>
+                                                        <ig:XamComboEditor x:Name="cmbtermeLangue" Width=" 134" Height="25" ItemsSource="{Binding LanguageStatList}" 
+                                                       DisplayMemberPath="Libelle"  Margin="56,3" SelectionChanged="cmbtermeLangue_SelectionChanged"
+                                                      SelectedItem="{Binding LangueTermeSelected}"/>
+                                                    </StackPanel>
+
+
+                                                </StackPanel>
+                                            </Border>
+
+                                            <Border Grid.Row="1">
+                                                <controls:SortableListView  x:Name="DetailViewTerme" Height="auto" MinHeight="100" HorizontalAlignment="Left"   
+                                          VerticalAlignment="Top"  IsSynchronizedWithCurrentItem="True" AlternationCount="2"
+                                        
+                                         MouseDoubleClick="DetailViewTerme_MouseDoubleClick"
+                                         ItemContainerStyle="{StaticResource myItemStyle}"
+                                         ItemsSource="{Binding TermeList}" Margin="0,5,0,0">
+                                                    <controls:SortableListView.View >
+                                                        <GridView >
+                                                            <GridView.Columns >
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Desciption}" Header="Libélle terme paiement" Width="600"/>
+                                                            </GridView.Columns>
+                                                        </GridView>
+                                                    </controls:SortableListView.View>
+
+                                                </controls:SortableListView>
+                                            </Border>
+                                        </Grid>
+
+                                    </Border>
+                                </DockPanel>
+                            </controlsPane:OptionsPanel>
+                        </Grid>
+                      
+                    </TabItem>
+                    <TabItem Header="Taxes">
+                        <DockPanel>
+                            <ToolBarTray DockPanel.Dock="Top">
+                                <ToolBar Width="auto">
+                                    <Button Background="Transparent" Commands:Click.Command="{Binding NewsTaxeCommand}" Width="30" Height="30"  ToolTip="Nouveau">
+                                        <Image Source="{StaticResource new}" />
+                                    </Button>
+                                    <Button ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveTaxeCommand}"  Width="30" Height="30">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource save}">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                    <Button ToolTip="Supprimer" Width="30" Height="30"  Commands:Click.Command="{Binding DeleteTaxeCommand}">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource delete}">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                </ToolBar>
+                            </ToolBarTray>
+                            <Border DockPanel.Dock="Bottom">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <GroupBox Header="" Grid.Row="0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Orientation="Vertical" Grid.Row="0">
+                                                <RadioButton Content="Tva" IsChecked="{Binding IsTvaradio}"/>
+                                                <RadioButton Content="Centimes" IsChecked="{Binding IsProrataradio}"/>
+                                                <RadioButton Content="Marge Sodexo" IsChecked="{Binding IsmargeSodexoadio}"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal" Grid.Row="1"  >
+                                                <Label Content="Taux :" Foreground="Green" FontWeight="Bold" Margin="3"/>
+                                                <TextBox Width="150" Text="{Binding TaxeSelected.Taux, StringFormat='{}{0:0.###}', UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="5"/>
+                                                <CheckBox Content="Taxe Par défault" IsEnabled="{Binding IsDefaulTaxeenable}" IsChecked="{Binding IsTaxeDefaulChecked}" Margin="0" Height="20" ToolTip="Permet de téfinire la taxe par défaut "/>
+                                            </StackPanel>
+                                          
+                                        </Grid>
+                                    </GroupBox>
+                                    <ig:XamGrid x:Name="gridtaxes" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding TaxeListes}"
+                                                 ActiveItem="{Binding TaxeSelected, Mode=TwoWay}" Height="auto" MinHeight="100">
+                                        <ig:XamGrid.Columns>
+                                            <ig:TextColumn Key="Libelle" Width="auto"   >
+                                                <ig:TextColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Libelle" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+                                            
+                                            <ig:TextColumn Key="Taux" Width="100"   >
+                                                <ig:TextColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Taux" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+
+
+                                            <ig:CheckBoxColumn Key="TaxeDefault">
+                                                <ig:CheckBoxColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Taxe Par default" />
+                                                    </DataTemplate>
+                                                </ig:CheckBoxColumn.HeaderTemplate>
+                                            </ig:CheckBoxColumn>
+                                        </ig:XamGrid.Columns>
+                                    </ig:XamGrid>
+                                </Grid>
+                            </Border>
+
+                        </DockPanel>
+                    </TabItem>
+                    <TabItem Header="Devises" x:Name="deviseHeader"  GotFocus="deviseHeader_GotFocus" >
+                        <DockPanel>
+                            <ToolBarTray DockPanel.Dock="Top">
+                                <ToolBar Width="auto">
+                                    <Button Background="Transparent" Commands:Click.Command="{Binding NewsDeviseCommand}" Width="30" Height="30"  ToolTip="Nouveau">
+                                        <Image Source="{StaticResource new}" />
+                                    </Button>
+                                    <Button ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveDeviseCommand}"  Width="30" Height="30">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource save}">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                    <Button ToolTip="Supprimer" Width="30" Height="30"  Commands:Click.Command="{Binding DeleteDeviseCommand}">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource delete}">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                </ToolBar>
+                            </ToolBarTray>
+                            <Border DockPanel.Dock="Bottom">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <GroupBox Header="" Grid.Row="0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Orientation="Horizontal" Grid.Row="0"  >
+                                                <Label Content="Désignation :" Foreground="Green" FontWeight="Bold" Margin="3,3"/>
+                                                <TextBox Width="150" Text="{Binding DeviseSelected.Libelle, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="30,3"/>
+                                            </StackPanel>
+                                                <StackPanel Orientation="Horizontal" Grid.Row="1"  >
+                                                <Label Content="Taux Conversion :" Foreground="Green" FontWeight="Bold" Margin="3"/>
+                                                <TextBox Width="150"  HorizontalAlignment="Left" Margin="5" Text="{Binding DeviseSelected.Taux,StringFormat='{}{0:0.###}', UpdateSourceTrigger=PropertyChanged}" >
+                                                    <!--<TextBox.Text>
+                                                        <Binding Path="DeviseSelected.Taux" UpdateSourceTrigger="PropertyChanged">
+                                                            <Binding.ValidationRules>
+                                                                <validation:NumericValidationRule />
+                                                            </Binding.ValidationRules>
+                                                        </Binding>
+                                                    </TextBox.Text>-->
+                                                </TextBox>
+                                                <CheckBox Content="Dévise Par défault" IsEnabled="{Binding IsDevisecheckedEnable}"  IsChecked="{Binding IsDeviseDefaulChecked}" Margin="0" Height="20" ToolTip="Permet de définire la dévise par défaut "/>
+                                            </StackPanel>
+
+                                        </Grid>
+                                    </GroupBox>
+                                    <ig:XamGrid x:Name="gridDevises" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding DeviseList}"
+                                                 ActiveItem="{Binding DeviseSelected, Mode=TwoWay}" Height="auto" MinHeight="100">
+                                        <ig:XamGrid.Columns>
+                                            <ig:TextColumn Key="Libelle" Width="auto"   >
+                                                <ig:TextColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Libelle" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+
+                                            <ig:TextColumn Key="Taux" Width="100"   >
+                                                <ig:TextColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Taux Conversion" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+
+
+                                            <ig:CheckBoxColumn Key="IsDefault" PropertyChanged="CheckBoxColumn_PropertyChanged"  >
+                                                <ig:CheckBoxColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Devise Par défaut" />
+                                                    </DataTemplate>
+                                                </ig:CheckBoxColumn.HeaderTemplate>
+                                            </ig:CheckBoxColumn>
+                                        </ig:XamGrid.Columns>
+                                    </ig:XamGrid>
+                                </Grid>
+                            </Border>
+                        </DockPanel>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

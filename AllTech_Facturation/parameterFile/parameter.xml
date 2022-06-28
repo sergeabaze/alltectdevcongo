@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter id="connectionString">
+    <server>localhost</server>
+    <nameBd>sysfact_douala</nameBd>
+    <username>root</username>
+    <password>root</password>
+  </parameter>
+  <parameter id="connectionStringArchives">
+    <server>localhost</server>
+    <nameBd>sysfact_archives</nameBd>
+    <username>root</username>
+    <password>root</password>
+  </parameter>
+  <parameter id="devises">
+    <dtva>15001</dtva>
+    <ddevise>160001</ddevise>
+    <defaultlangue>fr-FR</defaultlangue>
+  </parameter>
+  <parameter id="bases">
+    <dev>100</dev>
+    <prod>100</prod>
+    <location>100</location>
+    <teste>100</teste>
+    <nombrePagination>10</nombrePagination>
+    <dossierImages>SodexoImages</dossierImages>
+    <mailfrom>Sodexo@sodexo.com</mailfrom>
+    <mailTo>SodexoDla@yahoo.com</mailTo>
+    <smtp>smtp.gmail.com</smtp>
+    <jvreperory>D:\Users\WCMSEAB\Documents\SysfactDossier</jvreperory>
+    <jvmodeSelect>0</jvmodeSelect>
+  </parameter>
+  <parameter id="user">
+    <dpassword>@sodexo2012</dpassword>
+    <duser>sodexo</duser>
+  </parameter>
+  <parameter id="config">
+    <dejaUtiliser>1</dejaUtiliser>
+    <mode>prod</mode>
+  </parameter>
+  <parameter id="log">
+    <import></import>
+    <backUpLog></backUpLog>
+    <pathlog>local</pathlog>
+  </parameter>
+</parameters>

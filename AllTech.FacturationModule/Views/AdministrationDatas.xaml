@@ -1,0 +1,711 @@
+﻿<UserControl x:Class="AllTech.FacturationModule.Views.AdministrationDatas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:expand="clr-namespace:WpfMyexpander;assembly=WpfMyexpander"
+              xmlns:controls="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+             xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+             xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+             xmlns:ig="http://schemas.infragistics.com/xaml"
+            xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+             xmlns:local="clr-nam  espace:AllTech.FrameWork.Helpers;assembly=AllTech.FrameWork"
+             mc:Ignorable="d" 
+             Height="auto"  Width="auto">
+    <UserControl.Resources >
+        
+
+
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+        <localVisible:DateConverter x:Key="convertDate"/>
+        <DataTemplate x:Key="listBoxTemplate">
+            <Border BorderBrush="Blue" BorderThickness="3" CornerRadius="3" Margin="3">
+            <Grid >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox IsChecked="{Binding IsClick, UpdateSourceTrigger=PropertyChanged}"   Grid.Row="0" Grid.Column="0" />
+                
+                <TextBlock FontWeight="Bold" FontSize="13"  Text="Nom Fichier:"
+                   Grid.Row="0" Grid.Column="1"
+                  Margin="5,0,10,0"/>
+                <TextBlock Text="{Binding Nomfichier}" Foreground="Green" FontWeight="Bold"   Grid.Row="0" Grid.Column="2"/>
+                <TextBlock FontWeight="Bold" Text="Date Creation:" Foreground ="DarkOrange"
+                 Grid.Row="1" Grid.Column="1" Margin="5,0,5,0"/>
+                    <TextBlock Text="{Binding dateFichiers}"  Grid.Row="1" Grid.Column="2"/>
+                <TextBlock FontWeight="Bold" Text="Site Annexe:" Foreground ="DarkOrange"
+                 Grid.Row="2" Grid.Column="1"
+                  Margin="5,0,5,0"/>
+                    <TextBlock Text="{Binding adresse}"  Grid.Row="2" Grid.Column="2"/>
+                    <TextBlock FontWeight="Bold" Text="Periode Facturation:" Foreground ="DarkOrange"
+                 Grid.Row="3" Grid.Column="1"
+                  Margin="5,0,5,0"/>
+                    <TextBlock Text="{Binding periode}"  Grid.Row="3" Grid.Column="2"/>
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="listeBoxTemplateLog">
+            
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <GroupBox Header=" Export/Import "  FontSize="12"   Margin="9,7,13.97,12" Style="{DynamicResource GroupBoxStyle1}">
+            <DockPanel >
+                <Border DockPanel.Dock="Top" >
+                    
+                        <ToolBarTray  >
+                        <ToolBar x:Name="toolbAdmin" Width="auto"  >
+                            <Button ToolTip="fermer Formulaire"  Width="40" Height="30" Commands:Click.Command="{Binding CloseCommand}"
+									 >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="{StaticResource cancel}" />
+                                </Button.Background>
+                            </Button>
+                            
+                        </ToolBar>
+                    </ToolBarTray>
+                 
+                </Border>
+               
+                <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom" Background="White">
+                    <expand:AnimatedExpander Header="BackUp/Export" FontWeight="Bold" Margin="15,5"  IsExpanded="False" x:Name="expandexport" Expanded="expandexport_Expanded">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" HorizontalAlignment="Left">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="15,1">
+                                        <Button x:Name="btnSavaAS" Click="btnSavaAS_Click" Content="save as " Width="55" Height="25"/>
+                                        <Button x:Name="btnopen" Click="btnopen_Click" Background="Transparent"  Width="40" Height="30" Margin="3">
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                    Ce bouton permet d'importer d'acceder au dossier du fichier
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource importFile}"  Stretch="Fill">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        <TextBox x:Name="txtPath" Margin="5,0" Text="{Binding PathSaveAs}" Width="auto" MinWidth="250"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                                        <Button  Command="{Binding ExportDBrCommand}" Background="Transparent" Margin="5" Width="35" IsEnabled="{Binding BtnDbexportEnable}" >
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                     Ce bouton permet d'exporter la base donnée  <Bold > <Underline >A exporter </Underline> </Bold>
+                                                   
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource run}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        <ProgressBar x:Name="progressbar" IsIndeterminate="{Binding IsBusyDb}" Width="150" Margin="10,2" Height="15" Style="{StaticResource CustomProgressBarStyle}"  Visibility="{Binding ProgressBarDbVisibility, Converter={StaticResource visibled}}" />
+                                        <Label x:Name="lanbelInfo" Foreground="Yellow" FontWeight="Bold"/>
+                                    </StackPanel>
+                                    <Border Grid.Row="2" >
+                                        <DockPanel>
+                                            <StackPanel Orientation="Vertical" DockPanel.Dock="Left" >
+                                                <Label Content="Liste des bases de données" Foreground="Black" FontWeight="Bold"/>
+                                                <ListBox  VerticalAlignment="Top"  HorizontalContentAlignment="Stretch"
+                                                      SelectedItem="{Binding DatabaseSelected}" Height="150" Width="200" ItemsSource="{Binding ListeDatabases}">
+                                                    <ListBox.ItemTemplate>
+                                                        <DataTemplate >
+                                                            <Border BorderBrush="Blue" BorderThickness="1" Padding="3" Margin="3">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                    <TextBlock Text="{Binding DatabaseNAme}"/>
+                                                                </StackPanel>
+                                                            </Border>
+
+                                                        </DataTemplate>
+                                                    </ListBox.ItemTemplate>
+
+                                                </ListBox>
+                                            </StackPanel>
+
+                                            <StackPanel Orientation="Vertical" DockPanel.Dock="Right">
+                                                <Label Content="Liste des tables " Foreground="Black" FontWeight="Bold"/>
+                                                <!--<StackPanel Orientation="Horizontal">
+                                                    <Button  x:Name="btnSelecAll" Click="btnSelecAll_Click" Content="Select All" Width="80" Height="25"/>
+                                                </StackPanel>-->
+                                                
+                                                <DataGrid Margin="10" x:Name="datagridListeTables"  Height="300" MaxHeight="550"  Width="auto"  ItemsSource="{Binding ListeTableDB}" AutoGenerateColumns="False">
+                                                <DataGrid.Columns>
+                                                        <DataGridTemplateColumn  Header="Animate">
+                                                            <DataGridTemplateColumn.CellStyle>
+                                                                <Style TargetType="{x:Type DataGridCell}">
+                                                                    <Style.Triggers>
+                                                                        <DataTrigger Binding="{Binding Path=Ischeckd}" Value="false">
+                                                                            <Setter Property="Background" Value="Gray" />
+                                                                        </DataTrigger>
+                                                                    </Style.Triggers>
+                                                                </Style>
+                                                            </DataGridTemplateColumn.CellStyle>
+                                                            <!--<DataGridTemplateColumn.Header>
+                                                                <CheckBox x:Name="ckbselectall" Content="All/Annul" Checked="ckbselectall_Checked" Unchecked="ckbselectall_Unchecked" />
+                                                            </DataGridTemplateColumn.Header>-->
+                                                            <DataGridTemplateColumn.CellTemplate>
+                                                                <DataTemplate>
+                                                                    <CheckBox x:Name="IscheckedCk" Checked="IscheckedCk_Checked"  Unchecked="IscheckedCk_Unchecked" HorizontalAlignment="Center"  IsChecked="{Binding Path=Ischeckd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                                                </DataTemplate>
+                                                            </DataGridTemplateColumn.CellTemplate>
+                                                        </DataGridTemplateColumn>
+                                                       
+                                                    <DataGridTextColumn Width="auto" Binding="{Binding  Path=tablename}" Header="Tables Name" IsReadOnly="True" />
+                                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=sql}" Header="" IsReadOnly="True" />
+                                                    </DataGrid.Columns>
+                                            </DataGrid>
+                                            </StackPanel>
+                                        </DockPanel>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </expand:AnimatedExpander>
+                    
+                    <expand:AnimatedExpander x:Name="expandImport" Header="Import/Restore" FontWeight="Bold" Margin="15,5" Background="#FFE2E2E8" IsExpanded="False" Expanded="expandImport_Expanded">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="3">
+                                <Button x:Name="btnFichier" Click="btnFichier_Click"  Background="Transparent"  Width="40" Height="30" Margin="5,0">
+                                    <Button.ToolTip >
+                                        <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                    Ce bouton permet d'importer d'acceder au dossier du fichier
+                                        </TextBlock>
+                                    </Button.ToolTip>
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                    <Setter Property="Cursor" Value="Wait"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource importFile}"  Stretch="Fill">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                                <TextBox x:Name="txtpathBD" Width="auto" MinWidth="200" Text="{Binding PathImportDB}"/>
+                            </StackPanel>
+                            <Button x:Name="btnImport" Background="Transparent"  IsEnabled="{Binding BtnImportenable}" Command="{Binding ImportDBrCommand}"  Grid.Row="1" Grid.Column="0" Width="40">
+                                <Button.ToolTip >
+                                    <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                     Ce bouton permet d' importer un dump de  la base donnée 
+                                    </TextBlock>
+                                </Button.ToolTip>
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource run}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Button x:Name="btnCancel"  ToolTip="Annuler l'importation" IsEnabled="{Binding IsImportCancel}" Command="{Binding CancelimportDBrCommand}" Grid.Row="1" Grid.Column="1" Margin="10,3">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusyImport}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            
+                            <StackPanel  Orientation="Horizontal" Grid.Row="1"  Grid.Column="2">
+                                <Label Content="BD :" Foreground="Black"/>
+                                <ComboBox x:Name="CmbDtatabaseListe" SelectionChanged="CmbDtatabaseListe_SelectionChanged"  SelectedItem="{Binding CmbDatabaseSelected}"
+                                          ItemsSource="{Binding ListeDatabases}"  DisplayMemberPath="DatabaseNAme" Width="120" Height="25"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="3" Margin="10,5">
+                                <Label x:Name="lbStatus" Foreground="Yellow" FontWeight="Bold" Height="15"/>
+                                <ProgressBar x:Name="progressBar1" Visibility="{Binding ProgressBarIMportvisibility, Converter={StaticResource visibled}}" 
+                                             IsIndeterminate="{Binding IsImportBusy}" Width="150" Height="20" ></ProgressBar>
+                            </StackPanel>
+                          
+                        </Grid>
+                    </expand:AnimatedExpander>
+                    <expand:AnimatedExpander  Header="Histoiques" Margin="15,5" x:Name="expandHisto" Background="LightBlue" Expanded="expandHisto_Expanded" >
+                        <Grid>
+                                <DataGrid x:Name="gridhisto"  VerticalAlignment="Top" ItemsSource="{Binding TableHistoricLog}" AutoGenerateColumns="False" >
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=Creation_Date}" Header="Date creation#" IsReadOnly="True" />
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=ModeExportimport}" Header="Type operation" IsReadOnly="True" />
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=BackupDump}" Header="Fichier" IsReadOnly="True" />
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=FromDB}" Header="Import from" IsReadOnly="True" />
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=ToDB}" Header="Import To" IsReadOnly="True" />
+                                        <DataGridTextColumn Width="auto" Binding="{Binding  Path=CreateBY}" Header="Opérateur" IsReadOnly="True" />
+                                    </DataGrid.Columns>
+                                </DataGrid>
+
+                                 
+                        </Grid>
+                    </expand:AnimatedExpander>
+                   
+                    
+
+                  
+                </StackPanel>
+                <!--<Border DockPanel.Dock="Bottom" >
+                    <Border >
+                        <Grid>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Grid.Row="0" Header="Import des Fichiers" Margin="0,10,0,0" Height="220">
+                                <Grid>
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                              
+                                <StackPanel Orientation="Horizontal" Grid.Row="0" >
+                                        <Button ToolTip ="Rafraichir la pile" Background="Transparent"   Commands:Click.Command="{Binding RefreshImportCommand}" Width="60" Height="32"  Margin="10,2">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource refresh}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                    
+                                        <Button ToolTip="supprimer le fichier de la pile ou annuler l'opérarion" Background="Transparent" Height="30"  Margin="0" HorizontalAlignment="Left"  Commands:Click.Command="{Binding DeleteFileCommand}" >
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusyImport}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource delete}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                  
+                                        <Button   Background="Transparent"   Width="35" Margin="10,2" Commands:Click.Command="{Binding FichierRepertoireCommand}">
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                    Ce bouton permet d'importer d'acceder au dossier du fichier
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource importFile}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                    
+                                        <Button Grid.Column="0" Grid.Row="2"   Background="Transparent"  Height="40" Width="40" Margin="0,0"  Commands:Click.Command="{Binding ImportCommandcanImportFile}">
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                     Ce bouton permet d'importer les données <Bold > <Underline >de facturation </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                      Provenant d'un site annexe  à des fin de validation
+                                                    <LineBreak/>
+                                                    Vous pouvez rechercher directement le dossier ou rafraichir la pile
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource run}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        <TextBox Margin="10,0" Width="329" Height="27" Text="{Binding CheminFichier, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                        <Button Width="20" Height="20" Margin="0,0" HorizontalAlignment="Left" Background="Transparent"   Commands:Click.Command="{Binding FichierReClearCommand}">
+                                            <Image Source="{StaticResource delete}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        
+                                        <Button  Command="{Binding SendMailCommand}" Width="30" Height="30" >
+                                          
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                </Style>
+                                            </Button.Style>
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                     Ce bouton permet d'envoyer  <Bold > <Underline >le fichier de factures </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                      extrait vers un site précis
+                                                    <LineBreak/>
+                                                    Vous pouvez rechercher directement le dossier ou rafraichir la pile
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            
+                                            <Image Source="{StaticResource sendmail}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                    </StackPanel>
+                                    
+                                    <Border Grid.Row="1">
+                                        <Grid >
+                                            <Grid.ColumnDefinitions >
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                              
+                                            </Grid.ColumnDefinitions>
+                                            <Border Grid.Column="0">
+                                                <controls:OptionsPanel IsMovable="False" HeaderText="Liste des fichies dans la pile">
+                                                    <ListBox  DockPanel.Dock="Bottom"  Height="120"   ItemsSource="{Binding ListeFichiersDossiers}"
+                                              ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                                             ItemTemplate="{StaticResource listBoxTemplate}"
+                                              SelectedItem="{Binding FichierSelected}"
+                                             HorizontalContentAlignment="Stretch" SelectionChanged="ListBox_SelectionChanged" Width="550">
+                                                    </ListBox>
+                                                </controls:OptionsPanel>
+                                            </Border>
+                                           
+                                            <Border Grid.Column="1" Margin="10,0">
+                                                <controls:OptionsPanel HeaderText="Nouvelle Extraction" IsMovable="False">
+                                                    <Grid >
+                                                        <Grid.ColumnDefinitions >
+                                                            <ColumnDefinition Width="auto"/>
+                                                            <ColumnDefinition Width="auto"/>
+                                                            <ColumnDefinition Width="auto"/>
+                                                            <ColumnDefinition Width="auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions >
+                                                            <RowDefinition Height="auto"/>
+                                                            <RowDefinition Height="auto"/>
+                                                            <RowDefinition Height="auto"/>
+                                                            <RowDefinition Height="auto"/>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Grid.Column="0" Grid.Row="0"  Text="Date Debut :" FontWeight="Bold" Width="80"  Foreground="Green" Height="20"  Margin="0,5"/>
+                                                        <DatePicker Grid.Column="1" Grid.Row="0" Width="150"   SelectedDate="{Binding InDateDebut, UpdateSourceTrigger=PropertyChanged}"  Margin="0,0"  Height="25"/>
+                                                        <TextBlock Grid.Column="0" Grid.Row="1"   FontWeight="Bold"  Text="Date Fin :" Foreground="Green" Height="25" Margin="0,0" />
+                                                        <DatePicker Grid.Column="1" Grid.Row="1" Width="150"   SelectedDate="{Binding InDatefin, UpdateSourceTrigger=PropertyChanged}" Margin="0,0"  Height="25"/>
+                                                        <Button Grid.Column="1" Grid.Row="2"   Background="Transparent"  Height="40" Width="40" Margin="0,0" Commands:Click.Command="{Binding ExportCommand}"
+                                                                 HorizontalAlignment="Right">
+                                                            <Button.ToolTip >
+                                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                    Ce bouton permet d'extraire les données <Bold > <Underline >de facturation </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                       il est donc nécessaire de préciser la période de facturation
+
+                                                                </TextBlock>
+                                                            </Button.ToolTip>
+                                                            <Button.Style>
+                                                                <Style TargetType="{x:Type Button}">
+                                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                                    <Style.Triggers>
+                                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                                        </DataTrigger>
+                                                                    </Style.Triggers>
+                                                                </Style>
+                                                            </Button.Style>
+                                                            <Image Source="{StaticResource run}">
+                                                                <Image.Style >
+                                                                    <Style TargetType="Image">
+                                                                        <Style.Triggers >
+                                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                                            </Trigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </Image.Style>
+                                                            </Image>
+                                                        </Button>
+                                                        <TextBlock  Grid.ColumnSpan="2" Grid.Row="3"   Text="{Binding MessageFinal}" Foreground="Green" Height="20"  FontWeight="Bold"  Width="200" Margin="10,5"/>
+                                                    </Grid>
+                                                </controls:OptionsPanel>
+                                            </Border>
+                                            
+                                          
+                                        </Grid>
+                                           
+                                       
+                                    </Border>
+                                
+                                   
+                                </Grid>
+                            </GroupBox>
+                            <Label Content="{Binding Messagerefreshing}" Foreground="Red"  Grid.Row="1"/>
+                            <Border Grid.Row="2">
+                                <Grid >
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0">
+                                        <StackPanel Orientation="Horizontal" >
+                                           
+                                            <StackPanel Orientation="Horizontal"   HorizontalAlignment="Right">
+                                                <Label Content="Extraction des factures  validées"  Foreground="Blue" FontSize="11"/>
+
+                                                <Button  Width="40" Height="40"   Margin="0,0,0,0" HorizontalAlignment="Right"
+                                                 Visibility="{Binding Path=CmdRExportVisibility, Converter={StaticResource visibled}}"
+                                                Commands:Click.Command="{Binding LogReExportCommand}">
+                                                    <Button.ToolTip >
+                                                        <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                                                     <Bold > <Underline >Re export des données Validées </Underline> </Bold>
+                                                       <LineBreak/>
+                                                    Ce bouton permet de re exporter les données <Bold > <Underline >de facturation </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                      D'un site annexe Valider, vers ce site annexe
+                                                    <LineBreak/>
+
+
+                                                        </TextBlock>
+                                                    </Button.ToolTip>
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow"/>
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource run}">
+                                                        <Image.Style >
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers >
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                            </StackPanel>
+                                        </StackPanel>
+                                           
+                                       
+                                       
+                                       
+                                           
+                                      
+                                        
+                                    </Border>
+                                    <DataGrid x:Name="gridHst" Grid.Row="1" ItemsSource="{Binding ListeLog}"  AutoGenerateColumns="False"  
+                                              SelectedItem="{Binding CurrentLogSelected}" Height="auto"  MinHeight="100" >
+                                        <DataGrid.Columns >
+                                            <DataGridTextColumn Header="Fichier" Width="150" Binding="{Binding nomfichier}"/>
+                                            <DataGridTextColumn Header="Site  origine" Width="100" Binding="{Binding siteorigine}"/>
+                                            <DataGridTextColumn Header="Date Extraction " Width="100" Binding="{Binding DateExtraction, Converter={StaticResource convertDate},ConverterParameter=dd/MM/yyy}"/>
+                                            <DataGridTextColumn Header="Période Facturation" Width="120" Binding="{Binding periode}"/>
+                                            <DataGridTextColumn Header="Satut" Width="110" Binding="{Binding statut}"/>
+                                            <DataGridTextColumn Header="Date importation" Width="100" Binding="{Binding DateImport, Converter={StaticResource convertDate},ConverterParameter=dd/MM/yyy}"/>
+                                            <DataGridTextColumn Header="Fichier Valider" Width="120" Binding="{Binding DateExtract_valider, Converter={StaticResource convertDate},ConverterParameter=dd/MM/yyy}"/>
+                                            <DataGridTextColumn Header="Site mise jour" Width="110" Binding="{Binding siteMaj}"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                    <Border Grid.Row="2" BorderBrush="Green"   BorderThickness="2" Background="White">
+                                        <ToolBarPanel >
+                                            <StackPanel Orientation="Horizontal" >
+                                                <Label Content="Enregistrements :" Foreground="Blue" Margin="5,0" />
+                                                <TextBlock Text="{Binding NobreEnregistrement}" Width="50"  Margin="10,0"/>
+                                            </StackPanel>
+                                          
+                                        </ToolBarPanel>
+                                    </Border>
+                                </Grid>
+                              
+                            </Border>
+                        </Grid>
+                    </Border>
+                    
+                </Border>-->
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

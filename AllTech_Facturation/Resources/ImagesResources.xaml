@@ -1,0 +1,83 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <BitmapSource x:Key="warning">Images/Warning.png</BitmapSource>
+    <BitmapSource x:Key="help">Images/help.png</BitmapSource>
+    <BitmapSource x:Key="new">Images/new.png</BitmapSource>
+    
+    <BitmapSource x:Key="save">Images/save.png</BitmapSource>
+    <BitmapSource x:Key="saveAndnew">Images/saveas.png</BitmapSource>
+    <BitmapSource x:Key="delete">Images/delete.png</BitmapSource>
+    <BitmapSource x:Key="close">Images/close.png</BitmapSource>
+    <BitmapSource x:Key="cancel">Images/cancel.png</BitmapSource>
+    <BitmapSource x:Key="loupe_petite">Images/loup_2.png</BitmapSource>
+    <BitmapSource x:Key="edit">Images/edit.png</BitmapSource>
+    <BitmapSource x:Key="logOff">Images/LogOff-64.png</BitmapSource>
+    <BitmapSource x:Key="etats">Images/etats.png</BitmapSource>
+    <BitmapSource x:Key="liste">Images/LogOff-64.png</BitmapSource>
+    <BitmapSource x:Key="cutomer">Images/newPerson.png</BitmapSource>
+    <BitmapSource x:Key="print">Images/print.png</BitmapSource>
+    <BitmapSource x:Key="background">Images/background.png</BitmapSource>
+    <BitmapSource x:Key="background1">Images/background1.png</BitmapSource>
+    <BitmapSource x:Key="imagetool">Images/parametres_tools.png</BitmapSource>
+   
+
+
+    <BitmapSource x:Key="historic">Images/inventaire.png</BitmapSource>
+    <BitmapSource x:Key="pruduct">Images/stocks_package.png</BitmapSource>
+
+    <BitmapSource x:Key="new_edit">Images/edit_pencil.png</BitmapSource>
+    <BitmapSource x:Key="other_edit">Images/doc_edit.png</BitmapSource>
+    <BitmapSource x:Key="new_liste">Images/liste_list_bullets.png</BitmapSource>
+    <BitmapSource x:Key="new_add">Images/ad_sq_plus.png</BitmapSource>
+    <BitmapSource x:Key="new_loggin">Images/loggin_login.png</BitmapSource>
+
+    <BitmapSource x:Key="new_validate">Images/yes_ok.png</BitmapSource>
+    <BitmapSource x:Key="new_exit">Images/close_exit_delete.png</BitmapSource>
+    <BitmapSource x:Key="new_delete">Images/new_delete.png</BitmapSource>
+    <BitmapSource x:Key="loggon">Images/loggon.png</BitmapSource>
+
+    <BitmapSource x:Key="print_new">Images/new_printer.png</BitmapSource>
+   
+    <BitmapSource x:Key="livre">Images/bookmarks_list_add.png</BitmapSource>
+    <BitmapSource x:Key="openbook">Images/open.png</BitmapSource>
+    <BitmapSource x:Key="sendmail">Icones/sendMail.ico</BitmapSource>
+    <BitmapSource x:Key="parametersIco">Icones/parameters.ico</BitmapSource>
+    <BitmapSource x:Key="userfoto">Images/new_user.png</BitmapSource>
+
+    <BitmapSource x:Key="preview">Images/previous-ltr.png</BitmapSource>
+    <BitmapSource x:Key="next">Images/next.png</BitmapSource>
+    <BitmapSource x:Key="first">Images/first.png</BitmapSource>
+    <BitmapSource x:Key="last">Images/last.png</BitmapSource>
+
+    <BitmapSource x:Key="filtres">Images/filtre.png</BitmapSource>
+    <BitmapSource x:Key="newfiltres">Images/new_filter.png</BitmapSource>
+    <BitmapSource x:Key="sorties">Images/sortie.png</BitmapSource>
+    <BitmapSource x:Key="validate">Images/newedit-validated.png</BitmapSource>
+    <BitmapSource x:Key="suspendu">Images/suspend.png</BitmapSource>
+    <BitmapSource x:Key="excel">Images/toExcel.png</BitmapSource>
+    <BitmapSource x:Key="nonvalable">Images/non_available.png</BitmapSource>
+    <BitmapSource x:Key="logBackgrounf">Images/Ground.jpg</BitmapSource>
+    <BitmapSource x:Key="tips">Images/Tips.png</BitmapSource>
+    <BitmapSource x:Key="run">Images/runoperation.png</BitmapSource>
+
+    <BitmapSource x:Key="closeFacture">Images/fermerlock.png</BitmapSource>
+    <BitmapSource x:Key="uncloseFacture">Images/unlock.png</BitmapSource>
+
+    <BitmapSource x:Key="refresh">Images/refresh.png</BitmapSource>
+    <BitmapSource x:Key="runFile">Images/run.png</BitmapSource>
+    <BitmapSource x:Key="importFile">Images/importDocs.png</BitmapSource>
+    <BitmapSource x:Key="corbeilRouge">Images/corbeil_Bin_Full.png</BitmapSource>
+    <BitmapSource x:Key="newCorbeil">Images/Corbeille2_bin.png</BitmapSource>
+    <BitmapSource x:Key="newCancel">Images/newCancel.png</BitmapSource>
+    <BitmapSource x:Key="showops">Images/showOperation.png</BitmapSource>
+
+    <BitmapSource x:Key="iconApp">Images/app.ico</BitmapSource>
+    <BitmapSource x:Key="iconExportTxt">Icones/exportTxt.ico</BitmapSource>
+    <BitmapSource x:Key="iconHelp">Icones/about.ico</BitmapSource>
+    <BitmapSource x:Key="iconHelpAt">Images/help.png</BitmapSource>
+    <BitmapSource x:Key="iconApps">Images/factures.png</BitmapSource>
+    <BitmapSource x:Key="facturejv">Images/factures.png</BitmapSource>
+    
+
+
+</ResourceDictionary> 

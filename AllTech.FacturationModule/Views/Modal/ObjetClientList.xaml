@@ -1,0 +1,155 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.ObjetClientList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+         xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+          xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+         xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+          xmlns:ig="http://schemas.infragistics.com/xaml"
+        Title="" Height="470" Width="580" WindowStartupLocation="CenterOwner" WindowStyle="None" Loaded="Window_Loaded" Icon="/AllTech.FacturationModule;component/images/mydoc.ico"
+        >
+    
+    <Window.Resources >
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label  Content="Liste des Objets de facture" Margin="10,0,0,0" Width="Auto" FontWeight="Bold"
+                Foreground="#FF373737" FontSize="24" FontFamily="Corbel"/>
+       
+        <Border  Margin="0,40,0,0" >
+            <controlss:OptionsPanel IsMovable="False" >
+                <Grid >
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <ToolBarTray  Grid.Row="0" Margin="0,0,0,0" Width="Auto"  >
+                        <ToolBar  >
+                          
+                            <Button Background="Transparent"  ToolTip="Save " Commands:Click.Command="{Binding SaveCommand}" Width="30" Height="30">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource save}" >
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.3"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+                            <Button Background="Transparent"  Width="30" Height="30" ToolTip="Suppression " Commands:Click.Command="{Binding DeleteCommand}" >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.3"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+                            <Button   Background="Transparent"  ToolTip="Close " Margin="0,0,0,0" 
+                              VerticalAlignment="Top"   Width="40" Height="25" HorizontalAlignment="Left"
+                              Click="Button_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource cancel}"  Stretch="Fill" Width="30"  />
+                            </Button>
+                        </ToolBar>
+
+                    </ToolBarTray>
+                    <Border Grid.Row="1"  >
+                        <Border.Effect>
+                            <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                        </Border.Effect>
+                        <StackPanel Orientation="Vertical" Margin="3">
+                            <StackPanel Orientation="Horizontal" >
+                                <Label  Foreground="Green"  Content="Liste des objets :" Height="21" FontWeight="Bold" Margin="5,0" />
+                                <ig:XamComboEditor x:Name="cmbObjets"  ItemsSource="{Binding ObjetGenList}"    Width="180" Height="25" Margin="2"
+                                       DisplayMemberPath="Libelle"   SelectedItem="{Binding ObjetGenSelected}" SelectionChanged="cmbObjets_SelectionChanged">
+
+                                </ig:XamComboEditor >
+                             
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <Label Content="Client Sélectionné :" Foreground="Green" FontWeight="Bold" Height="17"  Margin="5,0"/>
+                                <TextBlock Text="{Binding CurrentClient.NomClient}" Width="139" Foreground="Green" Height="23"   />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Row="2" >
+                        <DockPanel>
+                            <Border DockPanel.Dock="Top" >
+                                <Button Background="Transparent"   Commands:Click.Command="{Binding AddDatasCommand}" ToolTip="Ajouter un objet sélectionner"  Width="30" HorizontalAlignment="Left" Margin="5,0" >
+                                    <Image Source="{StaticResource new_add}" >
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.3"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                            </Border>
+                            <controls:SortableListView  DockPanel.Dock="Bottom"   Grid.Row="2" x:Name="DetailView" Height="200" AlternationCount="2"  
+                                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True"
+                                                 ItemContainerStyle="{StaticResource myItemStyle}"
+                                                MouseDoubleClick="lstObjet_MouseDoubleClick"
+                                               ItemsSource="{Binding ObjetList}" Margin="0,0,0,14">
+
+                                <controls:SortableListView.View >
+                                    <GridView>
+                                        <GridView.Columns>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=ObjetGeneric.Libelle}" Header="Désignation  " Width="350" />
+                                        </GridView.Columns>
+                                    </GridView>
+                                </controls:SortableListView.View>
+
+                            </controls:SortableListView >
+                        </DockPanel>
+
+                    </Border>
+
+                </Grid>
+            </controlss:OptionsPanel> 
+          
+        </Border>
+    </Grid>
+</Window>

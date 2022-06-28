@@ -1,0 +1,334 @@
+﻿<UserControl x:Class="AllTech.FacturationModule.Views.DataRef_Customers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+              xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+              xmlns:teplLangue="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+              xmlns:convertir="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork" 
+              xmlns:validation="clr-namespace:AllTech.FrameWork.ValidationRules;assembly=AllTech.FrameWork"
+               xmlns:expand="clr-namespace:WpfMyexpander;assembly=WpfMyexpander"
+               mc:Ignorable="d" 
+                xmlns:igOB="http://infragistics.com/OutlookBar"
+              xmlns:local="clr-namespace:AllTech.FacturationModule"
+               xmlns:ac="clr-namespace:AdornedControl;assembly=AdornedControl"
+              xmlns:controls="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+               xmlns:ig="http://schemas.infragistics.com/xaml"
+              xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+              xmlns:igFramework="clr-namespace:Infragistics.Samples.Framework;assembly=Infragistics.Samples.Framework"
+               Loaded="UserControl_Loaded" Height="auto" SizeChanged="UserControl_SizeChanged">
+    <UserControl.Resources >
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+      
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot"  Background="Transparent">
+        
+        <GroupBox Header="Liste des clients" FontSize="12"  Height="auto"  Margin="9,0,0,12" Style="{DynamicResource GroupBoxStyle1}">
+            <DockPanel  VerticalAlignment="Top" >
+                <Border DockPanel.Dock="Top">
+                    <ToolBarTray >
+                        <ToolBar x:Name="toolbarMain"  >
+                            <Button Background="Transparent"  x:Name="btnNewClient" Click="btnNewClient_Click" Width="30" Height="30" 
+                                      Visibility="{Binding BtnNewVisible,Converter={StaticResource visibled}}"
+                                     ToolTip="Nouveau Client">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource new}" />
+                            </Button>
+                            <Separator/>
+                            <Button ToolTip="Supprimer" Width="30" Height="30"  
+                                     Visibility="{Binding BtnDeleteVisible,Converter={StaticResource visibled}}"
+                                    Command="{Binding DeleteCommand}" >
+                                <Button.Style >
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                        </ToolBar>
+                    </ToolBarTray>
+                </Border>
+                
+                <igOB:XamOutlookBar  DockPanel.Dock="Left" x:Name="optionrechechName"
+                                 Theme="IGTheme"  VerticalSplitterLocation="Left"
+                                HorizontalAlignment="Left" VerticalAlignment="Stretch" IsMinimized="False"
+                                  Width="auto" MinimizedWidth="35" >
+                    <igOB:OutlookBarGroup Header="Zone de Recherches">
+                        <Grid Margin="5,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                           
+                                <Label Content="Nom :" FontWeight="Bold" Foreground="Green" Grid.Row="0" />
+                            <StackPanel Orientation="Horizontal" Grid.Row="1" >
+                                <TextBox  x:Name="txtNomClient"  Text="{Binding NomClient, UpdateSourceTrigger=PropertyChanged}" FontSize="15" Width="auto" Height="25" MinWidth="80" MaxWidth="250" Margin="3" >
+                                    <TextBox.InputBindings >
+                                        <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                    </TextBox.InputBindings>
+                                </TextBox>
+                            
+                            <Button x:Name="btnCancelnom"  Width="20" Height="25" Background="Transparent" Grid.Row="2"
+                                                 Visibility="{Binding IsVisibleCancelNomClient,Converter={StaticResource visibled}}"
+                                                        Click="btnCancelnom_Click">
+                                <Button.InputBindings>
+                                    <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                </Button.InputBindings>
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}"/>
+                                </Button.Style>
+                                <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="15">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button></StackPanel>
+
+                            <Label Content="Ville :" Foreground="Green" FontWeight="Bold" Grid.Row="2" />
+                            <StackPanel Orientation="Horizontal" Grid.Row="3" >
+                                <TextBox x:Name="txtville"     Width="auto" Text="{Binding NomVille, UpdateSourceTrigger=PropertyChanged}" FontSize="15" Grid.Row="4" Height="25" MinWidth="80" MaxWidth="200" Margin="3" >
+                                    <TextBox.InputBindings >
+                                        <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                    </TextBox.InputBindings>
+                                </TextBox>
+                                <Button  x:Name="btncancelVille"  Width="20" Height="25" Background="Transparent"
+                                                    Visibility="{Binding IsVisibleCancelVille,Converter={StaticResource visibled}}"
+                                                       Click="btncancelVille_Click" >
+                                    <Button.InputBindings>
+                                        <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                    </Button.InputBindings>
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}"/>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="15">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                            </StackPanel>
+                            <Button  ToolTip="Rechercher " Command="{Binding SearchByCommand}"
+                                                     Grid.Row="4" HorizontalAlignment="Left"
+                                                  Width="30" Height="30" TabIndex="13">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource loupe_petite}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <GroupBox x:Name="groupeVisible" Header="Visibilité clients" Grid.Row="5" Foreground="Black" Margin="0,5">
+                                <GroupItem >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <RadioButton  Grid.Row="0"  IsChecked="{Binding IsRadClientActive}"  FontWeight="Bold" Foreground="Green" Content="Clients Actifs"></RadioButton>
+                                        <RadioButton Grid.Row="1" IsChecked="{Binding IsRadClientInactive}"   FontWeight="Bold" Foreground="Green"  Content="Clients Inactifs" 
+                                                                 Visibility="{Binding IsVisibleRadInactif,Converter={StaticResource visibled}}"></RadioButton>
+                                        <!--<RadioButton  Grid.Row="2"  IsChecked="{Binding IsRadClientArchive}"  FontWeight="Bold" Foreground="Green" Content="Valider/Archivés"></RadioButton>-->
+                                    </Grid>
+
+                                </GroupItem>
+                            </GroupBox>
+                           
+                        </Grid>
+                    </igOB:OutlookBarGroup>
+
+                </igOB:XamOutlookBar>
+                
+                <ac:AdornedControl Name="LoadingAdorner" DockPanel.Dock="Right" HorizontalAlignment="Left">
+                    <ac:AdornedControl.AdornerContent >
+                        <local:LoadingWait></local:LoadingWait>
+                    </ac:AdornedControl.AdornerContent>
+                    <ig:XamGrid  ItemsSource="{Binding Path=ClientList}"  x:Name="produitGrid" Height="auto" MinHeight="100"  RowHeight="25" 
+                                              Margin="5,0,0,0" Grid.ColumnSpan="3"  Width="auto" MinWidth="800"      
+                                              RowHover="Row" HeaderRowHeight="25"
+                                             MouseDoubleClick="produitGrid_MouseDoubleClick" 
+                                               RowSelectorClicked="produitGrid_RowSelectorClicked"
+                                              AutoGenerateColumns="False"  ActiveItem="{Binding ClientActif, Mode=TwoWay}"
+                                              HorizontalAlignment="Center"  IsAlternateRowsEnabled="True">
+                        <ig:XamGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Nouveau" Click="btnNewClient_Click" Foreground="Black">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource new}" Height="20" Width="20" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <Separator/>
+                                <MenuItem Header="Editer" Command="{Binding EditContextCommand}" Foreground="Black">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource edit}" Height="20" Width="20" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <Separator/>
+                                <MenuItem Header="Suppression" Command="{Binding DeleteContextCommand}" Foreground="Black">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource delete}" Height="20" Width="20" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <Separator/>
+                                <MenuItem Header="Parametre Suivi" Command="{Binding ParameterContextCommand}" Foreground="Black">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource parametersIco}" Height="20" Width="20" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--<MenuItem Header="Plage prouit" IsEnabled="False" Command="{Binding ParameterContextCommand}" Foreground="Black">
+                                    <MenuItem.Icon>
+                                        <Image Source="{StaticResource parametersIco}" Height="20" Width="20" />
+                                    </MenuItem.Icon>
+                                </MenuItem>-->
+                            </ContextMenu>
+                        </ig:XamGrid.ContextMenu>
+                        <ig:XamGrid.ColumnResizingSettings >
+                            <ig:ColumnResizingSettings AllowColumnResizing="Immediate" >
+
+                            </ig:ColumnResizingSettings>
+                        </ig:XamGrid.ColumnResizingSettings>
+
+                        <ig:XamGrid.RowSelectorSettings>
+                            <ig:RowSelectorSettings x:Name="rowSelectorSettings" Visibility="Visible"/>
+                        </ig:XamGrid.RowSelectorSettings>
+                        <ig:XamGrid.PagerSettings >
+                            <ig:PagerSettings AllowPaging="Bottom" PageSize="20"   />
+                        </ig:XamGrid.PagerSettings>
+                        <ig:XamGrid.Columns >
+                            <ig:TextColumn Key="NomClient" MinimumWidth="200" Width="200"  >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Nom client" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+                            <ig:TextColumn Key="Ville" MinimumWidth="170"  Width="auto" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Ville" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+                            <ig:TextColumn Key="Exonerere.Libelle" MinimumWidth="120"  Width="auto" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Exonération" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+                            <ig:TextColumn Key="Porata.Taux" Width="100" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Centimes" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+
+                            <ig:TextColumn Key="Llangue.Libelle" Width="auto" MinimumWidth="100" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Langue" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+
+                            <ig:TextColumn Key="DeviseConversion.Libelle" Width="auto" MinimumWidth="100" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Devises Conversion" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+
+                            <ig:TextColumn Key="DeviseFacture.Libelle" Width="auto" MinimumWidth="100" >
+                                <ig:TextColumn.HeaderTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Text="Devises Facture" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+
+                            <!--<ig:TemplateColumn Key="IdClient">
+                                <ig:TemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Produit/client" />
+                                    </DataTemplate>
+                                </ig:TemplateColumn.HeaderTemplate>
+                                
+                                <ig:TemplateColumn.ItemTemplate>
+                                    <DataTemplate >
+                                        <Button  Width="60" Height="35" Click="detail_click" CommandParameter="{Binding}" Background="Transparent" 
+                                                      >
+                                            <Image Source="{StaticResource other_edit}" Stretch="Fill"  />
+                                        </Button>
+                                    </DataTemplate>
+                                </ig:TemplateColumn.ItemTemplate>
+                            </ig:TemplateColumn>-->
+                        </ig:XamGrid.Columns>
+                        <ig:XamGrid.SelectionSettings>
+                            <ig:SelectionSettings CellClickAction="SelectRow"  CellSelection="Multiple"  RowSelection="Single" ></ig:SelectionSettings>
+                        </ig:XamGrid.SelectionSettings>
+                    </ig:XamGrid>
+                </ac:AdornedControl>
+
+              
+              
+            </DockPanel>
+        </GroupBox>
+       
+      
+    </Grid>
+</UserControl>

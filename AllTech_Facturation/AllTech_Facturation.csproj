@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C14BEDF-8FF5-470F-9927-016B5917F5D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllTech_Facturation</RootNamespace>
+    <AssemblyName>AllTech_Facturation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdornedControl">
+      <HintPath>lib\AdornedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Samples.Shared">
+      <HintPath>lib\Infragistique\Infragistics.Samples.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Charts.XamDataChart.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Charts.XamDataChart.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Charts.XamDiagram.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Charts.XamDiagram.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Charts.XamSparkline.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Charts.XamSparkline.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Charts.XamTreemap.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Charts.XamTreemap.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Editors.XamComboEditor.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Editors.XamComboEditor.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Grids.XamGrid.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Grids.XamGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Menus.XamMenu.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Controls.Menus.XamMenu.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.DataManager.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.DataManager.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.DataPresenter.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.DataPresenter.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.DataVisualization.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.DataVisualization.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Editors.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.Editors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Infragistique\17\InfragisticsWPF4.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemsControlDragDropBehaviorLibrary">
+      <HintPath>lib\ItemsControlDragDropBehaviorLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>lib\Spak\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <HintPath>lib\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>lib\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
+      <HintPath>lib\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windows.Shell">
+      <HintPath>lib\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="NumericUpDownControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>lib\NumericUpDownControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer">
+      <HintPath>lib\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared">
+      <HintPath>lib\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>lib\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Wpf.SplitButton">
+      <HintPath>lib\Wpf.SplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFAutoCompleteBox">
+      <HintPath>lib\WPFAutoCompleteBox.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfMyexpander">
+      <HintPath>lib\WpfMyexpander.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFSpark, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>lib\Spak\WPFSpark.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Boostrapper.cs" />
+    <Compile Include="LocalApps\ClsLocalRequetes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\Rex\MultiColumnComboEditorStrings.Designer.cs" />
+    <Compile Include="Shell.xaml.cs">
+      <DependentUpon>Shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShellViewModel.cs" />
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewSplaschScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewSplaschScreen.Designer.cs">
+      <DependentUpon>NewSplaschScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashScreens.xaml.cs">
+      <DependentUpon>SplashScreens.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserLoggin.xaml.cs">
+      <DependentUpon>UserLoggin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowSplascreen.xaml.cs">
+      <DependentUpon>WindowSplascreen.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Rex\MultiColumnComboEditorStrings.ja.resx" />
+    <EmbeddedResource Include="Resources\Rex\MultiColumnComboEditorStrings.resx" />
+    <EmbeddedResource Include="Views\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewSplaschScreen.resx">
+      <DependentUpon>NewSplaschScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="backup\AllTech_Facturation.csproj.bkp" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\Icones\Thumbs.db" />
+    <None Include="Resources\Images\photos.0" />
+    <None Include="Resources\Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="LOGS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AllTech.FacturationModule\AllTech.FacturationModule.csproj">
+      <Project>{B187927E-16DD-4B33-BE4D-724B529D97C0}</Project>
+      <Name>AllTech.FacturationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AllTech.FrameWork\AllTech.FrameWork.csproj">
+      <Project>{2ADB22F4-24D5-465A-93F7-B553A3B0490C}</Project>
+      <Name>AllTech.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Multilingue.Resources\Multilingue.Resources.csproj">
+      <Project>{786DA212-B441-42EE-8088-42CB49C96798}</Project>
+      <Name>Multilingue.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Global.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IG.DataVisualization.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IG.xamComboEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IG.xamDataChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IG.xamlGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IG.xamlMultiColumnCombo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ImagesResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ResourceEn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ResourceFr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StyleResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TemplateResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Shell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SplashScreens.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserLoggin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\WindowSplascreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icones\about.ico" />
+    <Resource Include="Resources\Icones\administration.ico" />
+    <Resource Include="Resources\Icones\clients.ico" />
+    <Resource Include="Resources\Icones\company.ico" />
+    <Resource Include="Resources\Icones\datarefs.ico" />
+    <Resource Include="Resources\Icones\exitApplication.ico" />
+    <Resource Include="Resources\Icones\exportTxt.ico" />
+    <Resource Include="Resources\Icones\factures.ico" />
+    <Resource Include="Resources\Icones\help.ico" />
+    <Resource Include="Resources\Icones\historyfacture.ico" />
+    <Resource Include="Resources\Icones\logoff.ico" />
+    <Resource Include="Resources\Icones\parameters.ico" />
+    <Resource Include="Resources\Icones\pdf.ico" />
+    <Resource Include="Resources\Icones\products.ico" />
+    <Resource Include="Resources\Icones\sendMail.ico" />
+    <Resource Include="Resources\Icones\sortiefacture.ico" />
+    <Resource Include="Resources\Icones\unistaller.ico" />
+    <Resource Include="Resources\Icones\users.ico" />
+    <Resource Include="Resources\Images\1348241726_application-x-executable-script.ico" />
+    <Resource Include="Resources\Images\ad_sq_plus.png" />
+    <Resource Include="Resources\Images\app.ico" />
+    <Resource Include="Resources\Images\background.png" />
+    <Resource Include="Resources\Images\background1.png" />
+    <Resource Include="Resources\Images\bookmarks_list_add.png" />
+    <Resource Include="Resources\Images\cancel.png" />
+    <Resource Include="Resources\Images\checkbox_checked.png" />
+    <Resource Include="Resources\Images\clear.png" />
+    <Resource Include="Resources\Images\close.png" />
+    <Resource Include="Resources\Images\close_exit_delete.png" />
+    <Resource Include="Resources\Images\compta_user.png" />
+    <Resource Include="Resources\Images\comta_saisie.png" />
+    <Resource Include="Resources\Images\Corbeille2_bin.png" />
+    <Resource Include="Resources\Images\corbeil_Bin_Full.png" />
+    <Resource Include="Resources\Images\delete.png" />
+    <Resource Include="Resources\Images\doc_edit.png" />
+    <Resource Include="Resources\Images\edit.png" />
+    <Resource Include="Resources\Images\edit_pencil.png" />
+    <Resource Include="Resources\Images\etats.png" />
+    <Resource Include="Resources\Images\factures.png" />
+    <Resource Include="Resources\Images\fermerlock.png" />
+    <Resource Include="Resources\Images\filtre.png" />
+    <Resource Include="Resources\Images\first.png" />
+    <Resource Include="Resources\Images\Gdot.jpg" />
+    <Resource Include="Resources\Images\Ground.jpg" />
+    <Resource Include="Resources\Images\help.png" />
+    <Resource Include="Resources\Images\importDocs.png" />
+    <Resource Include="Resources\Images\inventaire.png" />
+    <Resource Include="Resources\Images\Last.png" />
+    <Resource Include="Resources\Images\liste_list_bullets.png" />
+    <Resource Include="Resources\Images\loggin_closed-lock.png" />
+    <Resource Include="Resources\Images\loggin_login.png" />
+    <Resource Include="Resources\Images\loggon.png" />
+    <Resource Include="Resources\Images\LogOff-64.png" />
+    <Resource Include="Resources\Images\loup_2.png" />
+    <Resource Include="Resources\Images\money_gold.png" />
+    <Resource Include="Resources\Images\mydoc.ico" />
+    <Resource Include="Resources\Images\new.png" />
+    <Resource Include="Resources\Images\newCancel.png" />
+    <Resource Include="Resources\Images\newedit-validated.png" />
+    <Resource Include="Resources\Images\Newimagessplash.PNG" />
+    <Resource Include="Resources\Images\newPerson.png" />
+    <Resource Include="Resources\Images\new_delete.png" />
+    <Resource Include="Resources\Images\new_filter.png" />
+    <Resource Include="Resources\Images\new_printer.png" />
+    <Resource Include="Resources\Images\new_user.png" />
+    <Resource Include="Resources\Images\next.png" />
+    <Resource Include="Resources\Images\non_available.png" />
+    <Resource Include="Resources\Images\open.png" />
+    <Resource Include="Resources\Images\parametres_tools.png" />
+    <Resource Include="Resources\Images\previous-ltr.png" />
+    <Resource Include="Resources\Images\print.png" />
+    <Resource Include="Resources\Images\recherche_loup.png" />
+    <Resource Include="Resources\Images\refresh.png" />
+    <Resource Include="Resources\Images\run.png" />
+    <Resource Include="Resources\Images\runoperation.png" />
+    <Resource Include="Resources\Images\save.png" />
+    <Resource Include="Resources\Images\saveas.png" />
+    <Resource Include="Resources\Images\showOperation.png" />
+    <Resource Include="Resources\Images\sortie.png" />
+    <Resource Include="Resources\Images\statistics.png" />
+    <Resource Include="Resources\Images\stocks_package.png" />
+    <Resource Include="Resources\Images\suspend.png" />
+    <Resource Include="Resources\Images\Tips.png" />
+    <Resource Include="Resources\Images\toExcel.png" />
+    <Resource Include="Resources\Images\unlock.png" />
+    <Resource Include="Resources\Images\Warning.png" />
+    <Resource Include="Resources\Images\yes_ok.png" />
+    <Resource Include="Resources\Newimagessplash.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="parameterFile\parameter.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

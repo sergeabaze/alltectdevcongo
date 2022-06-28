@@ -1,0 +1,35 @@
+﻿<Window x:Class="AllTech.FrameWork.Views.StyledMessageBoxView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           ResizeMode="NoResize"
+        SizeToContent="Height"
+        Title="StyledMessageBox" 
+        Width="400"
+        WindowStartupLocation="CenterOwner">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Bottom" 
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,10"
+                    Orientation="Horizontal">
+            <Button Click="ok_Click"
+                    IsDefault="True"
+                    Width="80">
+                <AccessText>_OK</AccessText>
+            </Button>
+            <Button IsCancel="True"
+                    Margin="10,0,0,0"
+                    Width="80">
+                <AccessText>_Cancel</AccessText>
+            </Button>
+        </StackPanel>
+        <Image DockPanel.Dock="Left"
+               Height="64"
+               Margin="20"
+               Source="{StaticResource help }"
+               VerticalAlignment="Top" />
+        <TextBlock Margin="0,0,10,10"
+                   Text="{Binding Path=Message}"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Center" />
+    </DockPanel>
+</Window>

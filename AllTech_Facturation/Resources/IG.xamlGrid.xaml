@@ -1,0 +1,1500 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:igBase="http://schemas.infragistics.com/xaml"
+	xmlns:ig="http://schemas.infragistics.com/xaml"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+	xmlns:System="clr-namespace:System;assembly=mscorlib"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:igPrimBase="http://schemas.infragistics.com/xaml/primitives"
+	mc:Ignorable="d">
+
+    <!-- ********************************** COLORS **********************************-->
+    <Color x:Key="Color_001">#FF000000</Color>
+    <Color x:Key="Color_003">#FF262626</Color>
+    <Color x:Key="Color_004">#ff333333</Color>
+    <Color x:Key="Color_444">#FF4f4f4f</Color>
+    <Color x:Key="Color_005">#FF4E4E4E</Color>
+    <Color x:Key="Color_006">#FF535353</Color>
+    <Color x:Key="Color_007">#FF666666</Color>
+    <Color x:Key="Color_008">#FF747474</Color>
+    <Color x:Key="Color_009">#FF808080</Color>
+    <Color x:Key="Color_011">#FFa1a1a1</Color>
+    <Color x:Key="Color_012">#FFB1B1B1</Color>
+    <Color x:Key="Color_013">#FFC0C0C0</Color>
+    <Color x:Key="Color_015">#FFe0e0e0</Color>
+    <Color x:Key="Color_016">#FFffffff</Color>
+    <Color x:Key="Color_018">#FF185170</Color>
+    <Color x:Key="Color_020">#FF1A5F7C</Color>
+    <Color x:Key="Color_021">#FF216e99</Color>
+    <Color x:Key="Color_022">#FF2788B1</Color>
+    <Color x:Key="Color_024">#FF16A9E7</Color>
+    <Color x:Key="Color_025">#FF1BBBFA</Color>
+    <Color x:Key="Color_026">#FF3bb7eb</Color>
+    <Color x:Key="Color_034">#FF6DBDD1</Color>
+    <Color x:Key="Color_033">#FF78d1ec</Color>
+    <Color x:Key="Color_047">#FFCAE4ED</Color>
+    <Color x:Key="Color_065">#FFc62d36</Color>
+    <Color x:Key="Color_068">#FFD3404B</Color>
+    <Color x:Key="Color_027">#FF93A918</Color>
+    <Color x:Key="Color_028">#FFE3720C</Color>
+    <Color x:Key="Color_069">#AF2788B1</Color>
+    <Color x:Key="Color_070">#E4FFFFFF</Color>
+    <Color x:Key="Color_071">#ccE9E9E9</Color>
+    <Color x:Key="Color_072">#ccffffff</Color>
+    <Color x:Key="Color_073">#bfffffff</Color>
+    <Color x:Key="Color_074">#59ffffff</Color>
+    <Color x:Key="Color_075">#7FFFFFFF</Color>
+    <Color x:Key="Color_076">#00FFFFFF</Color>
+    <Color x:Key="Color_077">#00000000</Color>
+    <Color x:Key="Color_078">#052A2E31</Color>
+    <Color x:Key="Color_079">#152A2E31</Color>
+    <Color x:Key="Color_080">#BF000000</Color>
+    <Color x:Key="Color_081">#66000000</Color>
+    <Color x:Key="Color_082">#7F505050</Color>
+    <Color x:Key="Color_083">#7F757575</Color>
+    <Color x:Key="Color_084">#7F4f4f4f</Color>
+    <Color x:Key="Color_085">#59000000</Color>
+    <Color x:Key="Color_086">#4C565656</Color>
+    <Color x:Key="Color_087">#7F999999</Color>
+    <Color x:Key="Color_088">#352A2E31</Color>
+    <Color x:Key="Color_089">#252A2E31</Color>
+    <Color x:Key="Color_090">#00f87a79</Color>
+    <Color x:Key="Color_091">#00f27776</Color>
+    <Color x:Key="Color_092">#00565656</Color>
+    <Color x:Key="Color_093">#001A5F7C</Color>
+    <Color x:Key="Color_137">#4CACACAC</Color>
+    <Color x:Key="Color_440">#cc666666</Color>
+    <Color x:Key="Color_436">#4D666666</Color>
+    <Color x:Key="Color_097">#7FFFFFFF</Color>
+
+    <!-- ********************************** BRUSHES **********************************-->
+    <SolidColorBrush x:Key="HyperlinkForegroundBRush" Color="{StaticResource Color_022}"/>
+    <LinearGradientBrush x:Key="HeaderNormalBackgroundBrush" StartPoint="0,0" EndPoint="0,0.97">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_005}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="HeaderHoverBackgroundBrush" StartPoint="0,0" EndPoint="0,0.97">
+        <GradientStop Offset="0" Color="{StaticResource Color_005}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_008}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="HeaderMovingBackgroundBrush" StartPoint="0,0" EndPoint="0,0.97">
+        <GradientStop Offset="0" Color="{StaticResource Color_083}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_082}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_084}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CellItemHoverBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1.02">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CellItemSelectedBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CellRowHoverBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ExpansionCellHoverBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DataBarBidirectionNegativeBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_068}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_065}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DataBarBidirectionPositiveBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_005}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="PagerGlyphBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_008}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="PagerButtonHoverBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_072}"/>
+        <GradientStop Offset="0.96" Color="{StaticResource Color_071}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_071}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="PagerButtonPressedBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByCloseBtnBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_005}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByColumnLayoutHeaderFill" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByExpanderHoverBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByExpanderPressedBackgroundBrush" StartPoint="0.684,-0.039" EndPoint="0.684,0.977">
+        <GradientStop Offset="0" Color="{StaticResource Color_022}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_026}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GroupByHeaderBackgroundBrush" StartPoint="0.56,0.04" EndPoint="0.56,0.97">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_005}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="PopupBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="FilterSelectionItemBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="MenuItemMouseOver" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="MenuPopupOuterBorderBrush" Color="{StaticResource Color_012}"/>
+    <LinearGradientBrush x:Key="ColumnChooserDialogCloseBtnBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ColumnChooserDialogCloseBtnHoverBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ColumnChooserDialogCloseBtnPressedBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_022}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_026}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ItemSeparatorBrush" StartPoint="0,0" EndPoint="0,1" Opacity="0.2">
+        <GradientStop Offset="1" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="0" Color="{StaticResource Color_001}"/>
+        <GradientStop Color="{StaticResource Color_001}" Offset="0.5"/>
+        <GradientStop Color="{StaticResource Color_016}" Offset="0.501"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ToolTipBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_016}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_047}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonNormalBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_005}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonHoverBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonPressedBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_022}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_026}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonFocusedBackgroundBrush" StartPoint="0.58,0" EndPoint="0.58,1.00">
+        <GradientStop Offset="0" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_004}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonDisabledBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.96" Color="{StaticResource Color_011}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_011}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonGlyphHoverBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ScrollbarThumbNormalBackgroundBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.94" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_006}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ScrollBarThumbHoverBackgroundBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ScrollBarThumbPressedBackgroundBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="{StaticResource Color_022}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_026}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="HorizontalScrollbarThumbNormalBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.94" Color="{StaticResource Color_006}"/>
+        <GradientStop Offset="0.99" Color="{StaticResource Color_006}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="HorizontalScrollBarThumbHoverBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="HorizontalScrollBarThumbPressedBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_022}"/>
+        <GradientStop Offset="0.98" Color="{StaticResource Color_026}"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ArrowDarkStroke" Color="{StaticResource Color_444}"/>
+    <SolidColorBrush x:Key="ScrollbarStroke" Color="{StaticResource Color_137}"/>
+    <SolidColorBrush x:Key="ScrollbarThumbDisabled" Color="{StaticResource Color_009}"/>
+    <RadialGradientBrush x:Key="ScrollbarVBgBrush" Center="0.071435546875,0.5039216175738735" GradientOrigin="0,0.5" RadiusX="0.5" RadiusY="1.1" Opacity="0.3">
+        <GradientStop Color="#cc666666"/>
+        <GradientStop Color="#4D666666" Offset="0.95"/>
+        <GradientStop Color="#4D666666" Offset="0.98"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="ScrollbarHBgBrush" Center="0.495,0.128" GradientOrigin="0.495,0.128" RadiusX="1.134" RadiusY="0.65" Opacity="0.3">
+        <GradientStop Color="#cc666666"/>
+        <GradientStop Color="#4D666666" Offset="0.95"/>
+        <GradientStop Color="#4D666666" Offset="0.98"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="ScrollBarDisabledBackground" Color="{StaticResource Color_015}"/>
+    <LinearGradientBrush x:Key="Button_NormalState" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_007}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_004}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Button_Hover" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_026}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_022}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Button_Pressed" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_026}" Offset="1"/>
+        <GradientStop Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Button_Focused" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_006}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_004}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Button_Disabled" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_015}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_011}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="LightGrayGradient" StartPoint="0.6848234953703703,-0.0390625" EndPoint="0.6848234953703703,0.9777139734338831">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ButtonNormalBorderBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="ButtonHoverBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="ButtonPressedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="ButtonFocusedBorderBrush" Color="{StaticResource Color_026}"/>
+    <SolidColorBrush x:Key="ButtonDisabledBorderBrush" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="ButtonGlyphNormalBrush" Color="{StaticResource Color_007}"/>
+    <SolidColorBrush x:Key="ButtonGlyphPressedBrush" Color="{StaticResource Color_022}"/>
+    <LinearGradientBrush x:Key="TextBoxGradient" StartPoint="0.505,0.469" EndPoint="0.505,-0.023">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0.377"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="VertThumb_Hover" StartPoint="0.199,0.469" EndPoint="1.17,0.469">
+        <GradientStop Color="{StaticResource Color_026}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_022}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="VertThumb_Pressed" StartPoint="0.199,0.469" EndPoint="1.17,0.469">
+        <GradientStop Color="{StaticResource Color_026}" Offset="1"/>
+        <GradientStop Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DropDown_Hover" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="{StaticResource Color_026}"/>
+        <GradientStop Color="{StaticResource Color_022}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DropDown_Pressed" StartPoint="0,0 " EndPoint="0,1 ">
+        <GradientStop Color="{StaticResource Color_026}" Offset="1"/>
+        <GradientStop Color="{StaticResource Color_022}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DropDown_Focused" StartPoint="0,0 " EndPoint="0,1 ">
+        <GradientStop Color="{StaticResource Color_006}"/>
+        <GradientStop Color="{StaticResource Color_004}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="RadioButtonCheckStroke" Color="{StaticResource Color_022}"/>
+    <LinearGradientBrush x:Key="RadioButtonCheckFill" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_026}"/>
+        <GradientStop Offset="0.80" Color="{StaticResource Color_021}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_021}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TextBoxBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource Color_013}" Offset="1"/>
+        <GradientStop Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="PopupBorderBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_016}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ComboBoxBorderBrush" Color="{StaticResource Color_012}"/>
+    <LinearGradientBrush x:Key="ComboBoxFocusedFillBrush" StartPoint="0.571429443359375,-0.0952392578125" EndPoint="0.571429443359375,1.035712890625">
+        <GradientStop Color="{StaticResource Color_006}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_004}" Offset="0.9444440007209778"/>
+        <GradientStop Color="{StaticResource Color_004}" Offset="0.9777780175209045"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ComboBoxDisabledFillBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Color="{StaticResource Color_015}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_011}" Offset="0.9611110091209412"/>
+        <GradientStop Color="{StaticResource Color_011}" Offset="0.9944440126419067"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="EditingIndicatorFillBrush" StartPoint="0.666,-0.043" EndPoint="-0.066,0.949">
+        <GradientStop Offset="0.008" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.751" Color="{StaticResource Color_008}"/>
+        <GradientStop Offset="0.754" Color="{StaticResource Color_012}"/>
+        <GradientStop Offset="0.896" Color="{StaticResource Color_012}"/>
+        <GradientStop Offset="0.896" Color="{StaticResource Color_008}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonUnfocusedFillBrush" StartPoint="0.76,0" EndPoint="0.76,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_004}"/>
+        <GradientStop Offset="0.93" Color="{StaticResource Color_003}"/>
+        <GradientStop Offset="0.97" Color="{StaticResource Color_003}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="MenuBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="0.48"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DropAreaIndicatorBgBrush" StartPoint="1,0" EndPoint="0,0">
+        <GradientStop Color="{StaticResource Color_081}"/>
+        <GradientStop Color="{StaticResource Color_080}" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ColumnFilterDialogBgBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="{StaticResource Color_075}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_073}"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ClearFiterBorderBrush" Color="{StaticResource Color_012}"/>
+    <LinearGradientBrush x:Key="FilterTextBoxGlyphFill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource Color_003}" Offset="0.994"/>
+        <GradientStop Color="{StaticResource Color_007}"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ViewBoxFill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="{StaticResource Color_013}" Offset="1"/>
+        <GradientStop Color="{StaticResource Color_015}"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="SortableListBoxBorderBrush" Color="{StaticResource Color_012}"/>
+    <RadialGradientBrush x:Key="scrollBarTrackFill" Center="0,0.5" GradientOrigin="0,0.5" RadiusX="0.5" RadiusY="1">
+        <GradientStop Offset="0" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.36" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_015}"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="horizontalScrollBarTrackFill" Center="0.5,0" GradientOrigin="0.5,0" RadiusX="0.5" RadiusY="1">
+        <GradientStop Offset="0" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="0.36" Color="{StaticResource Color_015}"/>
+        <GradientStop Offset="1" Color="{StaticResource Color_015}"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="CheckBoxFill" RadiusX="0.916" RadiusY="0.667" Center="0.556,0.654" GradientOrigin="0.556,0.654">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0.645"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="1"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="InnerShadowFillBrush" RadiusX="0.916" RadiusY="1.667" Center="0.72,0.528" GradientOrigin="0.72,0.528">
+        <GradientStop Color="{StaticResource Color_092}" Offset="0.679"/>
+        <GradientStop Color="{StaticResource Color_086}" Offset="0.913"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="ButtonHiglightEffectBrush" Center="0.4810126582278481,-0.47058823529411764" GradientOrigin="0.4810126582278481,-0.47058823529411764" RadiusX="0.5" RadiusY="1">
+        <GradientStop Color="{StaticResource Color_020}" Offset="0"/>
+        <GradientStop Color="{StaticResource Color_093}" Offset="0.9944440126419067"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="GridBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="GridBorderBrush" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="HeaderNormalBorderBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="HeaderMovingBorderBrush" Color="{StaticResource Color_069}"/>
+    <SolidColorBrush x:Key="FooterBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="CellItemNormalBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="CellItemNormalBorderBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="CellItemHoverBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="CellItemAltNormalBackgroundBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="CellItemSelectedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="AddNewRowBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="SummaryRowExpansionIndicatorBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="SummaryRowBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="RowSelectorBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="RowSelectorBorderBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="RowSelectorActiveBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="RowSelectorActiveBorderBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ExpansionCellBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ExpansionCellBorderBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ExpansionCellHoverBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="ExpansionIndicatorForegroundBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="PagerAreaBackground" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="PagerItemSelectedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="PagerButtonBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="GroupByCloseBtnBorderBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="GroupByExpanderHoverBorderBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="GroupByExpanderHoverHighlightBrush" Color="{StaticResource Color_076}"/>
+    <SolidColorBrush x:Key="GroupByExpanderPressedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="GroupByExpanderPressedHighlightBrush" Color="{StaticResource Color_076}"/>
+    <SolidColorBrush x:Key="GroupByHeaderBorderBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="HeaderNormalForegroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="HeaderHoverForegroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="CellItemNormalForegroundBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="CellItemHoverForegroundBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="CellItemSelectedForegroundBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="HeaderCellGlyphBrush" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="FilterOperatorGlyphBrush" Color="{StaticResource Color_005}"/>
+    <SolidColorBrush x:Key="MoveIndicatorBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="ResizeIndicatorBrush" Color="{StaticResource Color_085}"/>
+    <SolidColorBrush x:Key="PopupBorderBrush" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="FilterSelectionItemBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="FilterSelectionItemHighlightBrush" Color="{StaticResource Color_076}"/>
+    <SolidColorBrush x:Key="FilterSelectionVerticalBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="FilterCustomDialogBackgroundBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="MenuItemMouseOverBorder" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="MenuItemHighlighted" Color="{StaticResource Color_047}"/>
+    <SolidColorBrush x:Key="MenuItemHighlightedBorder" Color="{StaticResource Color_026}"/>
+    <SolidColorBrush x:Key="MenuItemVerticalBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="MenuItemBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ColumnChooserDialogBackgroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ColumnChooserDialogBorderBrush" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="FixedBorderFillBrush" Color="{StaticResource Color_007}"/>
+    <SolidColorBrush x:Key="FocusBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="SeparatorBrush" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="ToolTipBorderBrush" Color="{StaticResource Color_008}"/>
+    <SolidColorBrush x:Key="ScrollBarThumbNormalBorderBrush" Color="{StaticResource Color_007}"/>
+    <SolidColorBrush x:Key="ScrollBarThumbHoverBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="ScrollBarThumbPressedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="HorizontalScrollBarThumbNormalBorderBrush" Color="{StaticResource Color_007}"/>
+    <SolidColorBrush x:Key="HorizontalScrollBarThumbHoverBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="HorizontalScrollBarThumbPressedBorderBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="Cyan0" Color="{StaticResource Color_033}"/>
+    <SolidColorBrush x:Key="Cyan1" Color="{StaticResource Color_024}"/>
+    <SolidColorBrush x:Key="Cyan2" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="Gray0" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="Gray1" Color="{StaticResource Color_013}"/>
+    <SolidColorBrush x:Key="Gray2" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="Gray3" Color="{StaticResource Color_008}"/>
+    <SolidColorBrush x:Key="Gray4" Color="{StaticResource Color_004}"/>
+    <SolidColorBrush x:Key="DropDownStroke_Normal" Color="{StaticResource Color_004}"/>
+    <SolidColorBrush x:Key="DropDownStroke_Hover" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="DropDownStroke_Disabled" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="DropDownStroke_Pressed" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="DropDownStroke_Focused" Color="{StaticResource Color_026}"/>
+    <SolidColorBrush x:Key="CellItemActiveBorderBrush" Color="{StaticResource Color_026}"/>
+    <SolidColorBrush x:Key="MenuSeparatorLine" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="LightForegroundBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="TransparentBrush" Color="{StaticResource Color_076}"/>
+    <SolidColorBrush x:Key="DarkTransparentBrush" Color="{StaticResource Color_077}"/>
+    <SolidColorBrush x:Key="GlyphBrush" Color="{StaticResource Color_007}"/>
+    <SolidColorBrush x:Key="ScrollViewerBorderBrush" Color="{StaticResource Color_013}"/>
+    <SolidColorBrush x:Key="Dat5eFilterTreeviewItemboxBorderBrush" Color="{StaticResource Color_013}"/>
+    <SolidColorBrush x:Key="ScrollViewerRectFill" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="TransparentBrush1" Color="{StaticResource Color_078}"/>
+    <SolidColorBrush x:Key="TransparentBrush2" Color="{StaticResource Color_079}"/>
+    <SolidColorBrush x:Key="TransparentBrush3" Color="{StaticResource Color_089}"/>
+    <SolidColorBrush x:Key="TransparentBrush4" Color="{StaticResource Color_088}"/>
+    <SolidColorBrush x:Key="InvalidUnfocusedBrush" Color="{StaticResource Color_068}"/>
+    <SolidColorBrush x:Key="InvalidFocusedBrush" Color="{StaticResource Color_065}"/>
+    <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource Color_065}"/>
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource Color_004}"/>
+    <SolidColorBrush x:Key="AlternateBackgroundBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="FocusedStroke" Color="{StaticResource Color_034}"/>
+    <SolidColorBrush x:Key="ErrorGlyphFillBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="AddNewRowGlyphFillBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="SortIndicatorFillBrush" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="PagerControlGlyphFill" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="ToggleButtonDisabledStroke" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="CheckBoxBgBrush" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="CheckBoxGlyphFill" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="IndeterminateCheckFillBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="FilterRowSelectorArrowFill" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="TransparentBrush5" Color="{StaticResource Color_087}"/>
+    <SolidColorBrush x:Key="SortIndicatorStrokeBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="CellBorderBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="LabelAreaSeparatorFill" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="SortableListBoxItemBorderBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="DragHandleBorderBrush" Color="{StaticResource Color_015}"/>
+    <SolidColorBrush x:Key="TransparentBrush6" Color="{StaticResource Color_075}"/>
+    <SolidColorBrush x:Key="TransparentBrush7" Color="{StaticResource Color_082}"/>
+    <SolidColorBrush x:Key="FixedRowSeparatorBgBrush" Color="{StaticResource Color_012}"/>
+    <SolidColorBrush x:Key="FilterMenuXamMenuItemBorder" Color="{StaticResource Color_077}"/>
+    <SolidColorBrush x:Key="TransparentBrush8" Color="{StaticResource Color_074}"/>
+    <SolidColorBrush x:Key="SeparatorFillBrush" Color="{StaticResource Color_013}"/>
+    <SolidColorBrush x:Key="FilterTextBoxGlyphStroke" Color="{StaticResource Color_022}"/>
+    <SolidColorBrush x:Key="WatermarkForeground" Color="{StaticResource Color_009}"/>
+    <SolidColorBrush x:Key="UncheckedVisualStrokeBrush" Color="{StaticResource Color_011}"/>
+    <SolidColorBrush x:Key="CheckedVisualFillBrush" Color="{StaticResource Color_003}"/>
+    <SolidColorBrush x:Key="LogicalANDBrush" Color="{StaticResource Color_027}" igPrimBase:XamlHelper.IsExcludedFromWash="True" />
+    <SolidColorBrush x:Key="LogicalORBrush" Color="{StaticResource Color_028}" igPrimBase:XamlHelper.IsExcludedFromWash="True" />
+    <LinearGradientBrush x:Key="FilterDescriptionBackground" EndPoint="0.5,-0.15" MappingMode="RelativeToBoundingBox" StartPoint="0.5,1">
+        <GradientStop Color="{StaticResource Color_016}" Offset="0.645"/>
+        <GradientStop Color="{StaticResource Color_015}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="CustomFilterButtonGlyph" Color="{StaticResource Color_016}"/>
+    <SolidColorBrush x:Key="CustomFilterButtonDisabledForeground" Color="{StaticResource Color_009}"/>
+    <LinearGradientBrush x:Key="HiddenColumnIndicatorBrush" EndPoint="-2,17" StartPoint="-7,12" SpreadMethod="Repeat" MappingMode="Absolute">
+        <GradientStop Color="{StaticResource Color_081}" Offset="0.499"/>
+        <GradientStop Color="{StaticResource Color_074}" Offset="0.500"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ReadOnlyBackgroundBrush" Color="{StaticResource Color_097}"/>
+
+    <!-- ********************************** Converters **********************************-->
+    <igPrim:CultureValueConverter x:Key="CultureConverter">
+    </igPrim:CultureValueConverter>
+    <igPrim:SummaryResultFormatStringValueConverter x:Key="SDFormatStringConverter">
+    </igPrim:SummaryResultFormatStringValueConverter>
+    <igPrim:VisibilityToBoolValueConverter x:Key="VisToBool"/>
+
+    <Style x:Key="FixedRowSeparatorStyle" TargetType="igPrim:FixedRowSeparator">
+        <Setter Property="Background" Value="{StaticResource FixedRowSeparatorBgBrush}"/>
+        <Setter Property="Height" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="igPrim:FixedRowSeparator">
+                    <Rectangle Fill="{TemplateBinding Background}">
+                    </Rectangle>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="igPrim:FixedRowSeparator" BasedOn="{StaticResource FixedRowSeparatorStyle}"/>
+    
+    <!-- *********************************  XamGrid Style  ********************************* -->
+    <Style x:Key="XamGridStyle" TargetType="ig:XamGrid">
+        <Setter Property="Background" Value="{StaticResource LightForegroundBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{StaticResource GridBorderBrush}"/>
+        <Setter Property="FixedRowSeparatorStyle" Value="{StaticResource FixedRowSeparatorStyle}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+                <ControlTemplate TargetType="ig:XamGrid">
+                    <Border x:Name="Root" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ReadOnlyStates">
+                                <VisualState x:Name="Active">
+                                </VisualState>
+                                <VisualState x:Name="ReadOnly">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ReadOnlyBorder" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border.Resources>
+                            <DataTemplate x:Key="DefaultDeferredScrollingTemplate">
+                                <Grid Margin="0,20,0,0">
+                                    <Border Background="{StaticResource ToolTipBackgroundBrush}" BorderBrush="{StaticResource ToolTipBorderBrush}" CornerRadius="2" BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                        <TextBlock Foreground="{StaticResource ForegroundBrush}" Text="{Binding FirstColumnValue, Converter={StaticResource CultureConverter}}" Margin="5"/>
+                                    </Border>
+                                </Grid>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DefaultGroupByDeferredScrollingTemplate">
+                                <Grid Margin="0,20,0,0">
+                                    <Border Background="{StaticResource ToolTipBackgroundBrush}" BorderBrush="{StaticResource ToolTipBorderBrush}" CornerRadius="2" BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                        <TextBlock Foreground="{StaticResource ForegroundBrush}" Text="{Binding Row.Data, Converter={StaticResource CultureConverter}}" Margin="5"/>
+                                    </Border>
+                                </Grid>
+                            </DataTemplate>
+                           
+                            <DataTemplate x:Key="TodayOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="DateAfterOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="DateBeforeOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="TomorrowOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="YesterdayOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="YearToDateOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="NextMonthOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="ThisMonthOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LastMonthOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="NextWeekOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="ThisWeekOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LastWeekOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="NextQuarterOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="ThisQuarterOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LastQuarterOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="NextYearOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="ThisYearOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LastYearOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="Quarter1Operand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="Quarter2Operand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="Quarter3Operand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="Quarter4Operand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+
+                            <DataTemplate x:Key="JanuaryOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="FebruaryOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="MarchOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="AprilOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="MayOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="JuneOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="JulyOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="AugustOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="SeptemberOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="OctoberOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="NovemberOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DecemberOperand">
+                                <Path Data="M8,5 L10.999999,5 L11.999999,5 L11.999999,6 L11.999999,7 L11.999999,7.9999995 L11.999999,9 L11.999999,10 L10.999999,10 L8,10 L8,9 L10.999999,9 L10.999999,7.9999995 L8.999999,7.9999995 L8.999999,7 L10.999999,7 L10.999999,6 L8,6 z M2.9999993,4.9999995 L6.999999,4.9999995 L7,7 L7,7.9999995 L6,7.9999995 L4,7.9999995 L4,9 L7,9 L7,10 L4,10 L3,10 L3,9 L3,7.9999995 L3,7 L4,7 L6,7 L6,5.9999995 L2.9999993,5.9999995 z M1.0000006,2.9999983 L1.0000006,12 L14.000001,12 L14.000001,2.9999983 z M9.0000019,1.0000007 L9.0000019,2.0000005 L10.000002,2.0000005 L10.000002,1.0000007 z M7.0000019,1.0000007 L7.0000019,2.0000005 L8.0000019,2.0000005 L8.0000019,1.0000007 z M5.0000019,1.0000007 L5.0000019,2.0000005 L6.0000019,2.0000005 L6.0000019,1.0000007 z M0,0 L15,0 L15,13 L0,13 z"
+										Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill" Width="12" Height="13"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="EqualsOperand">
+                                <Path Width="8" Height="5" Data="M 0,3 C0,3 0,5 0,5 0,5 8,5 8,5 8,5 8,3 8,3 8,3 0,3 0,3 zM 0,0 C0,0 0,2 0,2 0,2 8,2 8,2 8,2 8,0 8,0 8,0 0,0 0,0 z" Fill="{StaticResource FilterOperatorGlyphBrush}" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="NotEqualsOperand">
+                                <Path Width="8" Height="11" Data="M 0,3 C0,3 0,5 0,5 0,5 3,5 3,5 3,5 2,6 2,6 2,6 0,6 0,6 0,6 0,8 0,8 0,8 1.7,8 1.7,8 1.7,8 0,11 0,11 0,11 2,11 2,11 2,11 3.7,8 3.7,8 3.7,8 8,8 8,8 8,8 8,6 8,6 8,6 4,6 4,6 4,6 5.275,5 5.275,5 5.275,5 8,5 8,5 8,5 8,3 8,3 8,3 6.365,3 6.365,3 6.365,3 8,0 8,0 8,0 6,0 6,0 6,0 4.365,3 4.365,3 4.365,3 0,3 0,3 z" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="StartsWithOperand">
+                                <StackPanel x:Name="BeginsWith" HorizontalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock FontSize="10" Text="A" TextDecorations="Underline" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    <TextBlock FontSize="10" Text="a" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                            <DataTemplate x:Key="EndsWithOperand">
+                                <StackPanel x:Name="EndsWith" HorizontalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock FontSize="10" Text="a" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    <TextBlock FontSize="10" Text="A" TextDecorations="Underline" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DoesNotStartWithOperand">
+                                <Grid x:Name="DoesnotBeginWith">
+                                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                        <TextBlock FontSize="10" Text="A" TextDecorations="Underline" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                        <TextBlock FontSize="10" Text="a" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    </StackPanel>
+                                    <Grid>
+                                        <Path Width="8" Height="11" HorizontalAlignment="Center" Margin="-4,0,0,0" Data="M 0,11 C0,11 2,11 2,11 2,11 8,0 8,0 8,0 6,0 6,0 6,0 0,11 0,11 z" Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill"/>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DoesNotEndWithOperand">
+                                <Grid x:Name="DoesnotendWith">
+                                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                        <TextBlock FontSize="10" Text="a" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                        <TextBlock FontSize="10" Text="A" TextDecorations="Underline" Foreground="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    </StackPanel>
+                                    <Grid>
+                                        <Path Width="8" Height="11" HorizontalAlignment="Center" Margin="0,0,-4,0" Data="M 0,11 C0,11 2,11 2,11 2,11 8,0 8,0 8,0 6,0 6,0 6,0 0,11 0,11 z" Fill="{StaticResource FilterOperatorGlyphBrush}" Stretch="Fill"/>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                            <DataTemplate x:Key="ContainsOperand">
+                                <Border Width="10" Height="10" Background="{StaticResource LightForegroundBrush}" BorderBrush="{StaticResource FilterOperatorGlyphBrush}" BorderThickness="1">
+                                    <Rectangle Margin="2" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </Border>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DoesNotContainOperand">
+                                <Grid x:Name="DoesNotContains">
+                                    <Rectangle Width="10" Height="10" Fill="{StaticResource LightForegroundBrush}" Stroke="{StaticResource FilterOperatorGlyphBrush}" StrokeDashArray="2"/>
+                                    <Rectangle Width="4" Height="4" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </Grid>
+                            </DataTemplate>
+                            <DataTemplate x:Key="GreaterThanOperand">
+                                <Path Width="8" Height="8" HorizontalAlignment="Center" Data="M 1,0 C1,0 0,1 0,1 0,1 5,4 5,4 5,4 0,7 0,7 0,7 1,8 1,8 1,8 8,4 8,4 8,4 1,0 1,0 z" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="GreaterThanOrEqualOperand">
+                                <StackPanel x:Name="GreaterThanOrEqual">
+                                    <Path Width="8" Height="8" HorizontalAlignment="Center" Data="M 1,0 C1,0 0,1 0,1 0,1 5,4 5,4 5,4 0,7 0,7 0,7 1,8 1,8 1,8 8,4 8,4 8,4 1,0 1,0 z" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    <Rectangle Width="8" Height="1" Margin="0,1,0,0" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LessThanOperand">
+                                <Path Width="8" Height="8" HorizontalAlignment="Center" Data="M 7,0 C7,0 8,1 8,1 8,1 3,4 3,4 3,4 8,7 8,7 8,7 7,8 7,8 7,8 0,4 0,4 0,4 7,0 7,0 z" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                            </DataTemplate>
+                            <DataTemplate x:Key="LessThanOrEqualOperand">
+                                <StackPanel x:Name="LessThanOrEqual">
+                                    <Path Width="8" Height="8" HorizontalAlignment="Center" Data="M 7,0 C7,0 8,1 8,1 8,1 3,4 3,4 3,4 8,7 8,7 8,7 7,8 7,8 7,8 0,4 0,4 0,4 7,0 7,0 z" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                    <Rectangle Width="8" Height="1" Margin="0,1,0,0" Fill="{StaticResource FilterOperatorGlyphBrush}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                            <DataTemplate x:Key="DefaultFilterIcon">
+                                <Grid>
+                                    <Path Width="11" Height="8" Data="M 0,0 C0,0 11,0 11,0 11,0 7,4 7,4 7,4 7,8 7,8 7,8 4,8 4,8 4,8 4,4 4,4 4,4 0,0 0,0 z" Fill="{StaticResource HeaderCellGlyphBrush}" Stretch="Fill"/>
+                                    <Path Width="7" Height="6" Data="M 2,1 C2,1 9,1 9,1 9,1 6,4 6,4 6,4 6,7 6,7 6,7 5,7 5,7 5,7 5,4 5,4 5,4 2,1 2,1 z" Fill="{StaticResource LightForegroundBrush}" Stretch="Fill"/>
+                                    <Path Width="3.5" Height="7" HorizontalAlignment="Center" Margin="11,7,0,0" VerticalAlignment="Center" Data="M 0,0 C0,0 0,7 0,7 0,7 3.5,3.5 3.5,3.5 3.5,3.5 0,0 0,0 z" Fill="{StaticResource HeaderCellGlyphBrush}" Stretch="Fill"/>
+                                </Grid>
+                            </DataTemplate>
+                        </Border.Resources>
+                        <Grid>
+                            <Grid Background="{TemplateBinding Background}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <igPrim:RowsPanel x:Name="RowsPanel"/>
+                                <Rectangle Grid.Row="1" Grid.Column="1" Fill="{StaticResource ScrollViewerRectFill}"/>
+                                <ScrollBar x:Name="VerticalScrollBar" Width="17" Grid.Row="0" Grid.Column="1" Style="{StaticResource ScrollbarStyle}"/>
+                                <ScrollBar x:Name="HorizontalScrollBar" Height="16" Grid.Row="2" Style="{StaticResource ScrollbarStyle}"/>
+                            </Grid>
+                            <Border x:Name="ReadOnlyBorder" Background="{StaticResource ReadOnlyBackgroundBrush}" Visibility="Collapsed"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="ig:XamGrid" BasedOn="{StaticResource XamGridStyle}"/>
+
+    <Style x:Key="SummaryRowSelectorCellControlStyle" TargetType="igPrim:SummaryRowSelectorCellControl">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource CellItemNormalForegroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource SummaryRowBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ExpansionCellBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="igPrim:SummaryRowSelectorCellControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver"/>
+                                <VisualState x:Name="Alternate"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ActiveStates">
+                                <VisualState x:Name="InActive"/>
+                                <VisualState x:Name="Active"/>
+                                <VisualState x:Name="Editing"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SelectedStates">
+                                <VisualState x:Name="NotSelected"/>
+                                <VisualState x:Name="Selected"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"/>
+                        <Path x:Name="summarySigmaIcon" Data="M 5.5,-0.5 C5.5,-0.5 5.5,0.5 5.5,0.5 5.5,0.5 1.5,0.5 1.5,0.5 1.5,0.5 4.5,3.5 4.5,3.5 4.5,3.5 1.5,6.5 1.5,6.5 1.5,6.5 5.5,6.5 5.5,6.5 5.5,6.5 5.5,7.5 5.5,7.5 5.5,7.5 -0.5,7.5 -0.5,7.5 -0.5,7.5 -0.5,6.5 -0.5,6.5 -0.5,6.5 2.5,3.5 2.5,3.5 2.5,3.5 -0.5,0.5 -0.5,0.5 -0.5,0.5 -0.5,-0.5 -0.5,-0.5 -0.5,-0.5 5.5,-0.5 5.5,-0.5 z" Fill="{StaticResource HeaderCellGlyphBrush}" Width="6" Height="8" Stretch="Fill" StrokeThickness="0" RenderTransformOrigin="0.5, 0.5"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="igPrim:SummaryRowSelectorCellControl" BasedOn="{StaticResource SummaryRowSelectorCellControlStyle}"/>
+    
+    <!-- *********************************  CellControl Style  ********************************* -->
+    <Style x:Key="CellControlStyle" TargetType="ig:CellControl">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Background" Value="{StaticResource CellItemNormalBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource CellItemNormalBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground"  Value="Black" />
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ig:CellControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="hoverElem" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Alternate">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="altElem" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SelectedStates">
+                                <VisualState x:Name="NotSelected"/>
+                                <VisualState x:Name="Selected">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="rowSelected" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ActiveStates">
+                                <VisualState x:Name="InActive"/>
+                                <VisualState x:Name="Active">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ActiveSelected" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" x:Name="Root"/>
+                        <Border x:Name="altElem" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{StaticResource CellItemAltNormalBackgroundBrush}" Visibility="Collapsed"/>
+                        <Border x:Name="rowSelected" Background="{StaticResource CellItemSelectedBackgroundBrush}" BorderBrush="{StaticResource CellItemSelectedBorderBrush}" BorderThickness="1" Visibility="Collapsed" Margin="{TemplateBinding BorderThickness}"/>
+                        <Border x:Name="ActiveSelected" BorderBrush="{StaticResource CellItemSelectedBorderBrush}" BorderThickness="1" Visibility="Collapsed"/>
+                        <Border x:Name="hoverElem" BorderBrush="{StaticResource CellItemHoverBorderBrush}" BorderThickness="1" Background="{StaticResource CellItemHoverBackgroundBrush}" Visibility="Collapsed"/>
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="ig:CellControl" BasedOn="{StaticResource CellControlStyle}"/>
+
+
+    <!-- *********************************  RowSelectorCellControl Style  ********************************* -->
+    <Style x:Key="RowSelectorCellControlStyle" TargetType="igPrim:RowSelectorCellControl">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource CellItemNormalForegroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource CellItemNormalBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource CellItemNormalBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="igPrim:RowSelectorCellControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="hoverElem" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Alternate">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="altElem" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ActiveStates">
+                                <VisualState x:Name="InActive"/>
+                                <VisualState x:Name="Active">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ActiveIndicator" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Editing">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Duration="0" Storyboard.TargetName="EditingIndicator" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SelectedStates">
+                                <VisualState x:Name="NotSelected"/>
+                                <VisualState x:Name="Selected"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="Root" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"/>
+                        <Border x:Name="altElem" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{StaticResource CellItemAltNormalBackgroundBrush}" Visibility="Collapsed"/>
+                        <Border x:Name="selectedBd" BorderBrush="{StaticResource RowSelectorActiveBorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{StaticResource RowSelectorActiveBackgroundBrush}" Visibility="Collapsed"/>
+                        <Border x:Name="hoverElem" BorderBrush="{StaticResource CellItemHoverBorderBrush}" BorderThickness="1" Background="{StaticResource CellItemHoverBackgroundBrush}" Visibility="Collapsed"/>
+                        <Path x:Name="ActiveIndicator" Visibility="Collapsed" Stroke="{StaticResource FocusBrush}" Fill="{StaticResource LightForegroundBrush}" Data="M0,0 L0,10 L5,5 z" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        <Path x:Name="EditingIndicator" Visibility="Collapsed" Width="6" Height="12" Data="M 2.284,10.299 C2.284,10.299 2.5,10.434 2.5,10.434 2.5,10.434 2.699,9.991 2.699,9.991 2.699,9.991 3.5,9.391 3.5,9.391 3.5,9.391 3.054,9.193 3.054,9.193 3.054,9.193 6,2.608 6,2.608 6,2.608 6,0.521 6,0.521 6,0.521 3.5,0 3.5,0 3.5,0 3,1.565 3,1.565 3,1.565 0.360,7.987 0.360,7.987 0.360,7.987 0,7.826 0,7.826 0,7.826 0,8.869 0,8.869 0,8.869 0,12 0,12 0,12 2.284,10.299 2.284,10.299 z" Margin="3,0,0,0" Stretch="Fill" HorizontalAlignment="Left" Fill="{StaticResource EditingIndicatorFillBrush}"/>
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="igPrim:RowSelectorCellControl" BasedOn="{StaticResource RowSelectorCellControlStyle}"/>
+
+    <Style x:Key="HeaderCellControlStyle" TargetType="igPrim:HeaderCellControl">
+       <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Background" Value="{StaticResource HeaderNormalBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource HeaderNormalForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource HeaderNormalBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="8,4"/>
+        <!--<Setter Property="Template">
+           <Setter.Value>
+                <ControlTemplate TargetType="igPrim:HeaderCellControl">
+                    <igPrim:SimpleClickableContainer x:Name="NormalFill" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,1">
+                        <igBase:Commanding.Commands>
+                            <igBase:CommandSourceCollection>
+                                <ig:XamGridColumnCommandSource CommandType="Select" EventName="SimpleClick"/>
+                                <ig:XamGridColumnCommandSource CommandType="SortToggle" EventName="SimpleClick"/>
+                            </igBase:CommandSourceCollection>
+                        </igBase:Commanding.Commands>
+                        <Grid x:Name="Bd">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*">
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Width="1" HorizontalAlignment="Left" Fill="{StaticResource TransparentBrush5}" Grid.ColumnSpan="4"/>
+                            <igPrim:HeaderDropDownControl Padding="0" x:Name="HiddenLeftAdjacentColumnsElement" Width="Auto" Visibility="Collapsed">
+                                <ToolTipService.ToolTip>
+                                    <ToolTip Content="{Binding Cell.Column.ColumnLayout.Grid.ColumnChooserSettings.HiddenColumnIndicatorToolTipText, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                </ToolTipService.ToolTip>
+                                <igPrim:HeaderDropDownControl.OpenButtonContent>
+                                    <Rectangle x:Name="hiddenColumnIndicator" Width="10" HorizontalAlignment="Left" Fill="{StaticResource HiddenColumnIndicatorBrush}"/>
+                                </igPrim:HeaderDropDownControl.OpenButtonContent>
+                                <Grid>
+                                    <Border x:Name="ColumnChooserBd" MaxHeight="200" Background="{StaticResource PopupBackgroundBrush}" BorderBrush="{StaticResource PopupBorderBrush}" BorderThickness="1" CornerRadius="3" Padding="1">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition MinWidth="25" MaxWidth="25"/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.RowSpan="2" Background="{StaticResource FilterSelectionVerticalBrush}" CornerRadius="1,0,0,1"/>
+                                            <ListBox DataContext="{x:Null}" ItemsSource="{Binding Cell.ColumnsHiddenToLeft, RelativeSource={RelativeSource TemplatedParent}}" Background="{StaticResource TransparentBrush}" BorderThickness="0" Padding="0" Margin="0" Grid.ColumnSpan="2" Style="{StaticResource ListBoxStyle}" ItemContainerStyle="{StaticResource ColumnChooserPopupItemStyle}">
+                                                <ListBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding DisplayNameResolved}"/>
+                                                    </DataTemplate>
+                                                </ListBox.ItemTemplate>
+                                                <igBase:Commanding.Commands>
+                                                    <igBase:CommandSourceCollection>
+                                                        <ig:XamGridColumnCommandSource ParameterBinding="{Binding SelectedItem}" EventName="SelectionChanged" CommandType="Show"/>
+                                                        <igPrim:XamGridPopupCommandSource CommandType="ClosePopup" EventName="SelectionChanged"/>
+                                                    </igBase:CommandSourceCollection>
+                                                </igBase:Commanding.Commands>
+                                            </ListBox>
+                                            <StackPanel Background="{StaticResource TransparentBrush}" Grid.Row="1" Grid.ColumnSpan="2">
+                                                <Rectangle Stretch="Fill" Height="2" Fill="{StaticResource ItemSeparatorBrush}" HorizontalAlignment="Stretch" Margin="33,0,0,0"/>
+                                                <Button Margin="0,1,0,0" Style="{StaticResource ColumnChooserDialogBtnStyle}">
+                                                    <igBase:Commanding.Commands>
+                                                        <igBase:CommandSourceCollection>
+                                                            <ig:XamGridColumnChooserCommandSource CommandType="Open" EventName="Click"/>
+                                                            <igPrim:XamGridPopupCommandSource CommandType="ClosePopup" EventName="Click"/>
+                                                        </igBase:CommandSourceCollection>
+                                                    </igBase:Commanding.Commands>
+                                                    <TextBlock Text="{Binding Cell.Column.ColumnLayout.Grid.ColumnChooserSettings.ColumnChooserDisplayText, RelativeSource={RelativeSource TemplatedParent}}" Foreground="{StaticResource ForegroundBrush}"/>
+                                                </Button>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </Grid>
+                            </igPrim:HeaderDropDownControl>
+                            <ContentPresenter x:Name="headerContent" Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            <Grid Grid.Column="2" x:Name="SortAndPinIndicators" HorizontalAlignment="Right" Margin="0,0,5,0" Background="{TemplateBinding Background}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Path x:Name="SortedDescending" Width="8" Height="5" Data="M 9,1 C9,1 5,6 5,6 5,6 1,1 1,1 1,1 9,1 9,1 z" Fill="{StaticResource SortIndicatorFillBrush}" Stroke="{StaticResource SortIndicatorStrokeBrush}" Margin="0,0,5,0" Visibility="Collapsed"/>
+                                <Path x:Name="SortedAscending" Width="8" Height="5" Data="M 9,6 C9,6 5,1 5,1 5,1 1,6 1,6 1,6 9,6 9,6 z" Fill="{StaticResource SortIndicatorFillBrush}" Stretch="Fill" Stroke="{StaticResource SortIndicatorStrokeBrush}" Margin="0,0,5,0" Visibility="Collapsed"/>
+                                <Button Style="{StaticResource HeaderDropDownButtonStyle}" x:Name="PinnedIndicator" Grid.Column="3" Visibility="Collapsed" Width="20">
+                                    <Grid Background="{StaticResource TransparentBrush}">
+                                        <Path Width="7" Height="10" Data="M 6,4 C6,4 8,4 8,4 8,4 8,9 8,9 8,9 6,9 6,9 6,9 6,4 6,4 zM 5,3 C5,3 5,9 5,9 5,9 4,9 4,9 4,9 4,10 4,10 4,10 7,10 7,10 7,10 7,13 7,13 7,13 8,13 8,13 8,13 8,10 8,10 8,10 11,10 11,10 11,10 11,9 11,9 11,9 10,9 10,9 10,9 10,3 10,3 10,3 5,3 5,3 z" Fill="{StaticResource LightForegroundBrush}" Stretch="Fill"/>
+                                        <igBase:Commanding.Command>
+                                            <ig:XamGridColumnCommandSource CommandType="Unfix" EventName="MouseLeftButtonDown">
+                                            </ig:XamGridColumnCommandSource>
+                                        </igBase:Commanding.Command>
+                                    </Grid>
+                                </Button>
+                                <Button x:Name="UnpinnedIndicator" Visibility="Collapsed" Style="{StaticResource HeaderDropDownButtonStyle}" Grid.Column="3" Width="20">
+                                    <Grid Background="{StaticResource TransparentBrush}">
+                                        <Path Width="10" Height="7" Data="M 12,7 C12,7 12,9 12,9 12,9 7,9 7,9 7,9 7,7 7,7 7,7 12,7 12,7 zM 13,6 C13,6 7,6 7,6 7,6 7,5 7,5 7,5 6,5 6,5 6,5 6,8 6,8 6,8 3,8 3,8 3,8 3,9 3,9 3,9 6,9 6,9 6,9 6,12 6,12 6,12 7,12 7,12 7,12 7,11 7,11 7,11 13,11 13,11 13,11 13,6 13,6 z" Fill="{StaticResource LightForegroundBrush}" Stretch="Fill"/>
+                                        <igBase:Commanding.Command>
+                                            <ig:XamGridColumnCommandSource CommandType="Fix" EventName="MouseLeftButtonDown">
+                                            </ig:XamGridColumnCommandSource>
+                                        </igBase:Commanding.Command>
+                                    </Grid>
+                                </Button>
+                                <igPrim:HeaderDropDownControl x:Name="SummaryHeaderDropDownControl" Background="{StaticResource TransparentBrush}" Visibility="Collapsed" Grid.Column="1">
+                                    <igPrim:HeaderDropDownControl.OpenButtonContent>
+                                        <Grid Background="{StaticResource TransparentBrush}">
+                                            <Path Data="M 0,0 C0,0 5,0 5,0 5,0 5,1 5,1 5,1 2,1 2,1 2,1 4,3.5 4,3.5 4,3.5 2,6 2,6 2,6 5,6 5,6 5,6 5,7 5,7 5,7 0,7 0,7 0,7 0,6 0,6 0,6 2,3.5625 2,3.5625 2,3.5625 0,1 0,1 0,1 0,0 0,0 z" Fill="{StaticResource LightForegroundBrush}" Width="5" Height="7" x:Name="summarySigmaIcon" StrokeThickness="0"/>
+                                        </Grid>
+                                    </igPrim:HeaderDropDownControl.OpenButtonContent>
+                                    <igPrim:SummarySelectionControl Cell="{Binding Path=Cell,RelativeSource={RelativeSource TemplatedParent}}">
+                                    </igPrim:SummarySelectionControl>
+                                </igPrim:HeaderDropDownControl>
+                                <igPrim:HeaderDropDownControl AllowResizing="true" x:Name="FilterHeaderDropDownControl" Visibility="Collapsed" Background="{StaticResource TransparentBrush}" Grid.Column="2">
+                                    <igPrim:HeaderDropDownControl.OpenButtonContent>
+                                        <Grid>
+                                            <Path x:Name="clearFilterGlyphStroke" Width="11" Height="8" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0,0 C0,0 11,0 11,0 11,0 7,4 7,4 7,4 7,8 7,8 7,8 4,8 4,8 4,8 4,4 4,4 4,4 0,0 0,0 z" Fill="{StaticResource LightForegroundBrush}" Stretch="Fill"/>
+                                            <Path x:Name="clearFilterGlyphFill" Width="7" Height="6" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0,0 C0,0 7,0 7,0 7,0 4,3 4,3 4,3 4,6 4,6 4,6 3,6 3,6 3,6 3,3 3,3 3,3 0,0 0,0 z" Stretch="Fill"/>
+                                            <Path x:Name="redFilterGlyphFill" Width="7" Height="6" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0,0 C0,0 7,0 7,0 7,0 4,3 4,3 4,3 4,6 4,6 4,6 3,6 3,6 3,6 3,3 3,3 3,3 0,0 0,0 z" Fill="{StaticResource FocusBrush}" Stretch="Fill" Visibility="Collapsed"/>
+                                        </Grid>
+                                    </igPrim:HeaderDropDownControl.OpenButtonContent>
+                                    <igPrim:FilterSelectorControl Height="370" Width="250" MinWidth="250" MinHeight="370" MaxWidth="800" MaxHeight="800" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Cell="{Binding Path=Cell,RelativeSource={RelativeSource TemplatedParent}}">
+                                    </igPrim:FilterSelectorControl>
+                                </igPrim:HeaderDropDownControl>
+                                <Button x:Name="VisibilityToggleButton" Style="{StaticResource HeaderDropDownButtonStyle}" Visibility="Collapsed" Grid.Column="4" Width="20">
+                                    <Grid Background="{StaticResource TransparentBrush}">
+                                        <Path Width="8" Height="7" Data="M 7,0 C7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 5,4 5,4 5,4 5,5 5,5 5,5 6,5 6,5 6,5 6,6 6,6 6,6 7,6 7,6 7,6 7,7 7,7 7,7 8,7 8,7 8,7 8,5 8,5 8,5 7,5 7,5 7,5 7,4 7,4 7,4 6,4 6,4 6,4 6,3 6,3 6,3 7,3 7,3 7,3 7,2 7,2 7,2 8,2 8,2 8,2 8,0 8,0 8,0 7,0 7,0 zM 0,3 C0,3 0,4 0,4 0,4 1,4 1,4 1,4 1,5 1,5 1,5 2,5 2,5 2,5 2,6 2,6 2,6 3,6 3,6 3,6 3,7 3,7 3,7 4,7 4,7 4,7 4,6 4,6 4,6 4,5 4,5 4,5 3,5 3,5 3,5 3,4 3,4 3,4 2,4 2,4 2,4 2,3 2,3 2,3 3,3 3,3 3,3 3,2 3,2 3,2 4,2 4,2 4,2 4,1 4,1 4,1 4,0 4,0 4,0 3,0 3,0 3,0 3,1 3,1 3,1 2,1 2,1 2,1 2,2 2,2 2,2 1,2 1,2 1,2 1,3 1,3 1,3 0,3 0,3 z" Fill="{StaticResource LightForegroundBrush}"/>
+                                        <igBase:Commanding.Command>
+                                            <ig:XamGridColumnCommandSource CommandType="Hide" EventName="MouseLeftButtonDown"/>
+                                        </igBase:Commanding.Command>
+                                    </Grid>
+                                </Button>
+                            </Grid>
+                            <igPrim:HeaderDropDownControl Padding="0" Visibility="Collapsed" x:Name="HiddenRightAdjacentColumnsElement" Grid.Column="4" Width="Auto">
+                                <ToolTipService.ToolTip>
+                                    <ToolTip Content="{Binding Cell.Column.ColumnLayout.Grid.ColumnChooserSettings.HiddenColumnIndicatorToolTipText, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                </ToolTipService.ToolTip>
+                                <igPrim:HeaderDropDownControl.OpenButtonContent>
+                                    <Rectangle Fill="{StaticResource HiddenColumnIndicatorBrush}" Width="10" HorizontalAlignment="Right"/>
+                                </igPrim:HeaderDropDownControl.OpenButtonContent>
+                                <Grid>
+                                    <Border x:Name="ColumnChooserBdRight" MaxHeight="200" Background="{StaticResource PopupBackgroundBrush}" BorderBrush="{StaticResource PopupBorderBrush}" BorderThickness="1" CornerRadius="3" Padding="1">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition MinWidth="24" MaxWidth="24"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.RowSpan="2" Background="{StaticResource FilterSelectionVerticalBrush}" CornerRadius="1,0,0,1"/>
+                                            <ListBox DataContext="{x:Null}" ItemsSource="{Binding Cell.ColumnsHiddenToRight, RelativeSource={RelativeSource TemplatedParent}}" Background="{StaticResource TransparentBrush}" BorderThickness="0" Padding="0" Margin="0" Grid.ColumnSpan="2" Style="{StaticResource ListBoxStyle}" ItemContainerStyle="{StaticResource ColumnChooserPopupItemStyle}">
+                                                <ListBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding DisplayNameResolved}"/>
+                                                    </DataTemplate>
+                                                </ListBox.ItemTemplate>
+                                                <igBase:Commanding.Commands>
+                                                    <igBase:CommandSourceCollection>
+                                                        <ig:XamGridColumnCommandSource ParameterBinding="{Binding SelectedItem}" EventName="SelectionChanged" CommandType="Show"/>
+                                                        <igPrim:XamGridPopupCommandSource CommandType="ClosePopup" EventName="SelectionChanged"/>
+                                                    </igBase:CommandSourceCollection>
+                                                </igBase:Commanding.Commands>
+                                            </ListBox>
+                                            <StackPanel Background="{StaticResource TransparentBrush}" Grid.Row="1" Grid.ColumnSpan="2">
+                                                <Rectangle Stretch="Fill" Height="2" Fill="{StaticResource ItemSeparatorBrush}" HorizontalAlignment="Stretch" Margin="33,0,0,0"/>
+                                                <Button Margin="0,1,0,0" Style="{StaticResource ColumnChooserDialogBtnStyle}">
+                                                    <igBase:Commanding.Commands>
+                                                        <igBase:CommandSourceCollection>
+                                                            <ig:XamGridColumnChooserCommandSource CommandType="Open" EventName="Click"/>
+                                                            <igPrim:XamGridPopupCommandSource CommandType="ClosePopup" EventName="Click"/>
+                                                        </igBase:CommandSourceCollection>
+                                                    </igBase:Commanding.Commands>
+                                                    <TextBlock Text="{Binding Cell.Column.ColumnLayout.Grid.ColumnChooserSettings.ColumnChooserDisplayText, RelativeSource={RelativeSource TemplatedParent}}" Foreground="{StaticResource ForegroundBrush}"/>
+                                                </Button>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </Grid>
+                            </igPrim:HeaderDropDownControl>
+                        </Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="Bd" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource HeaderHoverBackgroundBrush}">
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="SortAndPinIndicators" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource HeaderHoverBackgroundBrush}">
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Moving">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="NormalFill" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource HeaderMovingBackgroundBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="NormalFill" Storyboard.TargetProperty="BorderBrush">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource HeaderMovingBorderBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="NormalFill" Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Thickness>1
+                                                    </Thickness>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SortAndPinIndicators" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FixedIndicatorStates">
+                                <VisualState x:Name="NotFixable"/>
+                                <VisualState x:Name="Pinned">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="PinnedIndicator" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unpinned">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="UnpinnedIndicator" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SummaryStates">
+                                <VisualState x:Name="Summable">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="SummaryHeaderDropDownControl" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unsummable">
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="SortedStates">
+                                <VisualState x:Name="NotSorted">
+                                </VisualState>
+                                <VisualState x:Name="Ascending">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="SortedAscending" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Descending">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="SortedDescending" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="HeaderFilterStates">
+                                <VisualState x:Name="NoIcon">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="FilterHeaderDropDownControl" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="FilterIcon">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="FilterHeaderDropDownControl" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="HeaderFilterAppliedStates">
+                                <VisualState x:Name="NotFiltered">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="clearFilterGlyphFill" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redFilterGlyphFill" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Filtered">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="clearFilterGlyphFill" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redFilterGlyphFill" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="VisibilityIconStates">
+                                <VisualState x:Name="VisibilityIconHidden"/>
+                                <VisualState x:Name="VisibilityIconVisible">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="VisibilityToggleButton" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="LeftAdjacentColumnHiddenStates">
+                                <VisualState x:Name="NoHiddenLeftAdjacentColumns"/>
+                                <VisualState x:Name="HiddenLeftAdjacentColumns">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="HiddenLeftAdjacentColumnsElement" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="RightAdjacentColumnHiddenStates">
+                                <VisualState x:Name="NoHiddenRightAdjacentColumns"/>
+                                <VisualState x:Name="LastVisibleColumnWithHiddenRightAdjacentColumns">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0" Storyboard.TargetName="HiddenRightAdjacentColumnsElement" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible
+                                                    </Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </igPrim:SimpleClickableContainer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>-->
+    </Style>
+    <Style TargetType="igPrim:HeaderCellControl" BasedOn="{StaticResource HeaderCellControlStyle}"/>
+
+
+
+    <!-- *********************************  filterMenuCustom  ********************************* -->
+   
+
+    <!-- *********************************  FilterSelectionControl Style  ********************************* -->
+  
+
+    <!-- *********************************  ClearFiterTxtbxWatermarkButton Style  ********************************* -->
+  
+
+    <!-- *********************************  FilterTextBoxWatermarked Style  ********************************* -->
+   
+    <!-- *********************************  DataBarControl Style  ********************************* -->
+  
+
+    <!-- *********************************  ConditionalFormattingCellControl Style  ********************************* -->
+   
+    <!-- *********************************  MergedSummaryCellControl Style  ********************************* -->
+  
+   
+
+    <!-- *********************************  DateFilterTreeViewItem Style  ********************************* -->
+  
+
+    <!-- *********************************  DateFilterSelectionControl Style  ********************************* -->
+   
+    <!-- *********************************  GridSortableListBox Style  ********************************* -->
+   
+
+    <!-- *********************************  GroupDisplayCellControl Style  ********************************* -->
+ 
+
+    <!-- *********************************  CustomFilterButton Style  ********************************* -->
+ 
+</ResourceDictionary> 

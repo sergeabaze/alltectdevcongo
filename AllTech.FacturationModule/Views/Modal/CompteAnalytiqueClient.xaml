@@ -1,0 +1,145 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.CompteAnalytiqueClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+         xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+         xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+        Title="" Height="480" Width="500" WindowStartupLocation="CenterOwner" WindowStyle="None">
+    <Window.Resources>
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button   Background="Transparent"  ToolTip="Close "  
+                  VerticalAlignment="Top"   Width="40" Height="40" HorizontalAlignment="Right"
+                  Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Cursor" Value="Arrow"/>
+
+                </Style>
+            </Button.Style>
+            <Image Source="{StaticResource cancel}"  Stretch="Fill" Width="35"  />
+        </Button>
+        <controlss:OptionsPanel HeaderText="COMPTES ANALYTIQUES DU CLIENT" Margin="0,40" FontWeight="Bold" Foreground="#FF373737"
+                                FontSize="13" FontFamily="Corbel" IsMovable="False" Width="auto">
+            <DockPanel>
+                <ToolBarTray   DockPanel.Dock="Top"  >
+                    <ToolBar x:Name="toolBarMain"  Width="430" >
+                        <Button Background="Transparent"  Width="30" Height="30" TabIndex="9" ToolTip="Nouveau Compte " Command="{Binding NewCommand}" >
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource new}"  />
+                        </Button>
+                        <Separator />
+                        <Button Background="Transparent"   ToolTip="Sauvegarder " TabIndex="8" Command="{Binding SaveCommand}" Width="30" Height="30">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource save}" >
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.3"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>
+                        <Separator/>
+                        <Button Background="Transparent"    Width="30" Height="30" TabIndex="10" ToolTip="Suppression " Command="{Binding DeleteCommand}" >
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource delete}">
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.3"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>
+                      
+
+
+                    </ToolBar>
+                </ToolBarTray>
+                <Grid DockPanel.Dock="Bottom" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                       
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0">
+                        <Grid>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5">
+                                <Label Foreground="Green"  Content="Client sélectionné :" FontSize="15" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding ClientName}" Width="auto" FontWeight="Bold" />
+                            </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                                <Label Foreground="Green"  Content="Numéro Compte :" Margin="0,5,5,0"  Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                                <ComboBox Width="auto" MinWidth="180"  Height="25"
+                                           ItemsSource="{Binding CompteAnalytiquesList}"
+                                           DisplayMemberPath="Numerocompte"
+                                           SelectedItem="{Binding CompteAnalityqueselected}">
+                                    
+                                </ComboBox>
+                                <Button Content="..." ToolTip="Liste Comptes Analytiques" Width="30"
+                                        Command="{Binding CompteAnalListCommand}"
+                                        Height="25" Margin="3,3,0,0"></Button>
+
+                            </StackPanel>
+                        </Grid>
+                        
+
+                    </Border>
+                    <controls:SortableListView   Grid.Row="2" x:Name="DetailView" Height="auto" MinHeight="200" MaxHeight="200" Width="400"
+                                               HorizontalAlignment="Stretch" VerticalAlignment="Top" 
+                                               IsSynchronizedWithCurrentItem="True"  AlternationCount="2" 
+                                                  ItemContainerStyle="{StaticResource myItemStyle}"
+                                                 MouseDoubleClick="DetailView_MouseDoubleClick" 
+                                               ItemsSource="{Binding Comptes}" 
+                                               
+                               Margin="3" Grid.RowSpan="2">
+                        <controls:SortableListView.View>
+                            <GridView>
+                                <GridView.Columns>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=CompteAnalyTique.Numerocompte}" Header="Numéro Compte " Width="180" />
+                                </GridView.Columns>
+                            </GridView>
+                        </controls:SortableListView.View>
+
+                    </controls:SortableListView>
+                </Grid>
+            </DockPanel>
+        </controlss:OptionsPanel>
+    </Grid>
+</Window>

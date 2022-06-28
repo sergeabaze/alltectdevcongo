@@ -1,0 +1,164 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Facture_rebus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+        xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+         xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+        Title="Facture_rebus" MinWidth="100" Width="900" MinHeight="100" Height="600">
+    <Window.Background >
+        <LinearGradientBrush  EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+            <GradientStop Color="#FCFFF5" Offset="0.992"/>
+            <GradientStop Color="#3E606F" Offset="0.185"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Resources >
+        <localVisible:DateConverter x:Key="convertDate"/>
+        <DataTemplate x:Key="listBoxTemplate">
+            <Border BorderBrush="Blue" BorderThickness="3" CornerRadius="3" Margin="3">
+                <Grid >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock Text="Facture #" Grid.Row="1" Grid.Column="1"/>
+                    <TextBlock Text="{Binding NumeroFacture}" Grid.Row="1" Grid.Column="2" />
+                    <TextBlock Text="Date Suppression :" Grid.Row="2" Grid.Column="1" />
+                    <TextBlock Text="{Binding DateSuppression, Converter={StaticResource convertDate},ConverterParameter=dd/MM/yyy}" Margin="5,0" Grid.Row="2" Grid.Column="2" Foreground="Blue" />
+                </Grid>
+            </Border>
+              
+        </DataTemplate>
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot" Background="Transparent"  >
+        <Label  Content="Factures en Rebus" Margin="10,0,0,0" Width="Auto" FontWeight="Bold" 
+                Foreground="#FF373737" FontSize="24" FontFamily="Corbel"/>
+        <GroupBox Header="Factures En Rebus"  FontSize="12"  Background="Transparent"    Margin="9,27,13.97,0" Style="{DynamicResource GroupBoxStyle1}" >
+            <DockPanel  Background="Transparent">
+                <Border DockPanel.Dock="Top">
+                    <ToolBarTray>
+                        <ToolBar >
+                            <Button Background="Transparent"    Width="30" Height="30" TabIndex="10" ToolTip="Suppression " Commands:Click.Command="{Binding DeleteCommand}" >
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.3"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                           
+                            <Button   Background="Transparent"  ToolTip="Close " 
+                            VerticalAlignment="Top"   Width="30" Height="25" 
+                             Click="Button_Click">
+                                <Image Source="{StaticResource cancel}"  Stretch="Fill" Width="30"  />
+                            </Button>
+                        </ToolBar>
+                    </ToolBarTray>
+                </Border>
+                <Border DockPanel.Dock="Bottom" >
+                    <Grid >
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0">
+                            
+                        </Border>
+                        <DockPanel Grid.Row="0">
+                            <Border DockPanel.Dock="Left" >
+                                <ListBox  ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding ListeFactures}"
+                                            Width="auto" MinWidth="100" Height="400" ItemTemplate="{StaticResource listBoxTemplate}"
+                                            SelectedItem="{Binding FactureSelect}"/>
+                            </Border>
+                            <Border DockPanel.Dock="Right"  Width="400"  Height="300" BorderThickness="2" 
+                                    BorderBrush="Blue"
+                                    HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                    Margin="10,5" >
+                                <DockPanel >
+                                    <Border DockPanel.Dock="Top" >
+                                        <Label Content="Detail facture"  HorizontalAlignment="Center" Foreground="Azure"  />
+                                    </Border>
+                                    <Border DockPanel.Dock="Bottom" >
+                                        <Grid >
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.Row="0" Background="White" BorderThickness="2" CornerRadius="2" BorderBrush="Black" Margin="0,5" >
+                                                <Grid >
+                                                    <Grid.RowDefinitions >
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions >
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    
+                                                    <Label Content="Client :" Foreground="Green"   Grid.Row="0" Grid.Column="0"  Margin="20,0"/>
+                                                    <Label Content="{Binding FactureSelect.Client}" FontSize="14" Height="20"  Width="180" Foreground="Blue"  Grid.Row="0" Grid.Column="1"  Margin="5,0"/>
+                                                    <Label Content="Exploitation :" Foreground="Green"   Grid.Row="1" Grid.Column="0"  Margin="20,0"/>
+                                                    <Label Content="{Binding FactureSelect.Exploitation}" FontSize="14" Height="20"  Width="180" Foreground="Blue"  Grid.Row="1" Grid.Column="1"  Margin="5,3"/>
+                                                    <Label Content="Objet :" Foreground="Green"   Grid.Row="2" Grid.Column="0"  Margin="20,0"/>
+                                                    <Label Content="{Binding FactureSelect.Objet}" FontSize="14" Height="20"  Width="180" Foreground="Blue"  Grid.Row="2" Grid.Column="1"  Margin="5,3,0,5"/>
+                                                </Grid>
+                                            </Border>
+                                            <Border Grid.Row="1" Background="White" BorderThickness="2" CornerRadius="2" BorderBrush="Black">
+                                                <ListView  ItemsSource="{Binding FactureSelect.Items}"
+                                                           AlternationCount="2"  
+                                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True">
+                                                    <ListView.View>
+                                                        <GridView >
+                                                            <GridView.Columns>
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Produit}" Header="Produit  " Width="150" />
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Qte}" Header="Quantité  " Width="60" />
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=PrixUnit}" Header="Pu  " Width="70" />
+                                                                <GridViewColumn DisplayMemberBinding="{Binding Path=MontantHTTC}" Header="Montant HTTC  " Width="100" />
+                                                            </GridView.Columns>
+                                                        </GridView>
+                                                    </ListView.View>
+
+                                                </ListView>
+                                            </Border>
+                                            <Border Grid.Row="2" Background="White" BorderThickness="2" CornerRadius="2" BorderBrush="Black" Margin="0,5">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions >
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Content="Montant HTTC :" Foreground="Blue" FontStyle="Normal"  FontWeight="Bold" Grid.Column="0" />
+                                                    <Label Content="{Binding FactureSelect.MontantTTc}" Foreground="Blue" FontStyle="Normal"  FontWeight="Bold" Grid.Column="0" />
+                                                </Grid>
+                                              
+                                            </Border>
+                                        </Grid>
+                                        
+                                    </Border>
+                                </DockPanel>
+                                
+                            </Border>
+                        </DockPanel>
+                    </Grid>
+                </Border>
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</Window>

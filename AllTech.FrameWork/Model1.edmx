@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sysfactLocalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="sysfactLocalModelStoreContainer">
+          <EntitySet Name="t_facture" EntityType="sysfactLocalModel.Store.t_facture" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+        <EntityType Name="t_facture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Modifie_Par" Type="int" />
+          <Property Name="Cree_Par" Type="int" Nullable="false" />
+          <Property Name="Numero_Facture" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Date_Creation" Type="datetime" Nullable="false" />
+          <Property Name="Date_Modification" Type="datetime" />
+          <Property Name="ID_Objet" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sysfactLocalModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="sysfactLocalEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="t_facture" EntityType="sysfactLocalModel.t_facture" />
+        </EntityContainer>
+        <EntityType Name="t_facture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="Modifie_Par" Type="Int32" />
+          <Property Name="Cree_Par" Type="Int32" Nullable="false" />
+          <Property Name="Numero_Facture" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Date_Creation" Type="DateTime" Nullable="false" />
+          <Property Name="Date_Modification" Type="DateTime" />
+          <Property Name="ID_Objet" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sysfactLocalModelStoreContainer" CdmEntityContainer="sysfactLocalEntities">
+          <EntitySetMapping Name="t_facture"><EntityTypeMapping TypeName="sysfactLocalModel.t_facture"><MappingFragment StoreEntitySet="t_facture">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Modifie_Par" ColumnName="Modifie_Par" />
+            <ScalarProperty Name="Cree_Par" ColumnName="Cree_Par" />
+            <ScalarProperty Name="Numero_Facture" ColumnName="Numero_Facture" />
+            <ScalarProperty Name="Date_Creation" ColumnName="Date_Creation" />
+            <ScalarProperty Name="Date_Modification" ColumnName="Date_Modification" />
+            <ScalarProperty Name="ID_Objet" ColumnName="ID_Objet" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="sysfactLocalModel.t_facture" Width="1.5" PointX="0.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

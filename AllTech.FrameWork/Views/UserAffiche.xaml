@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="AllTech.FrameWork.Views.UserAffiche"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:resources="clr-namespace:AllTech.FrameWork.Resources"
+             xmlns:models="clr-namespace:AllTech.FrameWork.Models.Series"
+            xmlns:ig="http://schemas.infragistics.com/xaml"
+            xmlns:langue="clr-namespace:Multilingue.Resources;assembly=Multilingue.Resources"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Background >
+        <ImageBrush ImageSource="{StaticResource background1}" />
+    </UserControl.Background>
+    <UserControl.Resources >
+            <resources:DataChartStrings x:Key="Strings"/>
+            <DataTemplate x:Key="outerLabelTemplate" >
+                <Grid>
+                    <TextBlock Text="{Binding}"
+                               FontSize="15"  
+                               Foreground="{StaticResource ForegroundBrush}"/>
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="InnerLabelTemplate" >
+                <Grid>
+                    <TextBlock Text="{Binding}" 
+                               FontSize="15"   
+                               Foreground="LightGray" />
+                </Grid>
+            </DataTemplate>
+      
+           
+    </UserControl.Resources>
+    <Grid  x:Name="LayoutRoot">
+       
+        <DockPanel Height="auto" HorizontalAlignment="Center"  Margin="10,100,0,0" Name="dockPanel1" VerticalAlignment="Top" Width="auto" >
+
+            <Label Background="BlueViolet" Margin="10,0"  Content="{x:Static langue:LanguageHelper.UserAfficheTitre}" FontSize="22"  DockPanel.Dock="Top"  HorizontalAlignment="Left" Foreground="#E61A0DA3" FontWeight="Bold">
+                
+            </Label>
+            <!--<Border DockPanel.Dock="Left">
+                <Grid >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image   Source="{StaticResource livre}" Width="50" Height="60"  Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Left"  />
+                    <Label Content="Factures Crées :"  Foreground="White" FontWeight="Bold" FontSize="13" Grid.Row="1" Grid.Column="0"/>
+                    <Label Content="Factures En Cours Validation :" Foreground="White" FontWeight="Bold" FontSize="13" Grid.Row="2" Grid.Column="0"/>
+                    <Label Content="Facture Validées :" Grid.Row="3" Foreground="White" FontWeight="Bold" FontSize="13" Grid.Column="0"/>
+                    <Label Content="Facture Sorties :" Grid.Row="4" Foreground="White" FontWeight="Bold" FontSize="13" Grid.Column="0"/>
+                    <Label Content="Facture Suspendues :" Foreground="White" FontWeight="Bold" FontSize="13" Grid.Row="5" Grid.Column="0"/>
+
+                    <TextBlock x:Name="txtfactCreate"  Grid.Row="1" Width="120" Grid.Column="1" Foreground="White" />
+                    <TextBlock x:Name="txtfactEncour"  Grid.Row="2" Width="120" Grid.Column="1" Foreground="White"/>
+                    <TextBlock x:Name="txtfactValide"  Grid.Row="3" Width="120" Grid.Column="1" Foreground="White"/>
+                    <TextBlock x:Name="txtfactSortie"  Grid.Row="4" Width="120" Grid.Column="1" Foreground="White"/>
+                    <TextBlock x:Name="txtfactSuspend"  Grid.Row="5" Width="120" Grid.Column="1" Foreground="White"/>
+                </Grid>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6668B6" Offset="0.183" />
+                        <GradientStop Color="#FFFFE6FF" Offset="0.968" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>-->
+            <Border DockPanel.Dock="Bottom"  VerticalAlignment="Top" Height="389">
+                <ig:XamFunnelChart x:Name="funnel"
+             Width="{Binding ActualWidth, ElementName=LayoutRoot}" 
+                      MaxWidth="600" MaxHeight="500"
+                      HorizontalAlignment="Left"
+                    
+                          ValueMemberPath="Budget"
+                      FunnelSliceDisplay="{Binding ElementName=sliceDisplayCombo, Path=SelectedItem}"             
+                      UseOuterLabelsForLegend="True"                   
+                      InnerLabelMemberPath="Budget"
+                      InnerLabelVisibility="Visible" 
+                      InnerLabelTemplate="{StaticResource InnerLabelTemplate}" 
+                      OuterLabelMemberPath="Label"
+                      OuterLabelVisibility="Visible"
+                      OuterLabelTemplate="{StaticResource outerLabelTemplate}"
+                      IsInverted="False"                       
+                      UseUnselectedStyle="True"                 
+                      TransitionDuration="0:00:00.7"
+                           >
+                    <ig:XamFunnelChart.ToolTip>
+                        <TextBlock Text="{Binding Item.Label}" />
+                    </ig:XamFunnelChart.ToolTip>
+
+                </ig:XamFunnelChart>
+                <!--<Rectangle Name="myrect" Width="350" Height="200">
+                    <Rectangle.Fill>
+                        <SolidColorBrush x:Name="brush" Color="#FF2056E0"/>
+                    </Rectangle.Fill>
+                    <Rectangle.Triggers>
+                        <EventTrigger RoutedEvent="Window.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard RepeatBehavior="Forever">
+                                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Red" To="Green" 
+                      Duration="0:0:1" BeginTime="0:0:0"/>
+                                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Green" To="Blue" 
+                      Duration="0:0:1" BeginTime="0:0:1"/>
+                                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Blue" To="Yellow" 
+                      Duration="0:0:1" BeginTime="0:0:2"/>
+                                    <ColorAnimation Storyboard.TargetName="brush" 
+                      Storyboard.TargetProperty="Color" From="Yellow" 
+                      To="Red" Duration="0:0:1" BeginTime="0:0:3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Rectangle.Triggers>
+                   
+
+                </Rectangle>-->
+                <!--<Grid Background="Aqua"  >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                       
+                </Grid>-->
+
+
+            </Border>
+        </DockPanel>
+    </Grid>
+</UserControl>

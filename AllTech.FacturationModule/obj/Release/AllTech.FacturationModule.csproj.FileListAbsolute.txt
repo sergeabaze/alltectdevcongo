@@ -1,0 +1,165 @@
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FacturationModule.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FacturationModule.pdb
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FrameWork.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Prism.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Unity.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\NumericUpDownControl.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\WPFAutoCompleteBox.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\WpfMyexpander.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\FACTURATION_DAL.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\MySql.Data.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FrameWork.pdb
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\NumericUpDownControl.pdb
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\FACTURATION_DAL.pdb
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\ResolveAssemblyReference.cache
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataReference_Views.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefPrestation.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRefUtilisateur.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Company.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Produit.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_List.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_Sortie.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_view.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefInvoice.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Compte.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DeataiProduit.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DetailProduitClient.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exploitation.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\FactureInformation.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\StatusFacture.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\VuesSortie.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WTaxeDevises.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Parameters.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataReference_Views.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefPrestation.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRefUtilisateur.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Company.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Produit.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_List.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_Sortie.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_view.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefInvoice.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Compte.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DeataiProduit.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DetailProduitClient.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exploitation.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\FactureInformation.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\StatusFacture.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\VuesSortie.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WmodalDatarefs.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WTaxeDevises.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Parameters.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\WFacturationModal_vie.g.cs
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule_MarkupCompile.cache
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule_MarkupCompile.lref
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WmodalDatarefs.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\WFacturationModal_vie.baml
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.g.resources
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Properties.Resources.resources
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Report.Form1.resources
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Report.FormeDash.resources
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\GenerateResource.read.1.tlog
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\GenerateResource.write.1.tlog
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.dll
+D:\Outils\full\SOFT_SPOOL\SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FacturationModule.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FacturationModule.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\ja\AllTech.FacturationModule.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AdornedControl.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FrameWork.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Framework.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Shared.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\NumericUpDownControl.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Wpf.SplitButton.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\WPFAutoCompleteBox.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\WpfMyexpander.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\FACTURATION_DAL.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Assets.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\MySql.Data.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AllTech.FrameWork.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\AdornedControl.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Framework.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Shared.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\NumericUpDownControl.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Wpf.SplitButton.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\FACTURATION_DAL.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\bin\Release\Infragistics.Samples.Assets.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Assets\Global.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Assets\IG.xamComboEditor.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\AdministrationDatas.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataReference_Views.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefPrestation.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRefUtilisateur.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Company.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Produit.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_List.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_Sortie.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefInvoice.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facture_rebus.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Compte.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DeataiProduit.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DetailProduitClient.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Devises.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exoneration.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exploitation.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\FactureInformation.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\ModalSignature.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\ObjetClientList.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\StatusFacture.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\VuesSortie.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WTaxeDevises.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Parameters.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\ProgressWindow.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Suggest\ModalSuggestFactures.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\AdministrationDatas.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataReference_Views.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefPrestation.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRefUtilisateur.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Company.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DataRef_Produit.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_List.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facturation_Sortie.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\DatarefInvoice.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Facture_rebus.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Compte.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DeataiProduit.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\DetailProduitClient.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Devises.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exoneration.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\Exploitation.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\FactureInformation.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\ModalSignature.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\ObjetClientList.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\StatusFacture.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\VuesSortie.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WmodalDatarefs.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WTaxeDevises.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\NewFactureEdition.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Parameters.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\ProgressWindow.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Suggest\ModalSuggestFactures.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\WFacturationModal_vie.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule_MarkupCompile.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule_MarkupCompile.lref
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\Modal\WmodalDatarefs.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\NewFactureEdition.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\Views\WFacturationModal_vie.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.g.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Properties.Resources.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Report.formeExonereNonExoner.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Ress.MultiColumnComboEditorStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.Ress.MultiColumnComboEditorStrings.ja.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.dll.licenses
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\ja\AllTech.FacturationModule.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\INSTALL_SYSFACT\INSTALL_SYSFACT\AllTech_Facturation\AllTech.FacturationModule\obj\Release\AllTech.FacturationModule.pdb

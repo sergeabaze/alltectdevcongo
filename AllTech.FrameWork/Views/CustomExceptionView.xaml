@@ -1,0 +1,28 @@
+﻿<Window x:Class="AllTech.FrameWork.Views.CustomExceptionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         ResizeMode="NoResize"
+        SizeToContent="Height"
+        Title="Exception"
+        Width="400"
+        WindowStartupLocation="CenterOwner">
+    <DockPanel LastChildFill="True">
+        <Button Click="ok_Click"
+                DockPanel.Dock="Bottom"
+                IsDefault="True"
+                HorizontalAlignment="Right"
+                Margin="0,0,10,10"
+                Width="80">
+            <AccessText>_OK</AccessText>
+        </Button>
+        <Image DockPanel.Dock="Left"
+               Height="64"
+               Margin="20"
+               Source="{StaticResource warning}"
+               VerticalAlignment="Top" />
+        <TextBlock Margin="0,0,10,10"
+                   Text="{Binding Path=Message}"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Center" />
+    </DockPanel>
+</Window>

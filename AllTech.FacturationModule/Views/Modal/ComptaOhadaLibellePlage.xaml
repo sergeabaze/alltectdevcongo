@@ -1,0 +1,108 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.ComptaOhadaLibellePlage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:ig="http://schemas.infragistics.com/xaml"
+          xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+          xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+         Height="260" Width="380" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <DockPanel>
+            <TextBlock Text="Compte libelle ohada" DockPanel.Dock="Top" />
+            <ToolBarTray DockPanel.Dock="Top" VerticalAlignment="Top" >
+                <ToolBar x:Name="toolBarMainOhada"  VerticalAlignment="Top" >
+                    <Button Background="Transparent"  Width="30" Height="30" TabIndex="3" ToolTip="Nouveau Compte "   Command="{Binding AddCommand}" >
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource new}"  />
+                    </Button>
+                    <Separator />
+                    <Button Background="Transparent"   ToolTip="Sauvegarder " TabIndex="4" Command="{Binding SaveCommand}" Width="30" Height="30">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource save}" >
+                            <Image.Style >
+                                <Style TargetType="Image">
+                                    <Style.Triggers >
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Opacity" Value="0.3"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Button>
+                    <Separator/>
+                    <Button Background="Transparent"    Width="30" Height="30" TabIndex="5" ToolTip="Suppression " Command="{Binding DeleteCommand}" >
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource delete}">
+                            <Image.Style >
+                                <Style TargetType="Image">
+                                    <Style.Triggers >
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Opacity" Value="0.3"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Button>
+                    <Separator/>
+                    <Button   Background="Transparent"  ToolTip="Close "  
+                  VerticalAlignment="Top" x:Name="btnClose"   Width="30" Height="30" HorizontalAlignment="Right"
+                 Click="btnClose_Click">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource cancel}"  Stretch="Fill" Width="25"  Height="20" />
+                    </Button>
+
+
+                </ToolBar>
+            </ToolBarTray>
+            <Border DockPanel.Dock="Bottom">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Designation :" Foreground="Green"/>
+                    <TextBox Grid.Row="0" Grid.Column="1"  Text="{Binding  CompteSelect.libelle, UpdateSourceTrigger=PropertyChanged}" MinWidth="180" MaxWidth="250"/>
+                    <ig:XamGrid Grid.Row="1" Grid.ColumnSpan="2" x:Name="gridPlage" ItemsSource="{Binding Comptelist}" 
+                                 IsAlternateRowsEnabled="True" 
+                                AutoGenerateColumns="False" Height="155" Width="350" 
+                                   MouseDoubleClick="gridPlage_MouseDoubleClick">
+                        <ig:XamGrid.Columns>
+                            <ig:TextColumn Key="libelle" Width="200"   >
+                                <ig:TextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Plage Libelle" />
+                                    </DataTemplate>
+                                </ig:TextColumn.HeaderTemplate>
+                            </ig:TextColumn>
+                        </ig:XamGrid.Columns>
+                    </ig:XamGrid>
+                </Grid>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E1E7547-34D9-42B5-85B9-AB0D688B68BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FACTURATION_DAL</RootNamespace>
+    <AssemblyName>FACTURATION_DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Facturation.cs" />
+    <Compile Include="FDataBase.cs" />
+    <Compile Include="IFacturation.cs" />
+    <Compile Include="Model\ClassComputer.cs" />
+    <Compile Include="Model\ClasseVues.cs" />
+    <Compile Include="Model\Client.cs" />
+    <Compile Include="Model\Compte.cs" />
+    <Compile Include="Model\CompteAnalClient.cs" />
+    <Compile Include="Model\CompteAnalytique.cs" />
+    <Compile Include="Model\CompteGeneral.cs" />
+    <Compile Include="Model\CompteOhada.cs" />
+    <Compile Include="Model\CompteTiers.cs" />
+    <Compile Include="Model\Constants.cs" />
+    <Compile Include="Model\Departement.cs" />
+    <Compile Include="Model\Devise.cs" />
+    <Compile Include="Model\Droit.cs" />
+    <Compile Include="Model\EnteteFacture.cs" />
+    <Compile Include="Model\Exoneration.cs" />
+    <Compile Include="Model\ExploitationFacture.cs" />
+    <Compile Include="Model\Facture.cs" />
+    <Compile Include="Model\JournalVenteCompteAnalytique.cs" />
+    <Compile Include="Model\JournalVenteGroupe.cs" />
+    <Compile Include="Model\JournalVentes.cs" />
+    <Compile Include="Model\JournalVentesDates.cs" />
+    <Compile Include="Model\Langue.cs" />
+    <Compile Include="Model\Libelle_Terme.cs" />
+    <Compile Include="Model\LigneFacture.cs" />
+    <Compile Include="Model\ModePaiement.cs" />
+    <Compile Include="Model\ObjetFacture.cs" />
+    <Compile Include="Model\ObjetGenerique.cs" />
+    <Compile Include="Model\OverviewFacture.cs" />
+    <Compile Include="Model\PiedPageFacture.cs" />
+    <Compile Include="Model\Prestation.cs" />
+    <Compile Include="Model\Produit.cs" />
+    <Compile Include="Model\ProduitDetail.cs" />
+    <Compile Include="Model\Profile.cs" />
+    <Compile Include="Model\ProfileDate.cs" />
+    <Compile Include="Model\Settings.cs" />
+    <Compile Include="Model\Societe.cs" />
+    <Compile Include="Model\StatutFacture.cs" />
+    <Compile Include="Model\Taxe.cs" />
+    <Compile Include="Model\Utilisateur.cs" />
+    <Compile Include="Model\Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

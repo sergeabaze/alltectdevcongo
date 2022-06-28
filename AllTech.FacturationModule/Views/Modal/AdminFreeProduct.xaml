@@ -1,0 +1,128 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.AdminFreeProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AllTech.FacturationModule.ViewModel"
+          xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+        Title=""  Height="400" Width="330" WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+       
+        
+       
+        
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+    </Window.Resources>
+    <Grid>
+        <Label  Content="Produits Non Facturés"   Width="Auto" FontWeight="Bold" Foreground="#FF373737" FontSize="16" FontFamily="Corbel" />
+        <DockPanel Margin="0,25">
+            <ToolBarTray   DockPanel.Dock="Top" >
+                <ToolBar x:Name="toolBarMain" Width="auto"  >
+
+                    <Button Background="Transparent"   IsEnabled="{Binding ButonProductEnable}"  ToolTip="Supprimer "  Command="{Binding RunFreeProductCommand}" Width="30" Height="30">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource run}" >
+                            <Image.Style >
+                                <Style TargetType="Image">
+                                    <Style.Triggers >
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Opacity" Value="0.3"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Button>
+
+                    <Separator/>
+                    <Button Background="Transparent"   IsEnabled="{Binding ButonCancelfreeproduct}"  ToolTip="Annuler l'opération " TabIndex="8" Command="{Binding CancelFreeProductCommand}" Width="30" Height="30">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource delete}" >
+                            <Image.Style >
+                                <Style TargetType="Image">
+                                    <Style.Triggers >
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Opacity" Value="0.3"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Button>
+
+                    <Separator/>
+                    <StackPanel Orientation="Vertical">
+                        <Label x:Name="lablinfoProduct" Foreground="Yellow" Height="15"/>
+                        <ProgressBar x:Name="progreBarProduct" Width="180" Height="20"  Visibility="{Binding ProgressBarProductVisibility, Converter={StaticResource visibled}}"/>
+                    </StackPanel>
+                    <Separator/>
+                    <Button   Background="Transparent"  ToolTip="Close "  
+                          VerticalAlignment="Top"   Width="30" Height="30" HorizontalAlignment="Right"
+                          Click="Button_Click">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Cursor" Value="Arrow"/>
+
+                            </Style>
+                        </Button.Style>
+                        <Image Source="{StaticResource cancel}"  Stretch="Fill" />
+                    </Button>
+
+                </ToolBar>
+            </ToolBarTray>
+            <Grid   DockPanel.Dock="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <!--<CheckBox Grid.Row="0" x:Name="chList" Checked="chList_Checked" Unchecked="chList_Unchecked" IsChecked="{Binding DeletecheckAllFreeproduct}" Content="Supprimé Tous" Foreground="Green" FontWeight="Bold" />-->
+
+                <ListBox Grid.Row="1" x:Name="LviewGrid"  MinWidth="270" Width="300"   SelectionMode="Single" Height="240"
+                         ItemsSource="{Binding PreviousFreeProduct}" MinHeight="10" HorizontalContentAlignment="Stretch"
+                          SelectedItem="{Binding PrviousfreeproductSelected}" >
+                    <ListBox.ItemTemplate >
+                        <DataTemplate >
+
+                            <Border BorderBrush="Aqua" BorderThickness="1" Padding="5" Margin="5" Background="{Binding Backcolor}" >
+                                <Grid>
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Produit :" Grid.Column="0" Grid.Row="0"  Background="Gray" Foreground="White"/>
+                                    <TextBlock Text="{Binding Product}"  Width="200" Grid.Column="1" Grid.Row="0" Margin="3,0,0,0"/>
+
+                                    <CheckBox Grid.Column="2" Grid.Row="1" x:Name="chkName" 
+                                          IsChecked="{Binding Checked, Mode=TwoWay}" Click="chkName_Click"  HorizontalAlignment="Right"
+                                            />
+
+
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+            </Grid>
+               
+           
+        </DockPanel>
+    </Grid>
+</Window>

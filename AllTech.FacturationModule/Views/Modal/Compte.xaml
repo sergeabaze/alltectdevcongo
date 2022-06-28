@@ -1,0 +1,181 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.Compte"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+        xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+        xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+          xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+         Title="" Height="400" Width="670" WindowStartupLocation="CenterOwner"
+        WindowStyle="None" Icon="/AllTech.FacturationModule;component/images/mydoc.ico" Loaded="Window_Loaded">
+   
+    <Window.Resources >
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid >
+       
+        <Label  Content="Liste Compte(Rib)"   Width="Auto" FontWeight="Bold" Foreground="#FF373737" FontSize="20" FontFamily="Corbel"/>
+            <Border  Margin="0,25" Height="auto">
+                    <DockPanel >
+                        <ToolBarTray   DockPanel.Dock="Top"  >
+                            <ToolBar x:Name="toolBarMain"  >
+                                <Button Background="Transparent"  Width="30" Height="30" TabIndex="9" ToolTip="Nouveau Compte "   Commands:Click.Command="{Binding NewCommand}" >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource new}"  />
+                                </Button>
+                            <Separator />
+                            <Button Background="Transparent"   ToolTip="Sauvegarder " TabIndex="8" Commands:Click.Command="{Binding SaveCommand}" Width="30" Height="30">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource save}" >
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.3"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                            <Separator/>
+                            <Button Background="Transparent"    Width="30" Height="30" TabIndex="10" ToolTip="Suppression " Commands:Click.Command="{Binding DeleteCommand}" >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.3"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                            <Separator/>
+                            <Button   Background="Transparent"  ToolTip="Close "  
+                                VerticalAlignment="Top"   Width="30" Height="30" HorizontalAlignment="Right"
+                               Click="Button_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource cancel}"  Stretch="Fill"   />
+                            </Button>
+                        </ToolBar>
+                        </ToolBarTray>
+
+                        <Border DockPanel.Dock="Bottom" >
+                            <Grid>
+                                <Grid.RowDefinitions >
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Border Grid.Row="0">
+                                    <Grid >
+                                        <Grid.RowDefinitions >
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions >
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Foreground="Green"  Content="Numero compte"  Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                                        <Label Foreground="Green"  Content="Libelle banque"  Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
+                                        <Label Foreground="Green"  Content="Ville"  Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center"/>
+                                        <Label Foreground="Green"  Content="Agence"  Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="0"  Text="{Binding CompteSelected.NumeroCompte,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"   BorderBrush="Black" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" Width="280" Margin="3,0,2,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="1" Text="{Binding CompteSelected.NomBanque,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"    BorderBrush="Black" Grid.Row="1" Grid.Column="2" Width="145" Margin="3,0,2,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="7" Text="{Binding CompteSelected.Ville,UpdateSourceTrigger=PropertyChanged}"  BorderBrush="Black" Grid.Row="5" Grid.Column="2" Width="145" HorizontalAlignment="Left"  Margin="3,0,2,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="2" Text="{Binding CompteSelected.Agence,UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left"  BorderBrush="Black" Grid.Row="1" Grid.Column="3" Width="130" Margin="0,0,2,3"/>
+
+                                        <Label Foreground="Green"  Content="Rue"  Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" />
+                                        <Label Foreground="Green"  Content="Boite Postale"  Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center"/>
+                                        <Label Foreground="Green"  Content="Téléphone"  Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"/>
+                                        <Label Foreground="Green"  Content="Pays"  Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center"/>
+
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="3" Grid.ColumnSpan="2" HorizontalAlignment="Left"  Text="{Binding CompteSelected.Rue, UpdateSourceTrigger=PropertyChanged}"   BorderBrush="Black" Grid.Row="3" Grid.Column="0" Width="280" Margin="3,0,0,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" Text="{Binding CompteSelected.BoitePostal, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" Grid.Row="5" Grid.Column="1" Width="126" Margin="3,0,21,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="4" Text="{Binding CompteSelected.Telephone, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"   BorderBrush="Black" Grid.Row="3" Grid.Column="2" Width="145" Margin="3,0,0,3"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="5" Text="{Binding CompteSelected.Pays, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left"  Width="130" Margin="0,0,0,3"/>
+
+                                        <Label Foreground="Green"  Content="Quartier"  Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center"/>
+                                        <TextBox IsEnabled="{Binding IstxtEnabled}" TabIndex="6" Text="{Binding CompteSelected.Quartier, UpdateSourceTrigger=PropertyChanged}"   BorderBrush="Black" Grid.Row="5" Grid.Column="0" Width="150" Margin="0,0,0,3"/>
+                                    </Grid>
+                                </Border>
+
+                                <Border Grid.Row="1"   Margin="0,2,0,0" >
+                                    <controls:SortableListView   Grid.Row="2" x:Name="DetailView" Height="190"
+                                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True"  AlternationCount="2" 
+                                                  ItemContainerStyle="{StaticResource myItemStyle}"
+                                                 MouseDoubleClick="DetailView_MouseDoubleClick" 
+                                               ItemsSource="{Binding CompteList}" 
+                                               
+                               Margin="0,0,0,0">
+                                        <controls:SortableListView.Resources>
+                                            <Style TargetType="{x:Type ListViewItem}">
+                                                <EventSetter Event="MouseDoubleClick" Handler="compte_MouseDoubleClick" />
+                                            </Style>
+                                        </controls:SortableListView.Resources>
+                                        <controls:SortableListView.View>
+                                            <GridView>
+                                                <GridView.Columns>
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=NumeroCompte}" Header="Numéro Compte " Width="180" />
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=NomBanque }" Header="Banque " Width="150" />
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Agence }" Header="Agence " Width="120" />
+                                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Ville }" Header="Ville " Width="145" />
+                                                </GridView.Columns>
+                                            </GridView>
+                                        </controls:SortableListView.View>
+                                    </controls:SortableListView  >
+                                </Border>
+                            </Grid>
+                        </Border>
+
+                    </DockPanel>
+               
+            </Border>
+               
+     
+      
+      
+     
+       
+       
+    </Grid>
+</Window>

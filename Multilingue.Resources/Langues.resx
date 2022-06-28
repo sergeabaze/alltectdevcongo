@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblLogin" xml:space="preserve">
+    <value>Nom utilisateur:</value>
+  </data>
+  <data name="lblNewPassword" xml:space="preserve">
+    <value>Nouveau mot passe:</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="lblselecttextlogin" xml:space="preserve">
+    <value>votre loggin</value>
+  </data>
+  <data name="lblselecttextPassword" xml:space="preserve">
+    <value>votre mot passe</value>
+  </data>
+  <data name="lblUserAfficheCours" xml:space="preserve">
+    <value>Factures en cours</value>
+  </data>
+  <data name="lblUserAfficheCreated" xml:space="preserve">
+    <value>Factures Crées</value>
+  </data>
+  <data name="lblUserAfficheError" xml:space="preserve">
+    <value>Problème survenu lors du chargement de l'historique des factures</value>
+  </data>
+  <data name="lblUserAfficheErrorTitre" xml:space="preserve">
+    <value>ERREURE CHARGEMENT PAGE ACCUEILLE</value>
+  </data>
+  <data name="lblUserAfficheSorties" xml:space="preserve">
+    <value>Facturs sorties</value>
+  </data>
+  <data name="lblUserAfficheSuspendu" xml:space="preserve">
+    <value>Factures suspendues</value>
+  </data>
+  <data name="lblUserAfficheValidee" xml:space="preserve">
+    <value>Factures validées</value>
+  </data>
+  <data name="mNuAdmin" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="mNuAdmin_Admin" xml:space="preserve">
+    <value>Archivage Factures</value>
+  </data>
+  <data name="mNuAdmin_Datarefs" xml:space="preserve">
+    <value>Données reférences</value>
+  </data>
+  <data name="mNuAdmin_Parametres" xml:space="preserve">
+    <value>Paramètres </value>
+  </data>
+  <data name="mNuAide" xml:space="preserve">
+    <value>Guide Utilisateur</value>
+  </data>
+  <data name="mNuApropos" xml:space="preserve">
+    <value>A propos</value>
+  </data>
+  <data name="mNuFile" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="mNuFile_fermer" xml:space="preserve">
+    <value>Déconnecter</value>
+  </data>
+  <data name="mNuFile_quitter" xml:space="preserve">
+    <value>Quitter</value>
+  </data>
+  <data name="mNuOperation" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="mNuOperation_Extract" xml:space="preserve">
+    <value> Export/Import</value>
+  </data>
+  <data name="mNuOperation_Hst" xml:space="preserve">
+    <value>Historique Factures</value>
+  </data>
+  <data name="mNuOperation_Sorties" xml:space="preserve">
+    <value>Gestion Sorties</value>
+  </data>
+  <data name="toolbarLangueEn" xml:space="preserve">
+    <value>Anglais(En)</value>
+  </data>
+  <data name="toolbarLangueEs" xml:space="preserve">
+    <value>Espagnol(Es)</value>
+  </data>
+  <data name="toolbarLangueFr" xml:space="preserve">
+    <value>Français(Fr)</value>
+  </data>
+  <data name="toolbarLanguePt" xml:space="preserve">
+    <value>Portuguais(Pt)</value>
+  </data>
+  <data name="toolbarPopUpCpmtTemp" xml:space="preserve">
+    <value>COMPTE TEMPORAIRE:</value>
+  </data>
+  <data name="toolbarPopUpLicense_tooltip" xml:space="preserve">
+    <value>Ajout licence</value>
+  </data>
+  <data name="toolbarPopUpMsInstal" xml:space="preserve">
+    <value>Bienvenu à Cette Nouvelle Installation:</value>
+  </data>
+  <data name="toolbarProfile" xml:space="preserve">
+    <value>Profile:</value>
+  </data>
+  <data name="toolbarUserConnecter" xml:space="preserve">
+    <value>Utilisateur :</value>
+  </data>
+  <data name="tooltipbtnAnnul" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="tooltipDeconecter" xml:space="preserve">
+    <value>Déconnecter</value>
+  </data>
+  <data name="tooltipHst" xml:space="preserve">
+    <value>Historique factures</value>
+  </data>
+  <data name="userAfficheTitre" xml:space="preserve">
+    <value>Résumé des factures du mois en cours</value>
+  </data>
+  <data name="factureAuditCrePar" xml:space="preserve">
+    <value>Créer par :</value>
+  </data>
+  <data name="factureAuditDatecreation" xml:space="preserve">
+    <value>Date creation:</value>
+  </data>
+  <data name="factureAuditDateModif" xml:space="preserve">
+    <value>Date modification:</value>
+  </data>
+  <data name="factureAuditDateValide" xml:space="preserve">
+    <value>Date validation:</value>
+  </data>
+  <data name="factureAuditModifpar" xml:space="preserve">
+    <value>Modifier par:</value>
+  </data>
+  <data name="factureAuditSortie" xml:space="preserve">
+    <value>Date sortie:</value>
+  </data>
+  <data name="factureEnteteClient" xml:space="preserve">
+    <value>Client:</value>
+  </data>
+  <data name="factureEnteteConverse" xml:space="preserve">
+    <value>Dévise conversion:</value>
+  </data>
+  <data name="factureEnteteDateCreate" xml:space="preserve">
+    <value>Date Creation:</value>
+  </data>
+  <data name="factureEnteteDateDepot" xml:space="preserve">
+    <value>Date dépot :</value>
+  </data>
+  <data name="factureEnteteDept" xml:space="preserve">
+    <value>Departement :</value>
+  </data>
+  <data name="factureEnteteDeviseFact" xml:space="preserve">
+    <value>Devise facture:</value>
+  </data>
+  <data name="factureEnteteexploit" xml:space="preserve">
+    <value>Expoitation:</value>
+  </data>
+  <data name="factureEnteteFactyreNum" xml:space="preserve">
+    <value>Facture # :</value>
+  </data>
+  <data name="factureEnteteJourFin" xml:space="preserve">
+    <value>Jour fin prestation:</value>
+  </data>
+  <data name="factureEnteteMoisP" xml:space="preserve">
+    <value>Mois de prestation:</value>
+  </data>
+  <data name="factureEnteteNonValide" xml:space="preserve">
+    <value>Non valable:</value>
+  </data>
+  <data name="factureEnteteObjet" xml:space="preserve">
+    <value>Objet:</value>
+  </data>
+  <data name="factureEnteteObjetNew" xml:space="preserve">
+    <value>Nouvel Objet:</value>
+  </data>
+  <data name="factureEnteteSortie" xml:space="preserve">
+    <value>Sortie :</value>
+  </data>
+  <data name="factureEnteteStatutClient" xml:space="preserve">
+    <value>Facture client</value>
+  </data>
+  <data name="factureEnteteStatutFacture" xml:space="preserve">
+    <value>Statut facture:</value>
+  </data>
+  <data name="factureEnteteSuspension" xml:space="preserve">
+    <value>Suspension :</value>
+  </data>
+  <data name="factureEnteteTotalFacture" xml:space="preserve">
+    <value>Total facture</value>
+  </data>
+  <data name="factureGridDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="factureGridMontantht" xml:space="preserve">
+    <value>Montant HT</value>
+  </data>
+  <data name="factureGridPrixunit" xml:space="preserve">
+    <value>Prix unitaire</value>
+  </data>
+  <data name="factureGridProd" xml:space="preserve">
+    <value>Produit</value>
+  </data>
+  <data name="factureGridQuantite" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="factureGridtaxe" xml:space="preserve">
+    <value>Detail Taxe</value>
+  </data>
+  <data name="factureInfoEnteteTitre" xml:space="preserve">
+    <value>Information entête facture</value>
+  </data>
+  <data name="factureLigneDelete" xml:space="preserve">
+    <value>Supprimer ligne facture</value>
+  </data>
+  <data name="factureLigneDesc" xml:space="preserve">
+    <value>Autre description</value>
+  </data>
+  <data name="factureLigneLignes" xml:space="preserve">
+    <value>Lignes factures</value>
+  </data>
+  <data name="factureLignePrixUnit" xml:space="preserve">
+    <value>Prix unitaire</value>
+  </data>
+  <data name="factureLigneProduit" xml:space="preserve">
+    <value>Produit</value>
+  </data>
+  <data name="factureLigneqte" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="factureLigneTitre" xml:space="preserve">
+    <value>Entete ligne facture</value>
+  </data>
+  <data name="factureLigneTooltibtnAdd" xml:space="preserve">
+    <value>ajout ligne</value>
+  </data>
+  <data name="factureTabItemAudit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="factureTabItemTitre" xml:space="preserve">
+    <value>Edition</value>
+  </data>
+  <data name="factureTopbarTooltipCancel" xml:space="preserve">
+    <value>Annuler la facture</value>
+  </data>
+  <data name="factureTopbarTooltipClose" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="factureTopbarTooltipNew" xml:space="preserve">
+    <value>Nouvelle facture</value>
+  </data>
+  <data name="factureTopbarTooltipPrint" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="factureTopbarTooltipSave" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="factureTopbarTooltipSupprime" xml:space="preserve">
+    <value>Supprimer la facture</value>
+  </data>
+  <data name="gridbtnDeselect" xml:space="preserve">
+    <value>Déselectionnées</value>
+  </data>
+  <data name="gridbtnselect" xml:space="preserve">
+    <value>Selectionnées</value>
+  </data>
+  <data name="gridClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="gridDatecreation" xml:space="preserve">
+    <value>Date creation #</value>
+  </data>
+  <data name="gridDatevalidation" xml:space="preserve">
+    <value>Date Validation</value>
+  </data>
+  <data name="gridMois" xml:space="preserve">
+    <value>Mois de prestation</value>
+  </data>
+  <data name="gridNumfacture" xml:space="preserve">
+    <value>Factures #</value>
+  </data>
+  <data name="gridObjet" xml:space="preserve">
+    <value>Objet facture</value>
+  </data>
+  <data name="gridPrepareBy" xml:space="preserve">
+    <value>Préparée par</value>
+  </data>
+  <data name="gridSataut" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="gridTotal" xml:space="preserve">
+    <value>Total TTC</value>
+  </data>
+  <data name="RecherchebuttonToolTip" xml:space="preserve">
+    <value>Recherche sur une plage</value>
+  </data>
+  <data name="RechercheCmbClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="splitBoutonFiltre" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="splitBoutonFiltreByClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="splitBoutonFiltreByClient_tooltip" xml:space="preserve">
+    <value>Recherche par client</value>
+  </data>
+  <data name="splitBoutonFiltreByDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="splitBoutonFiltreByDate_tooltip" xml:space="preserve">
+    <value>Recherche par Date</value>
+  </data>
+  <data name="splitBoutonFiltreByFacture" xml:space="preserve">
+    <value>Facture</value>
+  </data>
+  <data name="splitBoutonFiltreByFacture_tooltip" xml:space="preserve">
+    <value>Recherche par numero de facture</value>
+  </data>
+  <data name="splitBoutonImpressions" xml:space="preserve">
+    <value>Impressions</value>
+  </data>
+  <data name="splitBoutonImpressionsExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="splitBoutonImpressionsExportTooltip" xml:space="preserve">
+    <value>Ce Boutton permet d'exporter sous Excel l'historique des Factures affichés ou les factures sélectionnées</value>
+  </data>
+  <data name="splitBoutonImpressionsExport_List" xml:space="preserve">
+    <value>Export liste de factures</value>
+  </data>
+  <data name="splitBoutonImpressionsExport_select" xml:space="preserve">
+    <value>Export factures sélectionnées</value>
+  </data>
+  <data name="splitBoutonImpressionsprint" xml:space="preserve">
+    <value>Imprimer facture</value>
+  </data>
+  <data name="splitBoutonImpressionsprintList" xml:space="preserve">
+    <value>Imprimer Liste facture</value>
+  </data>
+  <data name="splitBoutonOperation" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="splitBoutonOperationTooltipNonValide" xml:space="preserve">
+    <value>boutton permettant de passer une facture au statut Non Valide</value>
+  </data>
+  <data name="splitBoutonOperationTooltipSortie" xml:space="preserve">
+    <value>boutton permettant de passer une facture au statut sortie facture</value>
+  </data>
+  <data name="splitBoutonOperationTooltipSuspension" xml:space="preserve">
+    <value>boutton permettant de passer une facture au statut suspendu</value>
+  </data>
+  <data name="splitBoutonOperationTooltipValidation" xml:space="preserve">
+    <value>Boutton permettant la validation d'une facture sélectionnée donc de la faire passer austatut validé</value>
+  </data>
+  <data name="splitBoutonRechercheDateDebut" xml:space="preserve">
+    <value>Date début</value>
+  </data>
+  <data name="splitBoutonRechercheDateFin" xml:space="preserve">
+    <value>Date fin</value>
+  </data>
+  <data name="splitBoutonRecherches" xml:space="preserve">
+    <value>Recherches</value>
+  </data>
+  <data name="titreFormulaire" xml:space="preserve">
+    <value>Historique des factures</value>
+  </data>
+  <data name="toolbaTitreListe" xml:space="preserve">
+    <value>Liste de sites</value>
+  </data>
+  <data name="toolbaToolTip_fermer" xml:space="preserve">
+    <value>Fermer Formulaire</value>
+  </data>
+  <data name="toolbaToolTip_refresh" xml:space="preserve">
+    <value>Rafraichir la Historique</value>
+  </data>
+  <data name="mNuAdminAdmin_Datarefs" xml:space="preserve">
+    <value>Archivage</value>
+  </data>
+  <data name="MNuOperation_Jv" xml:space="preserve">
+    <value>Journal des Ventes</value>
+  </data>
+  <data name="shellVm_MsgBadLoggincontent" xml:space="preserve">
+    <value>Loggin utilisateur incorrect</value>
+  </data>
+  <data name="shellVm_MsgBadLogginTitre" xml:space="preserve">
+    <value>ERREURE MOT LOGGIN</value>
+  </data>
+  <data name="shellVm_MsgBadMotpcontent" xml:space="preserve">
+    <value>Mot de passe incorrect</value>
+  </data>
+  <data name="shellVm_MsgBadMotpTitre" xml:space="preserve">
+    <value>ERREURE MOT PASSE</value>
+  </data>
+  <data name="shellVm_MsgCompteLockcontent" xml:space="preserve">
+    <value>Ce Compte est vérouillé, veuillez contacter l'administrateur</value>
+  </data>
+  <data name="shellVm_MsgCompteLockTitre" xml:space="preserve">
+    <value>PROBLEM COMPTE VEROUILLER</value>
+  </data>
+  <data name="shellVm_MsgcontentCompteStatus" xml:space="preserve">
+    <value>Compte est expiré et sera verouilleé, veuillez contacter l'administrateur</value>
+  </data>
+  <data name="shellVm_MsgTitreCompteStatus" xml:space="preserve">
+    <value>PROBLEM SUR LE COMPTE</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fiche_Client" xml:space="preserve">
+    <value>Fiche Client</value>
+  </data>
+  <data name="fiche_Produit" xml:space="preserve">
+    <value>Fiche produit</value>
+  </data>
+  <data name="fiche_Utilisateur" xml:space="preserve">
+    <value>Fiche Utilisateur</value>
+  </data>
+  <data name="messageCloseMsg" xml:space="preserve">
+    <value>Ce formulaire contient les données \n Confirmez la suppression ?</value>
+  </data>
+  <data name="messageCloseTitre" xml:space="preserve">
+    <value>MESSAGE FERMETURE</value>
+  </data>
+  <data name="txtNom" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="msgSuppression" xml:space="preserve">
+    <value>Voulez vous supprimer ce {0}</value>
+  </data>
+  <data name="msgSuppressiontitre" xml:space="preserve">
+    <value>MESSAGESUPPRESSION</value>
+  </data>
+  <data name="factureEnteteTaxeTitre" xml:space="preserve">
+    <value>Taxes &amp; marges</value>
+  </data>
+  <data name="factureEntetetyperadio1" xml:space="preserve">
+    <value>Facture Normale</value>
+  </data>
+  <data name="factureEntetetyperadio2" xml:space="preserve">
+    <value>Facture Avoir</value>
+  </data>
+  <data name="factureEntetetypeTitre" xml:space="preserve">
+    <value>Type Factures</value>
+  </data>
+  <data name="factureVM_msgNewfacture" xml:space="preserve">
+    <value>Nouvelle facture crée!</value>
+  </data>
+  <data name="factureVM_msgNewfacture_error" xml:space="preserve">
+    <value>Erreure &lt;&lt;10006&gt;&gt; Echec lors de la création de la facture</value>
+  </data>
+  <data name="factureVM_titreNewfacture" xml:space="preserve">
+    <value>MESSAGECREATION FACTURE</value>
+  </data>
+  <data name="factureVM_titreNewfacture_error" xml:space="preserve">
+    <value>MESSAGE ERREURE CREATION FACTURE</value>
+  </data>
+  <data name="MsgArchive_Display" xml:space="preserve">
+    <value>Archives  de la Périodes  </value>
+  </data>
+  <data name="TabItemHeaderArchive" xml:space="preserve">
+    <value>Archives Menu</value>
+  </data>
+  <data name="ctxFacture_menuItem_Delete" xml:space="preserve">
+    <value>Suppression</value>
+  </data>
+  <data name="ctxFacture_menuItem_Edit" xml:space="preserve">
+    <value>Edition facture</value>
+  </data>
+  <data name="ctxFacture_menuItem_New" xml:space="preserve">
+    <value>Nouvelle Facture</value>
+  </data>
+  <data name="ctxFacture_menuItem_print" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="facture_Msg_Jourlimite" xml:space="preserve">
+    <value>Impossible de Creer une facture pour cette période,  les délais fixés sont dépassée !</value>
+  </data>
+  <data name="hst_facture_validate_14001" xml:space="preserve">
+    <value>En cour de création</value>
+  </data>
+  <data name="hst_facture_validate_14003" xml:space="preserve">
+    <value>Facture validé</value>
+  </data>
+  <data name="hst_facture_validate_14004" xml:space="preserve">
+    <value>Facture sortie</value>
+  </data>
+  <data name="hst_facture_validate_14005" xml:space="preserve">
+    <value>Facture Suspendu</value>
+  </data>
+  <data name="hst_facture_validate_14006" xml:space="preserve">
+    <value>Facture Non Valable</value>
+  </data>
+  <data name="hst_facture_validate_14007" xml:space="preserve">
+    <value>Facture Avoir</value>
+  </data>
+  <data name="hst_OverviwTitle" xml:space="preserve">
+    <value>Review Des Clients Non Encore Facturés</value>
+  </data>
+  <data name="Droit_privilege_Msg" xml:space="preserve">
+    <value>Pas assez de privilèges pour cette opération</value>
+  </data>
+  <data name="factureVM_NewFacture_ErrorrequireItemsMsg" xml:space="preserve">
+    <value>Cette  facture ne peut pas être créer, Pas de ligne de factures Crées !</value>
+  </data>
+  <data name="factureVM_NewFacture_requireDateMsg" xml:space="preserve">
+    <value>Préciser la date du mois de prestation</value>
+  </data>
+  <data name="factureVM_NewFacture_requireDeviseMsg" xml:space="preserve">
+    <value>La dévise est obligatoire</value>
+  </data>
+  <data name="factureVM_NewFacture_requireTaxeMsg" xml:space="preserve">
+    <value>La Taxe est obligatoire</value>
+  </data>
+  <data name="factureVM_UpdatefactureErrorMsg" xml:space="preserve">
+    <value>Erreure &lt;&lt;10006&gt;&gt;Echec de mise jour facture</value>
+  </data>
+  <data name="factureVM_UpdatefactureInformation" xml:space="preserve">
+    <value>Facture Mise jour !</value>
+  </data>
+  <data name="factureVM_Updatefacturetitre" xml:space="preserve">
+    <value>MISE JOUR FACTURE</value>
+  </data>
+  <data name="factureVM_ValidatefactureErrormsg" xml:space="preserve">
+    <value>Erreure &lt;&lt;10006&gt;&gt;Echec de validation  de la facture</value>
+  </data>
+  <data name="jj" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hst_facture_research" xml:space="preserve">
+    <value>Recherches</value>
+  </data>
+  <data name="hst_header_action_a" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="hst_header_action_b" xml:space="preserve">
+    <value>Impression/Export</value>
+  </data>
+  <data name="hst_header_action_c" xml:space="preserve">
+    <value>Validation  Factures</value>
+  </data>
+  <data name="hst_TabItemHeaderArchive_msg" xml:space="preserve">
+    <value>Facture Courantes</value>
+  </data>
+  <data name="hst_TabItemHeaderOverview_msg" xml:space="preserve">
+    <value>Last Invoices</value>
+  </data>
+  <data name="factureEntete_marge" xml:space="preserve">
+    <value>Marge Sodexo</value>
+  </data>
+  <data name="factureEntete_marge2" xml:space="preserve">
+    <value>Marge :</value>
+  </data>
+  <data name="factureEntete_prorata" xml:space="preserve">
+    <value>Complement :</value>
+  </data>
+  <data name="factureEntete_TaxeMArge" xml:space="preserve">
+    <value>Taxe et Marges</value>
+  </data>
+  <data name="factureEntete_Tva" xml:space="preserve">
+    <value>Tva :</value>
+  </data>
+  <data name="journalVente_NotifCode_Msg" xml:space="preserve">
+    <value>Code du journal est requis</value>
+  </data>
+  <data name="journalVente_NotifDateJournal_Msg" xml:space="preserve">
+    <value>Vous devez d'abord choisire la période</value>
+  </data>
+  <data name="journalVente_NotifJvgenerateExist_Msg" xml:space="preserve">
+    <value>Il existe déja un journal pour cette période</value>
+  </data>
+  <data name="journalVente_NotifJvgenerate_Msg" xml:space="preserve">
+    <value>Pas de factures Trouvées Pour cette période</value>
+  </data>
+  <data name="logginVies_database" xml:space="preserve">
+    <value>Base données</value>
+  </data>
+  <data name="tooltipJvente" xml:space="preserve">
+    <value>Journal de ventes</value>
+  </data>
+  <data name="factureEnteteCommande" xml:space="preserve">
+    <value>Commande N° :</value>
+  </data>
+  <data name="factureEntete_Tva_Msg" xml:space="preserve">
+    <value>Tva</value>
+  </data>
+  <data name="gridNomSiteOps" xml:space="preserve">
+    <value>Site</value>
+  </data>
+</root>

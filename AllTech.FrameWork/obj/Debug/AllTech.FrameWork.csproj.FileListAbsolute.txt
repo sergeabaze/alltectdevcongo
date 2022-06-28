@@ -1,0 +1,1022 @@
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Chart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v12.1.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.csprojResolveAssemblyReference.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.csproj.GenerateResource.Cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal.mdf
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\sysfactLocal_log.LDF
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll.config
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\AllTech.FrameWork.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDiagram.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySql.Data.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\MySqlBackup.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\WPFAutoCompleteBox.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Undo.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamColorPicker.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamMaskedInput.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DragDrop.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamSlider.v17.2.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\Multilingue.Resources.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\FACTURATION_DAL.dll.config
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDataChart.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamDiagram.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamSparkline.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Charts.XamTreemap.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamComboEditor.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataManager.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataPresenter.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DataVisualization.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Undo.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamColorPicker.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamMaskedInput.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.DragDrop.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Editors.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\InfragisticsWPF4.Controls.Editors.XamSlider.v17.2.xml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\en\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\bin\Debug\fr\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.csprojResolveAssemblyReference.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Themes\Generic.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork_MarkupCompile.lref
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\BrushCollectionViewer.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Controls\OptionsPanel.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.baml
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.g.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Properties.Resources.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.CommonStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.DataChartStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.FinancialStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.PivotGridStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SeriesStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.Ressources.SparklineStrings.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.csproj.GenerateResource.Cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll.licenses
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.csproj.CoreCompileInputs.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.FrameWork\obj\Debug\AllTech.FrameWork.pdb

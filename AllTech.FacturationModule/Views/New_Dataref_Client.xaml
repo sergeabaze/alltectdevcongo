@@ -1,0 +1,525 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.New_Dataref_Client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+        xmlns:teplLangue="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+        xmlns:convertir="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork" 
+        xmlns:validation="clr-namespace:AllTech.FrameWork.ValidationRules;assembly=AllTech.FrameWork"
+        xmlns:ig="http://schemas.infragistics.com/xaml"
+        xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+        xmlns:igFramework="clr-namespace:Infragistics.Samples.Framework;assembly=Infragistics.Samples.Framework"
+       Height="620" Width="990" Loaded="Window_Loaded" WindowStyle="None" WindowStartupLocation="Manual">
+    <Window.Resources >
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot" Width="auto" Height="auto" Background="Transparent">
+        <Path Data="M12.19,0 L12.290733,14.847 -1.3000648E-08,14.847 z" Height="16.1" Margin="0,0,8.067,0" 
+              RenderTransformOrigin="0.499999978361064,0.499999995889058" 
+              Stretch="Fill" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="12.29" >
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.466,2.201" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5F6061" Offset="1"/>
+                    <GradientStop Color="#FF757576" Offset="0.855"/>
+                    <GradientStop Color="#FFD1D1D1" Offset="0.11"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.087"/>
+                    <TranslateTransform Y="-6.04399277075815" X="6.0531771644038841"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <GroupBox Header="Interface des clients" FontSize="12"  Height="600"  Margin="9,0,0,12" Style="{DynamicResource GroupBoxStyle1}">
+            <DockPanel  Height="auto" VerticalAlignment="Top" Width="auto">
+            <Border DockPanel.Dock="Top">
+                <ToolBarTray >
+                    <ToolBar  Width="auto">
+                        <Button Background="Transparent"   Command="{Binding NewCommand}" Width="30" Height="30" 
+                                      Visibility="{Binding BtnNewVisible,Converter={StaticResource visibled}}"
+                                     ToolTip="Nouveau">
+                            <Image Source="{StaticResource new}" />
+                        </Button>
+                        <Button  ToolTip="Sauvegarder " Command="{Binding SaveCommand}"
+                                      Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}"
+                                     Width="30" Height="30" TabIndex="13">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                            <Setter Property="Cursor" Value="Wait"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource save}">
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.5"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>
+                        <Button ToolTip="Supprimer" Width="30" Height="30"  
+                                     Visibility="{Binding BtnDeleteVisible,Converter={StaticResource visibled}}"
+                                    Command="{Binding DeleteCommand}" >
+                            <Button.Style >
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                            <Setter Property="Cursor" Value="Wait"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource delete}">
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.5"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>
+                        <Separator />
+                        <TextBox Width="180" BorderBrush="LightGray" BorderThickness="1" 
+                             Text="{Binding Filtertexte, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBlock Width="30" Height="20">
+                        <TextBlock.Background >
+                            <ImageBrush ImageSource="{StaticResource loupe_petite}"/>
+                        </TextBlock.Background>
+                        </TextBlock>
+                            <Separator />
+
+                            <Button x:Name="btnClose" ToolTip=" fermer la fenêtre"  HorizontalAlignment="Right" Width="30" Height="30" Click="btnClose_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                    </Style>
+                                </Button.Style>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="{StaticResource cancel}" />
+                                </Button.Background>
+                            </Button>
+                        </ToolBar>
+                </ToolBarTray>
+            </Border>
+
+            <Border  DockPanel.Dock="Bottom" >
+                <Grid Height="auto">
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Height="Auto" BorderThickness="1" BorderBrush="#FF02BBFF">
+                        <Border.Effect>
+                            <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                        </Border.Effect>
+                        <Grid >
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="97*" />
+                            </Grid.ColumnDefinitions>
+                            <Label FontSize="13" Content="Nom :" Height="32" Margin="52,4,150,4"  Foreground="Green" FontWeight="Bold" Width="62" Grid.ColumnSpan="2" />
+                            <TextBox  BorderBrush="Blue"  Grid.Row="0" Grid.Column="1"  IsEnabled="{Binding IsenableFields}"
+                                          Validation.ErrorTemplate="{StaticResource validationLogginTemplate}"
+                                          Width="160" Height="25" TabIndex="0">
+                                <TextBox.Text >
+                                    <Binding Path="ClientSelected.NomClient" UpdateSourceTrigger="PropertyChanged" ValidatesOnExceptions="True"  NotifyOnValidationError="True" ValidatesOnDataErrors="True"  >
+                                        <Binding.ValidationRules>
+                                            <validation:NotNullOrEmptyValidationRule  ErrorMessage="this Field is required"/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+
+                            <Label FontSize="12" Grid.Column="3"   Content="Numéro Contrib :" Height="19"  Margin="15,11,160,12" 
+                                       Foreground="Green" FontWeight="Bold" Grid.ColumnSpan="2" />
+                            <TextBox   BorderBrush="Blue" 
+                                   Text="{Binding ClientSelected.NumeroContribuable,  UpdateSourceTrigger=PropertyChanged}" 
+                                           IsEnabled="{Binding IsenableFields}" 
+                                           Grid.Column="4" Grid.Row="0" TabIndex="1"  Width="200" Height="25" Grid.ColumnSpan="2" Margin="0,8" />
+                            <Label FontSize="13" Content="Ville :" Height="28" Grid.Row="1" Margin="53,2,0,2" Foreground="Green" FontWeight="Bold" Width="50" />
+                            <TextBox  BorderBrush="Blue" Text="{Binding ClientSelected.Ville, UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          TabIndex="3" Grid.Column="1" Grid.Row="1"    Width="160" Height="25" Margin="0,0,0,0" Grid.RowSpan="2" />
+                            <Label FontSize="13" Grid.Row="3" Content="Adresse 1 :" Height="25"  Margin="22,3,158,5" Foreground="Green" FontWeight="Bold" Width="84" Grid.ColumnSpan="2" />
+                            <TextBox  BorderBrush="Blue" Text="{Binding ClientSelected.Rue1,  UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="3" Grid.Column="1"  Width="160" Height="25" TabIndex="4" Margin="0,0,0,0"  Grid.ColumnSpan="2" />
+
+                            <Label FontSize="12" Content="Adresse 2 :" Height="29" Grid.Row="4" Margin="27,0,156,0" Width="81" Foreground="Green" FontWeight="Bold" Grid.ColumnSpan="2" />
+                            <TextBox  BorderBrush="Blue" Text="{Binding ClientSelected.Rue2,UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="4" Grid.Column="1"  Width="160" Height="25" TabIndex="5" Margin="0,0,0,0" Grid.ColumnSpan="2" />
+                            <Label FontSize="13" Content="Langue :" Height="19"  Width="73" Foreground="Green" Grid.Column="3" Grid.Row="1" FontWeight="Bold"  Margin="62,6,177,8" Grid.ColumnSpan="2" />
+                            <ComboBox ItemsSource="{Binding Path=LanguageList}"  x:Name="cmbLangue"  IsEnabled="{Binding IsenableFields}"
+                                            HorizontalAlignment="Left"  DisplayMemberPath="Libelle"
+                                           SelectedItem="{Binding LanguageSelected }"  SelectionChanged="cmbLangue_SelectionChanged" BorderBrush="Blue" IsEditable="True" 
+                                          Width="148" Height="25" TabIndex="7" Margin="2,4,0,4"  Grid.Column="4" Grid.Row="1">
+
+                            </ComboBox>
+
+                            <Label FontSize="13" Content="Prorata :" Height="32" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Right"  Margin="0,0,9,0" Width="65" Foreground="Green" FontWeight="Bold" />
+                            <ComboBox Grid.Row="3" Grid.Column="7" ItemsSource="{Binding TaxePorataList}" Height="25" x:Name="cmbPorata"  
+                                           IsEditable="True"  BorderBrush="Blue" TabIndex="10" IsEnabled="{Binding IsPorataEnabled}" 
+                                             DisplayMemberPath="Taux"   SelectedItem="{Binding TaxePorataSelected}" HorizontalAlignment="Left" 
+                                          Width="148" MaxWidth="263" Margin="2,4,0,4"  SelectedIndex="{Binding ProrataIndex}"/>
+                            <Label FontSize="13" Content="Exoneration :" Height="17" Grid.Column="3" Grid.Row="3" Margin="32,8,180,8" Width="100"  Foreground="Green" FontWeight="Bold" Grid.ColumnSpan="2" />
+                            <ComboBox Grid.Row="3" Grid.Column="4" ItemsSource="{Binding ExonerateList}" Height="25" x:Name="cmbexonere"  IsEnabled="{Binding IsenableFields}"
+                                          IsEditable="True"  BorderBrush="Blue" TabIndex="8"   HorizontalAlignment="Left"
+                                          DisplayMemberPath="Libelle"   SelectedItem="{Binding ExonerateSelected}"
+                                          Width="150" Margin="0,0,0,0" Grid.ColumnSpan="2" SelectedIndex="{Binding ExonerateIndex}"/>
+                            <Button x:Name="btnExonereted" ToolTip="Listes des exonerations"  Width="20" Content="..." Margin="156,3,4,0"
+                                        Command="{Binding ListexonerationCommand}"
+                                        Grid.Row="3" Grid.Column="4" Height="20" VerticalAlignment="Top" />
+                            <Label FontSize="13" Content="Compte (Rib) :" Width="104" Grid.Column="6" Margin="35,1,7,26" Grid.Row="4" Height="32" Grid.RowSpan="2"  Foreground="Green" FontWeight="Bold" />
+                            <ComboBox Grid.Row="3" Grid.Column="7" ItemsSource="{Binding CompteList}" Height="25" x:Name="cmbCompte"  IsEnabled="{Binding IsenableFields}"
+                                             DisplayMemberPath="NumeroCompte"   SelectedItem="{Binding CompteSelected}" SelectedIndex="{Binding CompteIndex}"
+                                           IsEditable="True"  BorderBrush="Blue" TabIndex="11" HorizontalAlignment="Left" 
+                                          Width="150" Margin="0,10,0,0" Grid.ColumnSpan="2" Grid.RowSpan="3" />
+                            <Label Content="Liste Exploitation :" Grid.Row="5" Grid.Column="6" Foreground="Green" FontWeight="Bold" Margin="22,0,5,0" Width="119" />
+                            <Button Content="..." Grid.Row="5" Grid.Column="7" Width="20" HorizontalAlignment="Left" Margin="0,5" Command="{Binding ListexploitationCommand}" />
+                            <Label Content="Listes Objets :" Grid.Row="1" Grid.Column="6" Margin="22,0" Foreground="Green" FontWeight="Bold"  HorizontalAlignment="Right" VerticalAlignment="Center" />
+                            <Button ToolTip="liste objets clients" Content="..."  Grid.Row="1" Grid.Column="7"
+                                        Width="25" HorizontalAlignment="Left" Height="20" Command="{Binding ListeObjetClientCommand}" >
+
+                            </Button>
+
+                            <Button Content="..." Grid.Row="4" Grid.Column="7" Command="{Binding ListCompteCommand}" Margin="159,5,0,2" Width="20" ToolTip="Liste des compte Rib"/>
+
+                            <Label FontSize="13" Content="Devise Facturation:" Width="Auto" Grid.Column="3" Margin="0,6,0,3" Grid.Row="4" Height="21" Foreground="Orange"  FontWeight="Bold"  />
+                            <ComboBox Grid.Row="4" Grid.Column="4" ItemsSource="{Binding DeviseList}" Height="25" x:Name="cmbDevise"  IsEnabled="{Binding IsenableFields}"
+                                             DisplayMemberPath="Libelle"   SelectedItem="{Binding DeviseSelected}" SelectedIndex="{Binding DeviseFactIndex}"
+                                           IsEditable="True"  BorderBrush="Blue" TabIndex="9" HorizontalAlignment="Left" 
+                                          Width="150" Margin="0,5,0,30" Grid.RowSpan="2" />
+                            <Button ToolTip="Liste des Devises" Content="..." Grid.Row="4" Grid.Column="4" Width="20"
+                                        Command="{Binding ListeDeviseCommand}"
+                                        Height="20" Margin="161,11,9,29" Grid.RowSpan="2" />
+
+
+
+                            <Label FontSize="13" Content="Boite Postale :" Height="25" Grid.Row="5" Margin="0,0,0,0" Foreground="Green" FontWeight="Bold" Width="103" />
+                            <TextBox  BorderBrush="Blue" Text="{Binding ClientSelected.BoitePostal,  UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="5" Grid.Column="1"  Width="160" Height="25" TabIndex="6" Margin="0,5,0,0" Grid.ColumnSpan="2" />
+                            <Label FontSize="13" Content="Numero Immat :" Foreground="Green"  HorizontalAlignment="Right"  FontWeight="Bold" Height="25" Grid.Column="6" Margin="22,0,3,0" Width="120" />
+                            <TextBox  BorderBrush="Blue"  Text="{Binding ClientSelected.NumemroImat,  UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Column="7" Height="25" Margin="5,3,11,0" TabIndex="2" MaxWidth=" 163" Width="auto" />
+                            <Button Content="..." FontWeight="Bold" ToolTip="List Porata" Command="{Binding ListTaxeCommand}" 
+                                        Grid.Column="7" Grid.Row="3" Height="20" HorizontalAlignment="Left" Margin="160,5,0,0"
+                                        Name="button1" VerticalAlignment="Top" Width="19" />
+
+                            <Button  Grid.Column="8" Grid.Row="3" Width="20" Height="20" HorizontalAlignment="Left"  
+                                         ToolTip="Annuler le  prorata" Margin="3,0"
+                                       Command="{Binding AnnulerProrataCommand}" >
+                                <Button.Style >
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+
+                            </Button>
+
+
+                            <GroupBox Header="Terme de Paiement" Grid.Row="9" Grid.ColumnSpan="9"  Height=" auto"  x:Name="cmblanguage"  Margin="0,5,0,0" 
+                                          >
+                                <Grid>
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="22*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label FontSize="12" Content="Nombre de Jours :" Height="20" Margin="2,8,2,5" Foreground="Green" FontWeight="Bold"/>
+                                    <TextBox Text="{Binding ClientSelected.TermeNombre,  
+                                        UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1"  Width="80" Height="25" TabIndex="12" Margin="0,0,0,0" />
+                                    <Label FontSize="12" Content=" Description du terme :" Foreground="Green" FontWeight="Bold" Height="20" Grid.Column="2"  Margin="0,7,0,6"/>
+                                    <ComboBox Grid.Column="4" Width="300" x:Name="cmbTerme" Margin="2"
+                                                   DisplayMemberPath="Desciption" SelectedItem="{Binding LibelleSelected}" SelectedIndex="{Binding TermelibelleIndex}"
+                                                  HorizontalAlignment="Left"  IsEditable="True" ItemsSource="{Binding LibelleList}" TabIndex="13" />
+                                </Grid>
+                            </GroupBox>
+
+                        </Grid>
+                    </Border>
+
+                    <Border BorderThickness="1" BorderBrush="#FF02BBFF" Margin="0,0,0,0" Grid.Row="8"  >
+                        <Border.Effect>
+                            <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                        </Border.Effect>
+                        <Grid Height="AUto">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="19*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <ProgressBar Margin="1,5,82,155" Width=" 116" Style="{StaticResource CustomProgressBarStyle}" 
+                                         Height="15" IsIndeterminate="{Binding IsBusy}" 
+                                         Visibility="{Binding Path=ProgressBarVisibility, Converter={StaticResource visibled}}" Grid.Column="1" Grid.Row="1" />
+
+                            <ig:XamGrid Grid.Row="1" ItemsSource="{Binding Path=ClientList}"  x:Name="produitGrid" Height="200" RowHeight="25" 
+                                               Margin="5,5,0,0" Grid.ColumnSpan="3" Width="930"   RowHover="Row" HeaderRowHeight="25"
+                                             MouseDoubleClick="produitGrid_MouseDoubleClick"  AutoGenerateColumns="False"  IsAlternateRowsEnabled="True">
+                                <ig:XamGrid.ColumnResizingSettings >
+                                    <ig:ColumnResizingSettings AllowColumnResizing="Immediate" >
+
+                                    </ig:ColumnResizingSettings>
+                                </ig:XamGrid.ColumnResizingSettings>
+                                <ig:XamGrid.RowSelectorSettings>
+
+                                    <ig:RowSelectorSettings x:Name="rowSelectorSettings" 
+                                         />
+
+                                </ig:XamGrid.RowSelectorSettings>
+                                <ig:XamGrid.Columns >
+                                    <ig:TextColumn Key="NomClient" Width="280" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Nom client" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+                                    <ig:TextColumn Key="Ville" Width="195" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Ville" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+                                    <ig:TextColumn Key="Exonerere.Libelle" Width="120" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Exonération" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+                                    <ig:TextColumn Key="Porata.Taux" Width="80" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Prorata" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="Llangue.Libelle" Width="80" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Langue" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="Devise.Libelle" Width="80" >
+                                        <ig:TextColumn.HeaderTemplate >
+                                            <DataTemplate >
+                                                <TextBlock Text="Devises" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+                                    <ig:TemplateColumn Key="IdClient">
+                                        <ig:TemplateColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Produit/client" />
+                                            </DataTemplate>
+                                        </ig:TemplateColumn.HeaderTemplate>
+                                        <ig:TemplateColumn.ItemTemplate>
+                                            <DataTemplate >
+                                                <Button  Width="60" Height="35" Click="detail_click" CommandParameter="{Binding}" Background="Transparent" 
+                                                      >
+                                                    <Image Source="{StaticResource other_edit}" Stretch="Fill"  />
+                                                </Button>
+                                            </DataTemplate>
+                                        </ig:TemplateColumn.ItemTemplate>
+                                    </ig:TemplateColumn>
+                                </ig:XamGrid.Columns>
+                                <ig:XamGrid.SelectionSettings>
+                                    <ig:SelectionSettings CellClickAction="SelectRow"  CellSelection="Multiple"  RowSelection="Single" ></ig:SelectionSettings>
+                                </ig:XamGrid.SelectionSettings>
+                            </ig:XamGrid>
+
+                            <!--<DataGrid Grid.Row="1" ItemsSource="{Binding Path=ClientList}"  x:Name="produitGrid"
+                                   IsReadOnly="True" 
+                                  Background="LightGray" RowBackground="LightYellow" 
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                                  AlternatingRowBackground="Gainsboro" RowHeight="20"  Height="200"
+                                  AutoGenerateColumns="False" MinWidth="450"  Margin="10,15,-300,0" Grid.ColumnSpan="3" 
+                                  MouseDoubleClick="produitGrid_MouseDoubleClick" Width="950" Grid.RowSpan="2">
+                                    
+                                    <DataGrid.Resources >
+                                       
+                                        <Style x:Key="CenterCellStyle" TargetType="{x:Type DataGridCell}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                        <Grid Background="{TemplateBinding Background}">
+                                                            <ContentPresenter HorizontalAlignment="Left"  
+                                                                        VerticalAlignment="Center"/>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter Property="Background" Value="Green"   />
+                                                    <Setter Property="BorderBrush" Value="Blue"  />
+                                                    <Setter Property="Foreground"  Value="White"   />
+                                                   
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                        <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="styleEntete">
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="FontSize"   Value="13" />
+                                            <Setter Property="FontWeight"  Value="Bold"  />
+                                            <Setter Property="Foreground"  Value="Green"     />
+
+                                        </Style>
+                                    </DataGrid.Resources>
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Nom Client" Binding="{Binding  NomClient}"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="250" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}"  />
+                                        <DataGridTextColumn Header="Ville" Binding="{Binding  Ville}"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="185" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}" />
+                                        <DataGridTextColumn Header="Exoneration" Binding="{Binding  Exonerere .Libelle }"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="120" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}"/>
+                                        <DataGridTextColumn Header="Prorata" Binding="{Binding  Porata.Taux}"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="80" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}"/>
+                                        <DataGridTextColumn Header="Langue" Binding="{Binding  Llangue.Libelle}"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="120" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}"/>
+                                      
+                                        <DataGridTextColumn Header="Devises" Binding="{Binding Devise .Libelle}"  CellStyle="{StaticResource CenterCellStyle}"  
+                                                            Width="80" FontSize="14" FontWeight="Bold"  HeaderStyle="{StaticResource styleEntete}">
+                                           
+                                        </DataGridTextColumn>
+                                        <DataGridTemplateColumn Header="Détail produit" Width="100"  HeaderStyle="{StaticResource styleEntete}">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate >
+                                                    <Button  Width="60" Height="35" Click="detail_click" CommandParameter="{Binding}" Background="Transparent" 
+                                                      >
+                                                        <Image Source="{StaticResource other_edit}" Stretch="Fill"  />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>-->
+
+                            <Border Grid.Row="3" Height="30" Grid.ColumnSpan="4" Margin="10,3,-300,0" BorderThickness="2" BorderBrush="Blue" >
+                                <StatusBar >
+                                    <StatusBarItem >
+                                        <StackPanel  Orientation="Horizontal" >
+                                            <Label Content="Total Clients :" Foreground="Blue"  FontWeight="Bold"  />
+                                            <TextBox  Text="{Binding NbreClients}" IsReadOnly="True"  Margin=" 10,0" Width="50"/>
+
+                                            <Button  Command="{Binding RefreshCommand}" Margin="10,0 ">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Cursor" Value="Arrow"/>
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                <Setter Property="Cursor" Value="Wait"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                                <Image Source="{StaticResource refresh}">
+                                                    <Image.Style >
+                                                        <Style TargetType="Image">
+                                                            <Style.Triggers >
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Image.Style>
+                                                </Image>
+                                            </Button>
+                                        </StackPanel>
+
+
+                                    </StatusBarItem>
+                                </StatusBar>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+        </DockPanel>
+        </GroupBox>
+        <Grid Height="60.061" Margin="248,58.633,208,0" VerticalAlignment="Top" Visibility="Collapsed">
+            <Path Data="M12.19,0 L12.290733,14.847 -1.3000648E-08,14.847 z" Height="16.1" Margin="0,0,8.067,0" RenderTransformOrigin="0.499999978361064,0.499999995889058" Stretch="Fill" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="12.29" >
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.466,2.201" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5F6061" Offset="1"/>
+                        <GradientStop Color="#FF757576" Offset="0.855"/>
+                        <GradientStop Color="#FFD1D1D1" Offset="0.11"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.087"/>
+                        <TranslateTransform Y="-6.04399277075815" X="6.0531771644038841"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+        </Grid>
+    </Grid>
+</Window>

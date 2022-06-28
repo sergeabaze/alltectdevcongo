@@ -1,0 +1,733 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.WinModalClients"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:convertir="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork" 
+          xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+          xmlns:validation="clr-namespace:AllTech.FrameWork.ValidationRules;assembly=AllTech.FrameWork"
+          xmlns:expand="clr-namespace:WpfMyexpander;assembly=WpfMyexpander"
+          xmlns:controls="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+          xmlns:ig="http://schemas.infragistics.com/xaml"
+          xmlns:langue="clr-namespace:Multilingue.Resources;assembly=Multilingue.Resources"
+          xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+          xmlns:igFramework="clr-namespace:Infragistics.Samples.Framework;assembly=Infragistics.Samples.Framework"
+        Title="" Height="auto" Width="auto"  WindowStartupLocation="CenterOwner" ResizeMode="CanResize" WindowStyle="None" Focusable="False" SizeChanged="Window_SizeChanged" Closing="Window_Closing">
+    <Window.Resources>
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot"  Background="Transparent">
+        <GroupBox Header="{x:Static langue:LanguageHelper.Fiche_Client}"  FontSize="12"   Margin="0,0,0,0" Style="{DynamicResource GroupBoxStyle1}">
+            <DockPanel >
+                <Border DockPanel.Dock="Top">
+                    <ToolBarTray >
+                        <ToolBar x:Name="toolbarMain"  >
+                            <Button x:Name="btnNewClient" Background="Transparent" Command="{Binding NewCommand}" Width="30" Height="30" 
+                                      Visibility="{Binding BtnNewVisible,Converter={StaticResource visibled}}"
+                                     ToolTip="Nouveau" Click="btnNewClient_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource new}" />
+                            </Button>
+                            <Separator/>
+                            <!--<Button  ToolTip="Rechercher " Command="{Binding SaveCommand}"
+                                      Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}"
+                                     Width="30" Height="30" TabIndex="13">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                            <Setter Property="Cursor" Value="Wait"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource loupe_petite}">
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.5"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>-->
+                            <Separator/>
+                            <Button  x:Name="btnSaveClose" ToolTip="Sauvegarder et fermer " Command="{Binding SaveCommand}"
+                                      Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}"
+                                     Width="30" Height="30" TabIndex="13" Click="btnSaveClose_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource save}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+
+                            <Button  ToolTip="Sauvegarder et nouveau " Command="{Binding SaveCommand}"
+                                      Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}"
+                                     Width="30" Height="30" TabIndex="13">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource saveAndnew}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+
+                            <Button ToolTip="Supprimer" Width="30" Height="30"  
+                                     Visibility="{Binding BtnDeleteVisible,Converter={StaticResource visibled}}"
+                                    Command="{Binding DeleteCommand}" >
+                                <Button.Style >
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+                            <Button   Background="Transparent"  ToolTip="Close "  
+                                VerticalAlignment="Top"   Width="30" Height="30" HorizontalAlignment="Right"
+                             Click="Button_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource cancel}"  Stretch="Fill"  />
+                            </Button>
+                        </ToolBar>
+                    </ToolBarTray>
+                </Border>
+                <Border DockPanel.Dock="Bottom">
+                 
+                        <Grid  Background="White" >
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                        <TabControl Grid.Row="0" MinHeight="0" >
+                            <TabItem Header="Informations  Général" x:Name="HeadeInfoGene" >
+                                <Grid x:Name="tabControlHedader">
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<Label FontSize="13" Content="Code client :" Height="32" Margin="0,0,0,4" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left"  Foreground="Green" FontWeight="Bold"   />
+                                <TextBox  BorderBrush="Black"  Grid.Row="0" Grid.Column="1" Height="25" Width="120" HorizontalAlignment="Left" Text="{Binding ClientSelected.CodeClient, UpdateSourceTrigger=PropertyChanged}" />-->
+                                    <Label FontSize="13" Content="Nom :" Height="32" Margin="0,0,0,4" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"  Foreground="Green" FontWeight="Bold" Width="60"  />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" >
+
+
+                                        <TextBox  BorderBrush="Black"  Grid.Row="1" Grid.Column="1"  IsEnabled="{Binding IsenableFields}"
+                                          Validation.ErrorTemplate="{StaticResource validationLogginTemplate}"
+                                          Width="auto" MinWidth="300"  Height="25" TabIndex="0" Background="White">
+                                            <TextBox.Text >
+                                                <Binding Path="ClientSelected.NomClient" UpdateSourceTrigger="PropertyChanged" ValidatesOnExceptions="True"  NotifyOnValidationError="True" ValidatesOnDataErrors="True"  >
+                                                    <Binding.ValidationRules>
+                                                        <validation:NotNullOrEmptyValidationRule  ErrorMessage="this Field is required"/>
+                                                    </Binding.ValidationRules>
+                                                </Binding>
+                                            </TextBox.Text>
+                                        </TextBox>
+                                        <Label Content="*" Foreground="Red" ToolTip="Champ obligatoire" VerticalContentAlignment="Center"/>
+                                    </StackPanel>
+                                    <Label FontSize="12" Grid.Column="0" Grid.Row="2"   Content="Numéro Contrib :" Height="19"  Margin="0,2,0,0" 
+                                       Foreground="Green" FontWeight="Bold"  />
+                                    <TextBox   BorderBrush="Black" 
+                                   Text="{Binding ClientSelected.NumeroContribuable,  UpdateSourceTrigger=PropertyChanged}" 
+                                           IsEnabled="{Binding IsenableFields}" 
+                                            HorizontalAlignment="Left"
+                                           Grid.Column="1" Grid.Row="2" TabIndex="1"   MinWidth="150" Width="auto" Height="25" Margin="0,0" />
+
+                                    <Label FontSize="13" Grid.Row="3" Content="Numero Immat :" Foreground="Green"  HorizontalAlignment="Left"  FontWeight="Bold" Height="25" Grid.Column="0" Margin="0,0,3,0" Width="120" />
+                                    <TextBox  BorderBrush="Black"  Text="{Binding ClientSelected.NumemroImat,  UpdateSourceTrigger=PropertyChanged}"  
+                                          IsEnabled="{Binding IsenableFields}"
+                                           HorizontalAlignment="Left"
+                                          Grid.Column="1"  Grid.Row="3" Height="25" Margin="0,3,2,0" TabIndex="2" MinWidth="150"  Width="auto" />
+
+                                    <Label FontSize="13" Content="Langue facturation:" Height="19"   HorizontalAlignment="Left" Foreground="Green" Grid.Column="0" Grid.Row="4"  FontWeight="Bold"  Margin="0,6,0,8"  />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1" >
+                                        <ig:XamComboEditor  ItemsSource="{Binding Path=LanguageList}" 
+                                            x:Name="cmbLangue"  
+                                            IsEnabled="{Binding IsenableFields}"
+                                            HorizontalAlignment="Left" 
+                                            SelectedIndex="{Binding LangueIndex, Mode=TwoWay}"
+                                            DisplayMemberPath="Libelle"
+                                            SelectedItem="{Binding LanguageSelected }"  
+                                            SelectionChanged="cmbLangue_SelectionChanged" 
+                                            IsEditable="True" 
+                                          Width="148" Height="25" TabIndex="7" Margin="2,4,0,4"  >
+
+                                        </ig:XamComboEditor >
+                                        <Label Content="*" Foreground="Red" ToolTip="Champ obligatoire" VerticalContentAlignment="Center"/>
+                                    </StackPanel>
+
+                                    <Label FontSize="13" Content="Devise Facturation:" Width="Auto" Grid.Column="2" Margin="0,6,0,3" Grid.Row="5" Height="21" Foreground="Orange"  FontWeight="Bold"  />
+
+                                    <ig:XamComboEditor Grid.Row="5" Grid.Column="3" ItemsSource="{Binding DeviseFactureList}" Height="25"  x:Name="cmbDeviseFact"  IsEnabled="{Binding IsenableFields}"
+                                               DisplayMemberPath="Libelle"   SelectedItem="{Binding DeviseFactureSelected}" SelectedIndex="{Binding DeviseFactIndex, Mode=TwoWay}"
+                                           IsEditable="True"  TabIndex="13" HorizontalAlignment="Left"  Width="150" SelectionChanged="cmbDeviseFact_SelectionChanged" Margin="5,5,0,0" >
+                                        
+                                    </ig:XamComboEditor>
+                                  
+
+                                    <!--<StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="5" Margin="5" Visibility="{Binding ClientActifVisible, Converter={StaticResource visibled}}">
+                                        <Label Content="Actif" Foreground="Green"   FontWeight="Bold"/>
+                                        <CheckBox x:Name="chkClientActive" IsChecked="{Binding IsClientActif}"    />
+                                    </StackPanel>-->
+
+                                    <Label Content="Nom Abrégé" Foreground="Green"  Grid.Row="5" Grid.Column="0"  FontWeight="Bold"/>
+                                    <TextBox  BorderBrush="Green"  Height="25"  Grid.Row="5" Margin="0,3" Grid.Column="1" MinWidth="150" MaxWidth="300" HorizontalAlignment="Left"  Width="auto"
+                                                        Style="{StaticResource textBoxinError}" Validation.ErrorTemplate="{StaticResource validationTemplate}">
+                                        <TextBox.Text>
+                                            <Binding Path=" ClientSelected.NomClientCompta" UpdateSourceTrigger="PropertyChanged">
+                                                <Binding.ValidationRules>
+                                                    <validation:StringSizeValidationRule ErrorMessage="Size greater Than 18 characters"/>
+                                                </Binding.ValidationRules>
+                                            </Binding>
+                                        </TextBox.Text>
+                                    </TextBox>
+
+                                    <Label FontSize="13" Content="Exoneration :" HorizontalAlignment="Left" Height="17" Grid.Column="2" Grid.Row="1" Margin="5" Width="100"  Foreground="Green" FontWeight="Bold"  />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="3" >
+                                        <Label Content="*" Foreground="Red" VerticalContentAlignment="Center"/>
+                                        <ig:XamComboEditor  ItemsSource="{Binding ExonerateList}" 
+                                                        Height="25" 
+                                                        x:Name="cmbexonere" 
+                                                        IsEnabled="{Binding IsenableFields}"
+                                                          IsEditable="True"  
+                                                        TabIndex="11"  
+                                                        HorizontalAlignment="Left"
+                                                          DisplayMemberPath="Libelle"   
+                                                        SelectedItem="{Binding ExonerateSelected, Mode=TwoWay}"
+                                                          Width="150" Margin="0,0,0,0" Grid.ColumnSpan="2" 
+                                                        SelectedIndex="{Binding ExonerateIndex, Mode=TwoWay}" SelectionChanged="cmbexonere_SelectionChanged"/>
+                                        <Button x:Name="btnExonereted" ToolTip="Listes des exonerations"  Width="20" Content="..." Margin="3,3,4,2"
+                                        Command="{Binding ListexonerationCommand}"
+                                         Height="20" VerticalAlignment="Top" />
+                                    </StackPanel>
+
+                                    <Label FontSize="13" Content="Centimes :" Height="22" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" 
+                                       Margin="0,0,9,0" Width="65" Foreground="Green" FontWeight="Bold" />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="3">
+                                        <ig:XamComboEditor  ItemsSource="{Binding TaxePorataList}" Height="25" 
+                                             x:Name="cmbPorata"  
+                                             IsEditable="True"  TabIndex="10" 
+                                             IsEnabled="{Binding IsPorataEnabled}" 
+                                             DisplayMemberPath="Taux"   
+                                             SelectedItem="{Binding TaxePorataSelected}" 
+                                             HorizontalAlignment="Left" 
+                                             Width="auto" MinWidth="150" MaxWidth="263" Margin="2,4,0,4"  
+                                             SelectedIndex="{Binding ProrataIndex, Mode=TwoWay}"
+                                             SelectionChanged="cmbPorata_SelectionChanged"/>
+                                        <Button Content="..." FontWeight="Bold" ToolTip="List Porata" Command="{Binding ListTaxeCommand}" 
+                                        Height="20" HorizontalAlignment="Left" Margin="3,5,0,0"
+                                        Name="button1" VerticalAlignment="Top" Width="19" />
+                                        <Button  Grid.Column="8" Grid.Row="3" Width="20" Height="20" HorizontalAlignment="Left"  
+                                         ToolTip="Annuler le  prorata" Margin="3,0"
+                                       Command="{Binding AnnulerProrataCommand}" >
+                                            <Button.Style >
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource delete}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+
+                                        </Button>
+                                    </StackPanel>
+
+                                    <Label FontSize="13" Content="Compte (Rib) :" HorizontalAlignment="Left" Width="104" Grid.Column="2" Margin="0,1,0,0" Grid.Row="3"
+                                       Height="20"  Foreground="Green" FontWeight="Bold" />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="3">
+                                        <Label Content="*" Foreground="Red" VerticalContentAlignment="Center"/>
+                                        <ig:XamComboEditor  ItemsSource="{Binding CompteList}" Height="25"
+                                                        x:Name="cmbCompte"  IsEnabled="{Binding IsenableFields}"
+                                                        DisplayMemberPath="NumeroCompte"   
+                                                        SelectedItem="{Binding CompteSelected}" 
+                                                        SelectedIndex="{Binding CompteIndex, Mode=TwoWay}"
+                                                       IsEditable="True"  TabIndex="12" 
+                                                        HorizontalAlignment="Left"  
+                                                        SelectionChanged="cmbCompte_SelectionChanged"
+                                                       MinWidth="150" Width="auto"  Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="3" />
+                                        <Button Content="..."    Command="{Binding ListCompteCommand}" Margin="3,3,0,2" Width="20" ToolTip="Liste des compte Rib"/>
+                                    </StackPanel>
+
+                                    <Label FontSize="13" Content="Devise Conversion:" Width="Auto" Grid.Column="2" Margin="0,6,0,3" Grid.Row="4" Height="21" Foreground="Orange"  FontWeight="Bold"  />
+                                    <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="3">
+                                        <Label Content="*" Foreground="Red" VerticalContentAlignment="Center"/> 
+                                        <ig:XamComboEditor ItemsSource="{Binding DeviseList}" Height="25" x:Name="cmbDevise"  IsEnabled="{Binding IsenableFields}"
+                                             DisplayMemberPath="Libelle"   SelectedItem="{Binding DeviseSelected}" SelectedIndex="{Binding DeviseConversionIndex, Mode=TwoWay}"
+                                           IsEditable="True"  TabIndex="13" HorizontalAlignment="Left" 
+                                          Width="150" Margin="0,5,0,0" Grid.RowSpan="2" SelectionChanged="cmbDevise_SelectionChanged" />
+                                        <Button ToolTip="Liste des Devises" Content="..." Width="20"
+                                        Command="{Binding ListeDeviseCommand}"
+                                        Height="20" Margin="3,5,0,0" />
+                                    </StackPanel>
+                                    <GroupBox Header="Terme de Paiement" Foreground="Blue" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
+                                        <Grid>
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions >
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label FontSize="12" Content="Nombre de Jours :" Grid.Row="0" Grid.Column="0" Height="20" Margin="2,8,2,5" Foreground="Green" FontWeight="Bold"/>
+                                            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" >
+                                                <TextBox Text="{Binding ClientSelected.TermeNombre,  UpdateSourceTrigger=PropertyChanged}" 
+                                         HorizontalAlignment="Left" 
+                                          TabIndex="15"
+                                         Grid.Row="0" Grid.Column="1"  Width="80" Height="25"  Margin="0,0,0,0" />
+                                                <Label Content="*" Foreground="Red" ToolTip="Champ obligatoire" VerticalContentAlignment="Center"/>
+                                            </StackPanel>
+
+                                            <Label FontSize="12" Content=" Description du terme :" Foreground="Green" FontWeight="Bold" Height="20" Grid.Column="0" Grid.Row="1"  Margin="0,7,0,6"/>
+                                            <ig:XamComboEditor x:Name="cmblibelleTerme" Grid.Column="1" MaxWidth="300" MinWidth="200" Width="auto"
+                                         Margin="2" Grid.Row="1"  
+                                         ItemsSource="{Binding LibelleList}" 
+                                         DisplayMemberPath="Desciption"
+                                          SelectedItem="{Binding LibelleSelected, Mode=TwoWay}" 
+                                         SelectedIndex="{Binding TermelibelleIndex, Mode=TwoWay}"
+                                       
+                                                   >
+
+                                            </ig:XamComboEditor>
+
+                                        </Grid>
+                                    </GroupBox>
+
+                                    <GroupBox Header="Adresses" Foreground="Blue" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" IsEnabled="{Binding IsEnableClientdetail}" >
+                                        <Grid>
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions >
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label FontSize="13" Content="Ville :" Height="28" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="0,2,0,2" Foreground="Green" FontWeight="Bold" Width="50" />
+                                            <TextBox  BorderBrush="Black" Text="{Binding ClientSelected.Ville, UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          TabIndex="4" Grid.Column="1" MinWidth="250"   Width="auto"  Height="25" Margin="0,5,0,2" />
+
+                                            <Label FontSize="13" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Content="Adresse 1 :" Height="25"  Margin="0,3,0,5" Foreground="Green" FontWeight="Bold" Width="84"  />
+                                            <TextBox  BorderBrush="Black" Text="{Binding ClientSelected.Rue1,  UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="1" Grid.Column="1"  Width="auto" MinWidth="160" Height="25" TabIndex="5" Margin="0,0,0,0"  Grid.ColumnSpan="2" />
+
+                                            <Label FontSize="12" Content="Adresse 2 :" Height="29" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Margin="0,0,0,0" Width="81" Foreground="Green" FontWeight="Bold"  />
+                                            <TextBox  BorderBrush="Black" Text="{Binding ClientSelected.Rue2,UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="2" Grid.Column="1"  Width="auto" MinWidth="160" Height="25" TabIndex="6" Margin="0,0,0,0"  />
+                                            <Label FontSize="13" Content="Boite Postale :" Height="25" Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" Foreground="Green" FontWeight="Bold" Width="103" />
+                                            <TextBox  BorderBrush="Black" Text="{Binding ClientSelected.BoitePostal,  UpdateSourceTrigger=PropertyChanged}"  IsEnabled="{Binding IsenableFields}"
+                                          Grid.Row="3" Grid.Column="1"  Width="auto" MinWidth="160" Height="25" TabIndex="7" Margin="0,5,0,0" Grid.ColumnSpan="2" />
+                                          
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox Header="Comptabilité" Grid.Row="7" Grid.ColumnSpan="4" Grid.Column="0" Foreground="Blue">
+                                        <Grid>
+                                            <Grid.RowDefinitions >
+                                                <RowDefinition Height="Auto"/>
+                                              
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions >
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label FontSize="12" Content="Compte Tiers :" Height="20" Margin="2,8,2,5" Grid.Row="0"
+                                       Grid.Column="0" Foreground="Green" FontWeight="Bold"/>
+                                            
+                                            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                                                <ig:XamComboEditor  x:Name="cmbCmTiers" 
+                                         IsEditable="True"
+                                         DisplayMemberPath=""
+                                         ItemsSource="{Binding CompteTiersList}"
+                                          SelectedIndex="{Binding CompteTiersIndex, Mode=TwoWay}"
+                                            SelectionChanged="cmbCmTiers_SelectionChanged"             
+                                        Height="25"
+                                        MinWidth="120" MaxWidth="150" 
+                                        Width="auto">
+
+                                                </ig:XamComboEditor>
+                                                <Button Content="..." ToolTip="liste comptes tiers" Width="30" Height="25"
+                                             Command="{Binding ListeCopteTiersCommand}" IsEnabled="{Binding IsenableFields}"
+                                            Margin="2"></Button>
+                                            </StackPanel>
+                                            
+                                            <Label FontSize="12" Content="Compte Produit :" Height="20" Margin="20,0" Grid.Row="0"
+                                             Grid.Column="3" Foreground="Green" FontWeight="Bold"/>
+                                            <TextBox  Grid.Row="0"  Grid.Column="4" Height="25" BorderBrush="Green" Width="150" Margin="120,0"
+                                                      Text="{Binding ClientSelected.Compteproduit,  UpdateSourceTrigger=PropertyChanged}"/>
+                                        </Grid>
+                                    </GroupBox>
+                                </Grid>
+                            </TabItem>
+                            <TabItem Header="Objets" IsEnabled="{Binding IsEnableClientdetail}">
+                                <Grid  x:Name="tabControlObject">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5,2">
+                                            <ig:XamComboEditor Width="180" Height="20" ItemsSource="{Binding ObjetGenList}" 
+                                                            DisplayMemberPath="Libelle" SelectedItem="{Binding ObjetGenSelected, Mode=TwoWay}">
+
+                                            </ig:XamComboEditor>
+                                            <Button  ToolTip="Ajouter  le champ selectionner à la liste" Width="20" Height="20" Margin="5,0" Background="Transparent" Command="{Binding AddObjetClientDatasCommand}" >
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Cursor" Value="Arrow"/>
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                <Setter Property="Cursor" Value="Wait"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                                <Image Source="{StaticResource new_add}" >
+                                                    <Image.Style >
+                                                        <Style TargetType="Image">
+                                                            <Style.Triggers >
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Image.Style>
+                                                </Image>
+                                            </Button>
+
+                                        </StackPanel>
+                                        <ig:XamGrid Grid.Row="1" ItemsSource="{Binding ObjetList}" AutoGenerateColumns="False" x:Name="gridobjet"
+                                                 MinHeight="80" Width="auto" MinWidth="350" ActiveItem="{Binding ObjeSelected, Mode=TwoWay}">
+                                            <ig:XamGrid.ColumnResizingSettings >
+                                                <ig:ColumnResizingSettings AllowColumnResizing="Immediate" >
+                                                </ig:ColumnResizingSettings>
+                                            </ig:XamGrid.ColumnResizingSettings>
+
+                                            <ig:XamGrid.RowSelectorSettings>
+                                                <ig:RowSelectorSettings x:Name="rowSelectorSettingss" Visibility="Visible"/>
+                                            </ig:XamGrid.RowSelectorSettings>
+                                            <ig:XamGrid.SelectionSettings>
+                                                <ig:SelectionSettings CellClickAction="SelectRow"  RowSelection="Single" />
+                                            </ig:XamGrid.SelectionSettings>
+
+                                            <ig:XamGrid.Columns>
+                                                <ig:TextColumn Key="Libelle" Width="auto" MinimumWidth="200"  >
+                                                    <ig:TextColumn.HeaderTemplate >
+                                                        <DataTemplate >
+                                                            <TextBlock Text="Libelle objet" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+
+                                                <ig:TemplateColumn Key="IdObjet" Width="100" >
+                                                    <ig:TemplateColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Annuler" />
+                                                        </DataTemplate>
+                                                    </ig:TemplateColumn.HeaderTemplate>
+
+                                                    <ig:TemplateColumn.ItemTemplate >
+                                                        <DataTemplate >
+                                                            <Button x:Name="btnCancelobjet" Click="btnCancelobjet_Click"  ToolTip="Supprimer ce Site" Width="25" Height="20"  CommandParameter="{Binding IdObjet}" Background="Transparent" >
+
+                                                                <Button.Style>
+                                                                    <Style TargetType="{x:Type Button}"/>
+                                                                </Button.Style>
+                                                                <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="17">
+                                                                    <Image.Style >
+                                                                        <Style TargetType="Image">
+                                                                            <Style.Triggers >
+                                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                                    <Setter Property="Opacity" Value="0.5"/>
+                                                                                </Trigger>
+                                                                            </Style.Triggers>
+                                                                        </Style>
+                                                                    </Image.Style>
+                                                                </Image>
+                                                            </Button>
+                                                        </DataTemplate>
+                                                    </ig:TemplateColumn.ItemTemplate>
+                                                </ig:TemplateColumn>
+
+                                            </ig:XamGrid.Columns>
+
+                                        </ig:XamGrid>
+                                    </Grid>
+                                </Grid>
+                            </TabItem>
+                            <TabItem Header="Exploitations" IsEnabled="{Binding IsEnableClientdetail}">
+                                <Grid x:Name="tabControlExploitation">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition  Width="*"/>
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Row="0" Grid.Column="0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Content="Exploitation" Foreground="Green" FontWeight="Bold" Margin="2,0"/>
+                                                <TextBox x:Name="txtLibelleExploite" Width="auto" Height="25" MinWidth="200"  BorderBrush="Black" Margin="45,2,0,5" 
+                                                         Text="{Binding ExploitationLibelle, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEnabled="{Binding IstxtEnabled}"/>
+                                                <Button x:Name="btnCancelnom"  Width="20" Height="25" Background="Transparent" Grid.Row="2"
+                                                 Visibility="{Binding IsVisibleCancelExploitation,Converter={StaticResource visibled}}"
+                                                        Click="btnCancelnom_Click">
+                                                    <Button.InputBindings>
+                                                        <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                                    </Button.InputBindings>
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}"/>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="15">
+                                                        <Image.Style >
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers >
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+                                                <Button Background="Transparent" Margin="3,0"  Width="25" Height="25" TabIndex="9" ToolTip="Nouveau " Command="{Binding NewExploitationCommand}" >
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow"/>
+
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource new}"  />
+                                                </Button>
+
+                                                <Button  ToolTip="Ajouter  le champ selectionner à la liste"  Width="25" Height="25" Margin="3,0" Background="Transparent" Command="{Binding SaveExploitationCommand}" >
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Cursor" Value="Arrow"/>
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                                    <Setter Property="Cursor" Value="Wait"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                    <Image Source="{StaticResource new_validate}" >
+                                                        <Image.Style >
+                                                            <Style TargetType="Image">
+                                                                <Style.Triggers >
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Button>
+
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal"  Grid.Row="1">
+                                                <Label Content="Compte Analytyque" Foreground="Green" FontWeight="Bold"/>
+                                                <ig:XamComboEditor x:Name="cmbCmpteanal" ItemsSource="{Binding ComptesAnalList}" Width="190" HorizontalAlignment="Left" Margin="2"
+                                                                       SelectedItem="{Binding CompteAnalSelected, Mode=TwoWay}" DisplayMemberPath="Numerocompte"  SelectedIndex="{Binding CompteanalIndex, Mode=TwoWay}" >
+
+                                                </ig:XamComboEditor>
+
+                                                <Button Content="..."  HorizontalAlignment="Left"  ToolTip="Liste Comptes analytique" Width="40"
+                                                         Command="{Binding ListeCompteAnalClientCommand}"
+                                                         Height="20"  Margin="3,0,0,0"></Button>
+                                            </StackPanel>
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <ig:XamGrid Grid.Row="1" Grid.Column="0" ItemsSource="{Binding ExploitList}" AutoGenerateColumns="False" x:Name="gridExploitation"
+                                                 MinHeight="50" ColumnWidth="*" ActiveItem="{Binding ExploitSelected, Mode=TwoWay}" 
+                                                    >
+                                        <ig:XamGrid.ColumnResizingSettings >
+                                            <ig:ColumnResizingSettings AllowColumnResizing="Immediate" >
+                                            </ig:ColumnResizingSettings>
+                                        </ig:XamGrid.ColumnResizingSettings>
+
+                                        <ig:XamGrid.RowSelectorSettings>
+                                            <ig:RowSelectorSettings x:Name="rowSelectorSettingssExplot"   Visibility="Visible"/>
+                                        </ig:XamGrid.RowSelectorSettings>
+
+                                        <ig:XamGrid.SelectionSettings>
+                                            <ig:SelectionSettings CellClickAction="SelectRow"  RowSelection="Single" />
+                                        </ig:XamGrid.SelectionSettings>
+                                        <ig:XamGrid.Columns>
+
+                                            <ig:TextColumn Key="Libelle" Width="auto" MinimumWidth="200"  >
+                                                <ig:TextColumn.HeaderTemplate >
+                                                    <DataTemplate >
+                                                        <TextBlock Text="Libelle Exploitation" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+
+
+                                            <ig:TextColumn Key="CompteAnalytique.Numerocompte" Width="auto" MinimumWidth="200"  >
+                                                <ig:TextColumn.HeaderTemplate >
+                                                    <DataTemplate >
+                                                        <TextBlock Text="Compte Analytique" />
+                                                    </DataTemplate>
+                                                </ig:TextColumn.HeaderTemplate>
+                                            </ig:TextColumn>
+
+
+
+                                            <ig:TemplateColumn Key="IdExploitation" Width="auto"  IsReadOnly="True"  >
+                                                <ig:TemplateColumn.HeaderTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="Annuler" />
+                                                    </DataTemplate>
+                                                </ig:TemplateColumn.HeaderTemplate>
+
+                                                <ig:TemplateColumn.ItemTemplate >
+                                                    <DataTemplate >
+                                                        <Button x:Name="btnCancelExploitation"  Click="btnCancelExploitation_Click"   ToolTip="Supprimer" Width="25" Height="20"  CommandParameter="{Binding IdExploitation}" Background="Transparent" >
+                                                            <Button.Style>
+                                                                <Style TargetType="{x:Type Button}"/>
+                                                            </Button.Style>
+                                                            <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="17">
+                                                                <Image.Style >
+                                                                    <Style TargetType="Image">
+                                                                        <Style.Triggers >
+                                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                                            </Trigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </Image.Style>
+                                                            </Image>
+                                                        </Button>
+                                                    </DataTemplate>
+                                                </ig:TemplateColumn.ItemTemplate>
+                                            </ig:TemplateColumn>
+
+                                        </ig:XamGrid.Columns>
+
+
+
+
+                                    </ig:XamGrid>
+
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                           
+                      
+                          
+                                </Grid>
+                  
+                </Border>
+            </DockPanel>
+        </GroupBox>
+         
+    </Grid>
+</Window>

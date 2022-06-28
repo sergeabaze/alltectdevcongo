@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B187927E-16DD-4B33-BE4D-724B529D97C0}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllTech.FacturationModule</RootNamespace>
+    <AssemblyName>AllTech.FacturationModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdornedControl">
+      <HintPath>..\AllTech_Facturation\lib\AdornedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
+      <HintPath>..\AllTech_Facturation\lib\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AllTech_Facturation\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\AllTech_Facturation\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NumericUpDownControl">
+      <HintPath>..\AllTech_Facturation\lib\NumericUpDownControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\AllTech_Facturation\lib\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Wpf.SplitButton">
+      <HintPath>..\AllTech_Facturation\lib\Wpf.SplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFAutoCompleteBox">
+      <HintPath>..\AllTech_Facturation\lib\WPFAutoCompleteBox.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfMyexpander">
+      <HintPath>..\AllTech_Facturation\lib\WpfMyexpander.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonModule.cs" />
+    <Compile Include="ModuleFactureInit.cs" />
+    <Compile Include="Report\CrtExonereNonExonere.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrtExonereNonExonere.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReportFacture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportFacture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReportFacture_Dash.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportFacture_Dash.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DataProvider.cs" />
+    <Compile Include="Report\DataSetFacture.cs">
+      <DependentUpon>DataSetFacture.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DataSetFacture.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFacture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FormeDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FormeDash.Designer.cs">
+      <DependentUpon>FormeDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\formeExonereNonExoner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\formeExonereNonExoner.Designer.cs">
+      <DependentUpon>formeExonereNonExoner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportExonere.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportExonere.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\reportNonExonere.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportNonExonere.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModel\DatarefCompanyViewModel.cs" />
+    <Compile Include="ViewModel\DataReferenceViewModel.cs" />
+    <Compile Include="ViewModel\DatarefInvoiceViewModel.cs" />
+    <Compile Include="ViewModel\DataRefPrestationViewModel.cs" />
+    <Compile Include="ViewModel\DataRefUtilisateurViewModel.cs" />
+    <Compile Include="ViewModel\DatarefViewModel.cs" />
+    <Compile Include="ViewModel\FacturationListeViewModel.cs" />
+    <Compile Include="ViewModel\Facturation_viewModel.cs" />
+    <Compile Include="ViewModel\FactureSortieViewModel.cs" />
+    <Compile Include="ViewModel\ParametersViewModel.cs" />
+    <Compile Include="ViewModel\WFacturationModal_viewModel.cs" />
+    <Compile Include="Views\DataReference_Views.xaml.cs">
+      <DependentUpon>DataReference_Views.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatarefPrestation.xaml.cs">
+      <DependentUpon>DatarefPrestation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataRefUtilisateur.xaml.cs">
+      <DependentUpon>DataRefUtilisateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataRef_Company.xaml.cs">
+      <DependentUpon>DataRef_Company.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataRef_Produit.xaml.cs">
+      <DependentUpon>DataRef_Produit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Facturation_List.xaml.cs">
+      <DependentUpon>Facturation_List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Facturation_Sortie.xaml.cs">
+      <DependentUpon>Facturation_Sortie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Facturation_view.xaml.cs">
+      <DependentUpon>Facturation_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatarefInvoice.xaml.cs">
+      <DependentUpon>DatarefInvoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\Compte.xaml.cs">
+      <DependentUpon>Compte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\CompteViewModel.cs" />
+    <Compile Include="Views\Modal\DeataiProduit.xaml.cs">
+      <DependentUpon>DeataiProduit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\DetailProduitClient.xaml.cs">
+      <DependentUpon>DetailProduitClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\DetailProduitClientViewModel.cs" />
+    <Compile Include="Views\Modal\DetailProduitViewModel.cs" />
+    <Compile Include="Views\Modal\Devises.xaml.cs">
+      <DependentUpon>Devises.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\DeviseViewModel.cs" />
+    <Compile Include="Views\Modal\Exoneration.xaml.cs">
+      <DependentUpon>Exoneration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\ExonerationViewModel.cs" />
+    <Compile Include="Views\Modal\ExploitataionViewModel.cs" />
+    <Compile Include="Views\Modal\Exploitation.xaml.cs">
+      <DependentUpon>Exploitation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\FactureInformation.xaml.cs">
+      <DependentUpon>FactureInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\FactureInformationViewModel.cs" />
+    <Compile Include="Views\Modal\ModalSignature.xaml.cs">
+      <DependentUpon>ModalSignature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\ModalSignatureViewModel.cs" />
+    <Compile Include="Views\Modal\StatusFacture.xaml.cs">
+      <DependentUpon>StatusFacture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\StatusFactureViewModel.cs" />
+    <Compile Include="Views\Modal\TaxesDeviesViewModel.cs" />
+    <Compile Include="Views\Modal\VuesSortie.xaml.cs">
+      <DependentUpon>VuesSortie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\WmodalDatarefs.xaml.cs">
+      <DependentUpon>WmodalDatarefs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modal\WTaxeDevises.xaml.cs">
+      <DependentUpon>WTaxeDevises.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Parameters.xaml.cs">
+      <DependentUpon>Parameters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Suggest\ModalSuggestFactures.xaml.cs">
+      <DependentUpon>ModalSuggestFactures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFacturationModal_vie.xaml.cs">
+      <DependentUpon>WFacturationModal_vie.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\DataReference_Views.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DatarefPrestation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataRefUtilisateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataRef_Company.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataRef_Produit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Facturation_List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Facturation_Sortie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Facturation_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DatarefInvoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\Compte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\DeataiProduit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\DetailProduitClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\Devises.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\Exoneration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\Exploitation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\FactureInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\ModalSignature.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\StatusFacture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\VuesSortie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\WmodalDatarefs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Modal\WTaxeDevises.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Parameters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Suggest\ModalSuggestFactures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WFacturationModal_vie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrtExonereNonExonere.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrtExonereNonExonere.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReportFacture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportFacture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReportFacture_Dash.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportFacture_Dash.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FormeDash.resx">
+      <DependentUpon>FormeDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\formeExonereNonExoner.resx">
+      <DependentUpon>formeExonereNonExoner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportExonere.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportExonere.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportNonExonere.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportNonExonere.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Report\DataSetFacture.xsc">
+      <DependentUpon>DataSetFacture.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSetFacture.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFacture.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSetFacture.xss">
+      <DependentUpon>DataSetFacture.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AllTech.FrameWork\AllTech.FrameWork.csproj">
+      <Project>{2ADB22F4-24D5-465A-93F7-B553A3B0490C}</Project>
+      <Name>AllTech.FrameWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

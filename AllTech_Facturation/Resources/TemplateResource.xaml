@@ -1,0 +1,147 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- gestion validation-->
+    <ControlTemplate x:Key="validationTemplate">
+        <DockPanel LastChildFill="True"  >
+            <TextBlock Foreground="Red" FontSize="20" DockPanel.Dock="Right" FontWeight="Bold"   >!!</TextBlock>
+            <Border BorderBrush="Green"  BorderThickness="1">
+                <AdornedElementPlaceholder />
+            </Border>
+
+        </DockPanel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="validationTemplateFac">
+        <DockPanel LastChildFill="True"  >
+            <TextBlock Foreground="Red" FontSize="20" DockPanel.Dock="Top"   FontWeight="Bold"   >!!!</TextBlock>
+            <Border BorderBrush="Red" BorderThickness="1">
+                <AdornedElementPlaceholder />
+            </Border>
+
+        </DockPanel>
+    </ControlTemplate>
+    
+    <Style TargetType="Control" x:Key="ErrorStyle">
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="true">
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                                                    Path=(Validation.Errors)[0].ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="DatePicker" BasedOn="{StaticResource ErrorStyle}"/>
+
+    <Style x:Key="textBoxinError" TargetType="{x:Type TextBox}">
+        <Style.Triggers >
+            <Trigger Property="Validation.HasError" Value="true" >
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                                                    Path=(Validation.Errors)[0].ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="DateBoxinError" TargetType="{x:Type DatePicker}">
+        <Style.Triggers >
+            <Trigger Property="Validation.HasError" Value="true" >
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                                                    Path=(Validation.Errors)[0].ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <ControlTemplate x:Key="validationLogginTemplate">
+        <DockPanel LastChildFill="True"  >
+
+            <TextBlock Foreground="Red" FontSize="20" DockPanel.Dock="Left"   FontWeight="Bold"   >!!</TextBlock>
+            <Border BorderBrush="Red"  BorderThickness="2"  >
+                <AdornedElementPlaceholder />
+            </Border>
+
+        </DockPanel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WindowTemplateKey" TargetType="{x:Type Window}">
+        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+            <Grid>
+                <AdornerDecorator>
+                    <ContentPresenter/>
+                </AdornerDecorator>
+                <ResizeGrip x:Name="WindowResizeGrip" HorizontalAlignment="Right" IsTabStop="false" Visibility="Collapsed" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Border>
+        <ControlTemplate.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="ResizeMode" Value="CanResizeWithGrip"/>
+                    <Condition Property="WindowState" Value="Normal"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="Visibility" TargetName="WindowResizeGrip" Value="Visible"/>
+            </MultiTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!--Client DataTemplates-->
+
+    <DataTemplate x:Key="langueComboExpand" >
+        <TextBlock Text="{Binding Libelle}" />
+    </DataTemplate>
+    <DataTemplate x:Key="langueComboCollapsed" >
+        <TextBlock Text="{Binding Libelle}" />
+    </DataTemplate>
+    
+    
+    <DataTemplate x:Key="ClientComboCollapsed" >
+                <TextBlock Text="{Binding Path=NomClient}" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="ClientComboExpanded" >
+        <GroupBox BorderThickness = "1"
+                  Margin = "0,0,0,3" BorderBrush="AliceBlue" 
+                  Width = "Auto " Background="Bisque"
+                  HorizontalAlignment = "Stretch"
+                  Header = "{Binding Path=NomClient}">
+            <StackPanel Margin="3" 
+                        HorizontalAlignment="Stretch"
+                        MinWidth="250">
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content="City :" Width="50"/>
+                    <TextBlock Text = "{Binding Path=Ville}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content="Contrib :" Width="50"/>
+                    <TextBlock Text = "{Binding Path=NumeroContribuable}"
+                           Name = "tbAddr1"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content="Rue :" Width="50"/>
+                    <TextBlock Text = "{Binding Path=Rue1}"
+                           Name = "tbAddr2"
+                />
+              </StackPanel>
+                <!-- City, State, and ZIP display 
+                <StackPanel Orientation = "Horizontal">
+                    <TextBlock Text = "{Binding Path=City}" />
+                    <TextBlock Text="," Padding="0,0,5,0"/>
+                  
+                </StackPanel>-->
+            </StackPanel>
+        </GroupBox>
+
+        <DataTemplate.Triggers>
+            <!--If the "AddressLine2" portion of the address is blank, then
+				HIDE it (no need to display an extra blank line)
+                
+                This only works is AddressLine2 = "", not if it's null
+            
+            <DataTrigger Binding = "{Binding Path=AddressLine2}" Value = "">
+                <Setter TargetName = "tbAddr2" 
+					    Property = "Visibility" 
+                        Value = "Collapsed"
+                />
+            </DataTrigger>-->
+        </DataTemplate.Triggers>
+    </DataTemplate>
+    <!--End Address DataTemplates-->
+
+</ResourceDictionary>

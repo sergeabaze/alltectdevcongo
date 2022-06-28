@@ -1,0 +1,248 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                     xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+                    >
+
+    <!-- loggin -->
+    <system:String x:Key="lblLogin" >Nom utilisateur:</system:String>
+    <system:String x:Key="lblPassword" >Mot de passe:</system:String>
+    <system:String x:Key="lblNewPassword" >Nouveau mot passe:</system:String>
+    <system:String x:Key="lblselecttextPassword" >votre mot passe</system:String>
+    <system:String x:Key="lblselecttextlogin" >votre loggin</system:String>
+    <system:String x:Key="tooltipbtnAnnul" >Annuler</system:String>
+    <system:String x:Key="tooltipDeconecter" >Déconnecter</system:String>
+    <system:String x:Key="tooltipHst" >Historique factures</system:String>
+    
+    <!-- Main menu  -->
+    <system:String x:Key="mNuFile" >Fichier</system:String>
+    <system:String x:Key="mNuFile_fermer" >Déconnecter</system:String>
+    <system:String x:Key="mNuFile_quitter" >Quitter</system:String>
+
+    <system:String x:Key="mNuOperation" >Operation</system:String>
+    <system:String x:Key="mNuOperation_Hst" >Historique factures</system:String>
+    <system:String x:Key="mNuOperation_Sorties" >Gestion sorties</system:String>
+    <system:String x:Key="mNuOperation_Extract" >Gestion Extractions</system:String>
+
+    <system:String x:Key="mNuAdmin" >Administration</system:String>
+    <system:String x:Key="mNuAdmin_Parametres" >Parametres</system:String>
+    <system:String x:Key="mNuAdmin_Datarefs" >Données références</system:String>
+    <system:String x:Key="mNuAdmin_Admin" >Maintenance</system:String>
+
+    <system:String x:Key="mNuAide" >Guide Utilisateur</system:String>
+    <system:String x:Key="mNuApropos" >A propos</system:String>
+    <!-- Main menu Toolbar -->
+    <system:String x:Key="toolbarUserConnecter" >Utilisateur : </system:String>
+    <system:String x:Key="toolbarProfile" >Profile: </system:String>
+    <system:String x:Key="toolbarLangueFr" >Français(Fr)</system:String>
+    <system:String x:Key="toolbarLangueEn" >Anglais(En)</system:String>
+    <system:String x:Key="toolbarLanguePt" >Portuguais(Pt)</system:String>
+    <system:String x:Key="toolbarLangueEs" >Espagnol(Es)</system:String>
+
+    <system:String x:Key="toolbarPopUpLicense_tooltip" >Ajout licence</system:String>
+   
+    <system:String x:Key="toolbarPopUpMsInstal" >Bienvenu à Cette Nouvelle Installation:</system:String>
+    <system:String x:Key="toolbarPopUpCpmtTemp" >COMPTE TEMPORAIRE:</system:String>
+    <!-- User Affiche -->
+    <system:String x:Key="userAfficheTitre" >Résumé des factures du mois en cours</system:String>
+
+    <!-- Historic factures -->
+    <system:String x:Key="titreFormulaire" >Historique des factures</system:String>
+    <system:String x:Key="toolbaToolTip_fermer" >Fermer Formulaire</system:String>
+    <system:String x:Key="toolbaToolTip_refresh" >Rafraichir la Historique</system:String>
+    <system:String x:Key="toolbaTitreListe" >Liste de sites</system:String>
+    
+    <system:String x:Key="splitBoutonFiltre" >Filtres</system:String>
+    <system:String x:Key="splitBoutonFiltreByFacture" >Facture</system:String>
+    <system:String x:Key="splitBoutonFiltreByFacture_tooltip" >Recherche par numero de facture</system:String>
+    <system:String x:Key="splitBoutonFiltreByClient" >Client</system:String>
+    <system:String x:Key="splitBoutonFiltreByClient_tooltip" >Recherche par client</system:String>
+    <system:String x:Key="splitBoutonFiltreByDate" >Date</system:String>
+    <system:String x:Key="splitBoutonFiltreByDate_tooltip" >Recherche par Date</system:String>
+    <system:String x:Key="splitBoutonRecherches" >Recherches</system:String>
+    <system:String x:Key="splitBoutonRechercheDateDebut" >Date début</system:String>
+    <system:String x:Key="splitBoutonRechercheDateFin" >Date fin</system:String>
+    <system:String x:Key="RechercheCmbClient" >Client</system:String>
+    <system:String x:Key="RecherchebuttonToolTip" >Recherche sur une plage</system:String>
+
+    <system:String x:Key="splitBoutonImpressions" >Impressions</system:String>
+    <system:String x:Key="splitBoutonImpressionsExport" >Export</system:String>
+    <system:String x:Key="splitBoutonImpressionsExportTooltip" >Ce Boutton permet d'exporter sous Excel l'historique des Factures affichés ou les factures sélectionnées</system:String>
+    <system:String x:Key="splitBoutonImpressionsExport_select" >Export factures sélectionnées</system:String>
+    <system:String x:Key="splitBoutonImpressionsExport_List" >Export liste de factures</system:String>
+    <system:String x:Key="splitBoutonImpressionsprint" >Imprimer facture </system:String>
+    <system:String x:Key="splitBoutonImpressionsprintList" >Imprimer Liste facture</system:String>
+
+    <system:String x:Key="splitBoutonOperation" >Operations</system:String>
+    <system:String x:Key="splitBoutonOperationTooltipValidation" >Boutton permettant la validation d'une facture sélectionnée donc de la faire passer austatut validé
+    </system:String>
+    <system:String x:Key="splitBoutonOperationTooltipSortie" >boutton permettant de passer une facture au statut sortie facture
+    </system:String>
+    <system:String x:Key="splitBoutonOperationTooltipSuspension" >boutton permettant de passer une facture au statut suspendu
+    </system:String>
+
+    <system:String x:Key="splitBoutonOperationTooltipNonValide" >boutton permettant de passer une facture au statut Non Valide
+    </system:String>
+
+    <system:String x:Key="gridbtnselect" >Selectionnées</system:String>
+    <system:String x:Key="gridbtnDeselect" >Déselectionnées</system:String>
+    <system:String x:Key="gridNumfacture" >Factures #</system:String>
+    <system:String x:Key="gridDatecreation" >Date creation #</system:String>
+    <system:String x:Key="gridMois" >Mois de prestation</system:String>
+    <system:String x:Key="gridObjet" >Objet facture</system:String>
+    <system:String x:Key="gridClient" >Client</system:String>
+    <system:String x:Key="gridPrepareBy" >Préparée par</system:String>
+    <system:String x:Key="gridDatevalidation" >Date Validation</system:String>
+    <system:String x:Key="gridSataut" >Statut</system:String>
+    <system:String x:Key="gridTotal" >Total TTC</system:String>
+
+    <!-- facture ui -->
+    <system:String x:Key="factureTabItemTitre" >Edition </system:String>
+    <system:String x:Key="factureTabItemAudit" >Audit</system:String>
+    <system:String x:Key="factureTopbarTooltipNew" > Nouvelle facture</system:String>
+    <system:String x:Key="factureTopbarTooltipSave" >Sauvegarder</system:String>
+    <system:String x:Key="factureTopbarTooltipSupprime" >Supprimer la facture</system:String>
+    <system:String x:Key="factureTopbarTooltipCancel" >Annuler la facture</system:String>
+    <system:String x:Key="factureTopbarTooltipPrint" >Imprimer</system:String>
+    <system:String x:Key="factureTopbarTooltipClose" >Fermer</system:String>
+    <system:String x:Key="factureInfoEnteteTitre" >Information entête facture</system:String>
+    <system:String x:Key="factureEnteteClient" >Client:</system:String>
+    <system:String x:Key="factureEnteteexploit" >Expoitation:</system:String>
+    <system:String x:Key="factureEnteteObjet" >Objet:</system:String>
+    <system:String x:Key="factureEnteteObjetNew" >Nouvel Objet:</system:String>
+    <system:String x:Key="factureEnteteMoisP" >Mois de prestation:</system:String>
+    <system:String x:Key="factureEnteteJourFin" >Jour fin prestation:</system:String>
+    <system:String x:Key="factureEnteteDateCreate" >Date Creation:</system:String>
+    <system:String x:Key="factureEnteteStatutFacture" >Statut facture:</system:String>
+    <system:String x:Key="factureEnteteStatutClient" >Facture client</system:String>
+    <system:String x:Key="factureEnteteDeviseFact" >Devise facture:</system:String>
+    <system:String x:Key="factureEnteteConverse" >Dévise conversion:</system:String>
+    <system:String x:Key="factureEnteteDept" >Departement :</system:String>
+    <system:String x:Key="factureEnteteDateDepot" >Date dépot :</system:String>
+    <system:String x:Key="factureEnteteFactyreNum" >Facture # :</system:String>
+    <system:String x:Key="factureEnteteSortie" >Sortie :</system:String>
+    <system:String x:Key="factureEnteteSuspension" >Suspension :</system:String>
+    <system:String x:Key="factureEnteteNonValide" >Non valable:</system:String>
+    <system:String x:Key="factureEnteteTotalFacture" >Total facture</system:String>
+
+    <system:String x:Key="factureLigneTitre" >Entete ligne facture</system:String>
+    <system:String x:Key="factureLigneProduit" >Produit</system:String>
+    <system:String x:Key="factureLigneDesc" >Autre description</system:String>
+    <system:String x:Key="factureLigneqte" >Quantité</system:String>
+    <system:String x:Key="factureLignePrixUnit" >Prix unitaire</system:String>
+    <system:String x:Key="factureLigneTooltibtnAdd" >ajout ligne</system:String>
+    <system:String x:Key="factureLigneDelete" >Supprimer ligne facture</system:String>
+
+    <system:String x:Key="factureLigneLignes" >Lignes factures</system:String>
+    <system:String x:Key="factureGridProd" >Produit</system:String>
+    <system:String x:Key="factureGridDesc" >Description</system:String>
+    <system:String x:Key="factureGridQuantite" >Quantité</system:String>
+    <system:String x:Key="factureGridPrixunit" >Prix unitaire</system:String>
+    <system:String x:Key="factureGridMontantht" >Montant HT</system:String>
+    <system:String x:Key="factureGridtaxe" >Detail Taxe</system:String>
+    <system:String x:Key="factureAuditDatecreation" >Date creation:</system:String>
+    <system:String x:Key="factureAuditDateModif" >Date modification:</system:String>
+    <system:String x:Key="factureAuditDateValide" >Date validation:</system:String>
+    <system:String x:Key="factureAuditSortie" >Date sortie:</system:String>
+    <system:String x:Key="factureAuditCrePar" >Créer par :</system:String>
+    <system:String x:Key="factureAuditModifpar" >Modifier par:</system:String>
+
+
+
+
+
+
+
+
+
+
+    <col:Hashtable x:Key="contentFile">
+        <!-- loggin -->
+        <system:String x:Key="MsStart_ErrProcessus" >Un processus est Déja En cours</system:String>
+        <system:String x:Key="mNuFile_MsgQuitter" >Voulez-vous fermer l'application</system:String>
+         <system:String x:Key="vmLoading_MsgErreurCrgtTitre" >INFORMATION CHARGEMENT PARAMETRES</system:String>
+        <system:String x:Key="vmLoading_MsgErreurChrgt" >Problème de chargement du fichier de parametres ce fichier est soit corrompu ou  n'est pas à jour</system:String>
+
+        <!--<system:String x:Key="shellVm_MsgTitre" ></system:String>
+        <system:String x:Key="shellVm_Msgcontent" ></system:String>-->
+
+        <system:String x:Key="shellVm_MsgLogFileTitre" >GENERATION FICHIER LOG</system:String>
+        <system:String x:Key="shellVm_MsgLogFilecontent" >Probleme survenu lors de la génération du fichier Log</system:String>
+        <system:String x:Key="shellVm_MsgConnecteDBTitre" >PROBLEM DE CONNECTION</system:String>
+
+       <system:String x:Key="toolbarPopUpLicenseMsgInfo" >Vous utilisez une version limitée de {0} jours de sysfact</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgInfo2" >Il ne vous reste plus que :{0} jours d'utilisation de sysfact</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgInfolastday" > Attention il ne vous reste  plus que :{0} jours d'utilisation de sysfact, vous devez impérativement renouveller votre license</system:String>
+
+        <system:String x:Key="shellVm_MsgTitreConnection" >ERREUR DE CONNECTION</system:String>
+        <system:String x:Key="shellVm_MsgcontentConnection" >Impossible de se connecter à la base de données\n Vérifier les paramètres de connexion</system:String>
+        <system:String x:Key="shellVm_MsgTitreCompteStatus" >PROBLEM SUR LE COMPTE</system:String>
+        <system:String x:Key="shellVm_MsgcontentCompteStatus" >Compte est expiré et sera verouilleé, veuillez contacter l'administrateur</system:String>
+        <system:String x:Key="shellVm_MsgSaisireMotpTitre" >ERREUR SAISIE MOT PASSE</system:String>
+        <system:String x:Key="shellVm_MsgSaisireMotpcontent" >Vous devez saisire votre nouveau mot de passe !</system:String>
+        <system:String x:Key="shellVm_MsgCompteLockTitre" >PROBLEM COMPTE VEROUILLER</system:String>
+        <system:String x:Key="shellVm_MsgCompteLockcontent" >Ce Compte est vérouillé, veuillez contacter l'administrateur</system:String>
+        <system:String x:Key="shellVm_MsgBadMotpTitre" >ERREURE MOT PASSE</system:String>
+        <system:String x:Key="shellVm_MsgBadMotpcontent" >Mot de passe incorrect</system:String>
+        <system:String x:Key="shellVm_MsgBadLogginTitre" >ERREURE MOT LOGGIN</system:String>
+        <system:String x:Key="shellVm_MsgBadLoggincontent" >Loggin utilisateur incorrect</system:String>
+        <system:String x:Key="shellVm_MsgErrorConnectTitre" >ERREURE CONNECTION</system:String>
+        <system:String x:Key="shellVm_MsgErrorConnectcontent1" >Accès non autorisé, vérifiez à nouveau les paramètres de connexion</system:String>
+        <system:String x:Key="shellVm_MsgErrorConnectcontent2" >Erreure d'authentification</system:String>
+        <system:String x:Key="shellVm_MsgCorrupteLicenseTitre" >ERREUR LICENCE CORROMPU</system:String>
+        <system:String x:Key="shellVm_MsgCorrupteLicensecontent" >Licence corrompu ou altérée, veillez contacter votre administrateur</system:String>
+
+        <system:String x:Key="toolbarPopUpLicenseMsgRegion" >Cette licence n'est pas valable pour cette région</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgErroneTitre" >LICENCE ERRONE</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgErrone" >Désolé vous avez essayez de re utiliser une licence limitée, \n cette action est fort déconseillée car elle risque d'endomager l'apllication</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgVersion" >Cette licence n'est pas valable pour cette version de sysfact</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgExpirationTitre" >EXPIRATION LICENCE</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgExpiration" >Période d'utilisation expiré \n Merci de contacter @Technologie pour renouveller la licence</system:String>
+        <system:String x:Key="toolbarPopUpFirstLoggin" >Vous devez vous connecter avec le loggin par défaut pour modifier les parametres de connection</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgTemporarycmpt" >Vous Utilisez un compte temporaire \n Dernier jour de validitée pour ce Compte!!!!!\n veillez contantez votre administrateur</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgDefaulloggin" >Vous devez vous connecter avec le loggin par défaut pour modifier les parametres de connection</system:String>
+       
+         <system:String x:Key="toolbarPopUpLicenseMsgExpirationtemp" >La date d'expiration de ce compte est atteinte, il est vérouillé \n veuillez contacter l'administrateur ou inserrer une nouvelle license</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgtype" >Ce type de licence n'est pas autoriser referrez vous à @lltechnologie</system:String>
+        <system:String x:Key="popupMsginputText" >Numéro de licence incorrect</system:String>
+        <system:String x:Key="popupMsginputTextAgain" >Cette Licence a déja fait l'objet dune utilisation antérieur, vous ne pouvez plus l'exploiter! inserre une nouvelle licence valide</system:String>
+        <system:String x:Key="popupMsgavalaible" >Cette license n'est plus valable </system:String>
+        <system:String x:Key="popupMsgQuotas" >Cette machine ne peut pas se connecter car le nombre de autorisé est atteint</system:String>
+        <system:String x:Key="popupMsgQuotasTitre">ERREURE QUOTAS LICENSE</system:String>
+        <system:String x:Key="popupMsgAutorisationTitre">ERREURE AUTHORISATION ACCES</system:String>
+        <system:String x:Key="popupMsgpopupMsgAutorisationMsg">Vous n'avez pas d'autorisation de vous connecter à cette application \n veiullez contactez votre administrateur</system:String>
+
+        <system:String x:Key="toolbarPopUpLicenseMsgrestevalidite" >Nombre Jours de validité Restante  : {0} \n Pensez à renouvellez la période</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgJourRestant" >Nombre Jours de validité Restant  : {0}</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgNewLicense" >vous disposez à nouveau de :{0} jours d'utilisation de sysfact</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgAddLicense" >Nouvelle licence validée, relancer l'application</system:String>
+        <system:String x:Key="toolbarPopUpLicenseMsgRrrorAddLicense" >Erreure sauvegarde de la licence</system:String>
+        
+        <system:String x:Key="MsgErrorLoadingDatarefsTitre" >ERREURE DE CHARGEMENT VUE DATAREFS</system:String>
+        <system:String x:Key="MsgErrorLoadingDatarefs" >Erreure survenue lors du chargement interface données de référence</system:String>
+        <system:String x:Key="MsgErrorLoadingParametreTitre" >ERREURE DE CHARGEMENT VUE PARAMETRE</system:String>
+        <system:String x:Key="MsgErrorLoadingParametre" >Erreure survenue lors du chargement interface des parametres</system:String>
+        <system:String x:Key="MsgErrorLoadingAdminTitre" >ERREURE DE CHARGEMENT VUE ADMINISTRATION</system:String>
+        <system:String x:Key="MsgErrorLoadingAdmin" >Erreure survenue lors du chargement interface Administration</system:String>
+        <system:String x:Key="MsgErrorLoadingFactureTitre" >ERREURE DE CHARGEMENT VUE NOUVELLE FACTURE</system:String>
+        <system:String x:Key="MsgErrorLoadingFacture" >Erreure survenue lors du chargement interface de creation de la facture</system:String>
+        <system:String x:Key="MsgErrorLoadingSortieFactureTitre" >ERREURE DE CHARGEMENT VUE SORTIE FACTURE</system:String>
+        <system:String x:Key="MsgErrorLoadingSortieFactureFacture" >Erreure survenue lors du chargement interface de sortie des factures</system:String>
+        <system:String x:Key="MsgErrorLoadingExtractFactureTitre" >ERREURE DE CHARGEMENT VUE IMPORT/EXPORT FACTURES</system:String>
+        <system:String x:Key="MsgErrorLoadingExtractFactureFacture" >Erreure survenue lors du chargement interface import export des factures extraites</system:String>
+
+
+
+
+        <!-- User Affiche -->
+        <system:String x:Key="lblUserAfficheCreated">Factures Crées</system:String>
+        <system:String x:Key="lblUserAfficheCours">Factures en cours</system:String>
+        <system:String x:Key="lblUserAfficheValidee">Factures validées</system:String>
+        <system:String x:Key="lblUserAfficheSorties">Facturs sorties</system:String>
+        <system:String x:Key="lblUserAfficheSuspendu">Factures suspendues</system:String>
+        <system:String x:Key="lblUserAfficheErrorTitre">ERREURE CHARGEMENT PAGE ACCUEILLE</system:String>
+        <system:String x:Key="lblUserAfficheError">Problème survenu lors du chargement de l'historique des factures</system:String>
+    </col:Hashtable>
+   
+
+</ResourceDictionary>

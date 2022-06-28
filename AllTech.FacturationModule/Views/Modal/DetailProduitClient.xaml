@@ -1,0 +1,152 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.DetailProduitClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+         xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+         xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+         xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+        Title="" Height="440" Width="600" WindowStartupLocation="CenterOwner" WindowStyle="None" Icon="/AllTech.FacturationModule;component/images/mydoc.ico">
+    
+    <Window.Resources >
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label  Content="Détail produit client" Margin="10,0,0,0" Width="Auto" FontWeight="Bold" 
+                Foreground="#FF373737" FontSize="24" FontFamily="Corbel"/>
+        <Button  Background="Transparent" Width="40" Height="25"   ToolTip="Close " Margin="0,0,5,0" VerticalAlignment="Top" HorizontalAlignment="Right"   Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Cursor" Value="Arrow"/>
+
+                </Style>
+            </Button.Style>
+            <Image Source="{StaticResource cancel}" Width="25"  />
+        </Button>
+        <Border  Margin="0,40,0,0" >
+            <controlss:OptionsPanel IsMovable="False">
+                <Grid >
+                    <Border Grid.Row="1"  >
+                        <Grid >
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Border Grid.ColumnSpan="4" Grid.Row="0" Margin="3,3,6,3" BorderBrush="Blue"  >
+                                <Grid>
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Client Sélectionné" Foreground="Green" Grid.Column="4" Margin="20,0,37,3" Width="443" />
+                                    <TextBlock Text="{Binding Clientselected.NomClient}" Grid.Row="0" Grid.Column="4" Width="200" Margin="150,0"/>
+                                </Grid>
+
+                            </Border>
+                            
+                            <Border Grid.Row="1" Grid.ColumnSpan="4" Margin="0,0,5,0" >
+                                <Grid >
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Margin="0,0,0,0" Content="Nouvelle Quantité :" Width="120" Height="25" Foreground="Green" Grid.Row="0" Grid.Column="0" />
+                                    <TextBox IsEnabled="{Binding TxtEnable_a}"  Height="20"  Grid.Row="0" Grid.Column="1" Text="{Binding Path=DetailProduitSelect.Quantite, UpdateSourceTrigger=PropertyChanged}" Width="80" Margin="3"  BorderBrush="LightGray" BorderThickness="1" />
+                                    <Label Grid.Row="0" Grid.Column="2" Margin="5,0,0,0" Height="25" Foreground="Green" Content="Prix Unitaire :" Width="80" />
+                                    <TextBox IsEnabled="{Binding TxtEnable_a}" Grid.Row="0" Grid.Column="3" Text="{Binding Path=DetailProduitSelect.Prixunitaire,StringFormat={}{0:###} , UpdateSourceTrigger=PropertyChanged}" Width="90" Margin="3" Height="20"  BorderBrush="LightGray" BorderThickness="1"/>
+                                </Grid>
+                            </Border>
+                            <controls:SortableListView   Grid.Row="2" x:Name="DetailView" Height="250" Grid.ColumnSpan="4"
+                                               HorizontalAlignment="Center" VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True" AlternationCount="2" 
+                                               MouseDoubleClick="DetailView_MouseDoubleClick_1" 
+                                               ItemContainerStyle="{StaticResource myItemStyle}"
+                                               ItemsSource="{Binding DetailProduitlist}" Margin="0,3,10,5" >
+                                <controls:SortableListView.Resources>
+                                    <Style TargetType="{x:Type ListViewItem}">
+                                        <EventSetter Event="MouseDoubleClick" Handler="DetailView_MouseDoubleClick" />
+                                    </Style>
+                                </controls:SortableListView.Resources>
+                                <controls:SortableListView.GroupStyle >
+                                    <GroupStyle >
+                                        <GroupStyle.ContainerStyle >
+                                            <Style TargetType="{x:Type GroupItem}">
+                                                <Setter Property="Margin"
+                                                Value="0,0,0,5" />
+                                            </Style>
+                                        </GroupStyle.ContainerStyle>
+                                    </GroupStyle>
+                                </controls:SortableListView.GroupStyle>
+                                <controls:SortableListView.View >
+                                    <GridView>
+                                        <GridView.Columns >
+
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Produit.Libelle}"
+                                                    Header="Produit" Width="180" />
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Quantite}"
+                                                    Header="Quantité" Width="90" />
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Prixunitaire, StringFormat={}{0:### ### ###}}"
+                                                    Header="Prix unitaire" Width="70" />
+                                            <GridViewColumn 
+                                                    Header="Exonerated" Width="70">
+                                                <GridViewColumn.CellTemplate  >
+                                                    <DataTemplate >
+                                                        <CheckBox IsChecked="{Binding Path=Exonerer}"  IsEnabled="False"  />
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                            <GridViewColumn 
+                                                    Header="Prorata" Width="70">
+                                                <GridViewColumn.CellTemplate >
+                                                    <DataTemplate >
+                                                        <CheckBox IsChecked="{Binding Path=Isprorata}" IsEnabled="False" />
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView.Columns>
+                                    </GridView>
+
+                                </controls:SortableListView.View>
+
+                            </controls:SortableListView >
+
+
+                        </Grid>
+                    </Border>
+                </Grid>
+            </controlss:OptionsPanel>
+           
+        </Border>
+    </Grid>
+</Window>

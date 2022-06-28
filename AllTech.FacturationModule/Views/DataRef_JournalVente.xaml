@@ -1,0 +1,958 @@
+﻿<UserControl x:Class="AllTech.FacturationModule.Views.DataRef_JournalVente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+              xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+              xmlns:teplLangue="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+              xmlns:convertir="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork" 
+              xmlns:validation="clr-namespace:AllTech.FrameWork.ValidationRules;assembly=AllTech.FrameWork"
+               xmlns:expand="clr-namespace:WpfMyexpander;assembly=WpfMyexpander"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+              xmlns:local="clr-namespace:AllTech.FacturationModule"
+               xmlns:ac="clr-namespace:AdornedControl;assembly=AdornedControl"
+              xmlns:controls="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+               xmlns:ig="http://schemas.infragistics.com/xaml"
+              xmlns:igPrim="http://schemas.infragistics.com/xaml/primitives"
+               xmlns:wpfspark="clr-namespace:WPFSpark;assembly=WPFSpark"
+              xmlns:igFramework="clr-namespace:Infragistics.Samples.Framework;assembly=Infragistics.Samples.Framework"
+             mc:Ignorable="d" 
+              Height="auto" SizeChanged="UserControl_SizeChanged">
+    <UserControl.Resources >
+
+        <Style x:Key="CustomCellControlStyle" TargetType="ig:CellControl" BasedOn="{StaticResource {x:Type ig:CellControl}}">
+            <Setter Property="Foreground" Value="#FF52CC00" />
+        </Style>
+        <Style x:Key="LastMatchStyle" TargetType="ig:CellControl" BasedOn="{StaticResource {x:Type ig:CellControl}}">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+        <SolidColorBrush x:Key="CellItemNormalBorderBrush" Color="#FFC9CACA"/>
+        <SolidColorBrush x:Key="CellItemAltNormalBackgroundBrush" Color="#FFF6F9FC"/>
+
+        <Style x:Key="OrangeColumnStyle" TargetType="ig:CellControl">
+            <Setter Property="BorderBrush" Value="{StaticResource CellItemNormalBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="0,0,1,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ig:CellControl">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Alternate">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AltElem" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="SelectedStates">
+                                    <VisualState x:Name="Selected"/>
+                                    <VisualState x:Name="NotSelected" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="ActiveStates">
+                                    <VisualState x:Name="Active"/>
+                                    <VisualState x:Name="InActive"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FixedStates">
+                                    <VisualState x:Name="Fixed"/>
+                                    <VisualState x:Name="Unfixed"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="EditingStates">
+                                    <VisualState x:Name="Editing"/>
+                                    <VisualState x:Name="NotEditing"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" x:Name="Root"/>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{StaticResource CellItemAltNormalBackgroundBrush}" Visibility="Collapsed" x:Name="AltElem"/>
+                            <Rectangle Margin="0,0,1,0">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStopCollection>
+                                                <GradientStop Offset="0" Color="#CCffcc00"/>
+                                                <GradientStop Offset="0.988" Color="#CCFF6700"/>
+                                                <GradientStop Offset="1" Color="#CCff6600"/>
+                                            </GradientStopCollection>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Fill="#0C333333" Height="1" VerticalAlignment="Bottom" Margin="0,0,1,0"/>
+                            <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="BlueColumnStyle" TargetType="ig:CellControl">
+            <Setter Property="BorderBrush" Value="{StaticResource CellItemNormalBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="0,0,1,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ig:CellControl">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Alternate">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AltElem" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="SelectedStates">
+                                    <VisualState x:Name="Selected"/>
+                                    <VisualState x:Name="NotSelected" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="ActiveStates">
+                                    <VisualState x:Name="Active"/>
+                                    <VisualState x:Name="InActive"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FixedStates">
+                                    <VisualState x:Name="Fixed"/>
+                                    <VisualState x:Name="Unfixed"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="EditingStates">
+                                    <VisualState x:Name="Editing"/>
+                                    <VisualState x:Name="NotEditing"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" x:Name="Root"/>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{StaticResource CellItemAltNormalBackgroundBrush}" Visibility="Collapsed" x:Name="AltElem"/>
+                            <Rectangle Margin="0,0,1,0">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0.194,0.277" EndPoint="0.933,0.277">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStopCollection>
+                                                <GradientStop Offset="0" Color="#FFb2e200"/>
+                                                <GradientStop Offset="0.944" Color="#FF87b200"/>
+                                            </GradientStopCollection>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Fill="#0C333333" Height="1" VerticalAlignment="Bottom" Margin="0,0,1,0"/>
+                            <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="AltRowStyle" TargetType="ig:CellControl">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ig:CellControl">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Alternate">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AltElem" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AltElementHightlight" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" x:Name="Root"/>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Visibility="Collapsed" x:Name="AltElem">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStopCollection>
+                                                <GradientStop Offset="0" Color="#FF77dafc"/>
+                                                <GradientStop Offset="0.983" Color="#FF5bd4fd"/>
+                                            </GradientStopCollection>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                            <Rectangle Fill="#7FFFFFFF" x:Name="AltElementHightlight" Visibility="Collapsed" Margin="0,1,0,0" Height="1" VerticalAlignment="Top" />
+                            <ContentPresenter   VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+        <localVisible:DateConverter x:Key="convertDate"/>
+        <DataTemplate x:Key="listBoxTemplate">
+            <Border x:Name="borderlistbox" BorderBrush="Blue" BorderThickness="3" CornerRadius="3" Margin="3">
+                <Grid >
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontWeight="Bold" FontSize="13"  Text="Num Journal:" Grid.Row="0" Grid.Column="0" Margin="1,0,0,0"/>
+                    <TextBlock Text="{Binding NumeroJournal}" Foreground="Green" FontWeight="Bold"   Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock FontWeight="Bold" FontSize="13"  Text="Nombre :" Grid.Row="1" Grid.Column="0" Margin="1,0,0,0"/>
+                    <TextBlock Text="{Binding NbreFactures}" Foreground="Green" FontWeight="Bold"   Grid.Row="1" Grid.Column="1"/>
+                    <TextBlock FontWeight="Bold" Text="Période:" Foreground ="DarkOrange" Grid.Row="2" Grid.Column="0" Margin="5,0,5,0"/>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                        <TextBlock Text="{Binding DateDebut, StringFormat=dd/MM/yyyy}"  />
+                        <TextBlock Text="-"  />
+                        <TextBlock FontWeight="Bold" Text="{Binding DateFin, StringFormat=dd/MM/yyyy}" Foreground ="DarkOrange"/>
+                    </StackPanel>
+                   
+                    
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid  x:Name="LayoutRoot"  Background="Transparent">
+        <GroupBox Header="Journal de ventes" FontSize="12"  Height="auto"  Margin="9,0,0,12" Style="{DynamicResource GroupBoxStyle1}">
+            <DockPanel  VerticalAlignment="Top" >
+                <Button ToolTip="fermer Formulaire" DockPanel.Dock="Top"  Background="Transparent" 
+                        HorizontalAlignment="Left" Width="40" Height="30" Command="{Binding CloseCommand}">
+                    <!--<Button.Background>
+                        <ImageBrush ImageSource="{StaticResource cancel}" />
+                    </Button.Background>-->
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Cursor" Value="Arrow"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                    <Setter Property="Cursor" Value="Wait"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Image Source="{StaticResource cancel}">
+                        <Image.Style >
+                            <Style TargetType="Image">
+                                <Style.Triggers >
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
+                <controls:OptionsPanel HeaderText="" IsMovable="False" DockPanel.Dock="Top">
+                    <GroupBox Header="Génération journal">
+                        <Grid>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                              
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="26*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Content="Période Début :" Grid.Row="0" Grid.Column="0" Foreground="Green" Margin="0,5,0,0" FontWeight="Bold"/>
+                            <DatePicker Width="150"  Grid.Row="0" Grid.Column="1" Margin="3" FontFamily="Verdana" Height="25"
+                                       SelectedDate="{Binding DateDebutSelected}" 
+                                          DisplayDateEnd="{Binding DateFinSelected}"/>
+                            
+                         
+                            <Label Content="Période Fin :" Grid.Row="1" Grid.Column="0" Foreground="Green" Margin="0,5,0,0" FontWeight="Bold"/>
+                            <DatePicker Width="150"  Grid.Row="1" Grid.Column="1" Margin="3"
+                                SelectedDate="{Binding DateFinSelected}"
+                                 DisplayDateStart="{Binding DateDebut}"
+                                 
+                                        />
+                            <TextBlock Text="{Binding NobreFactureSelectionnees}" FontSize="13" Grid.Row="0"  Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue"/>
+                                <Button x:Name="btnGenrate"  Grid.Row="1" Grid.Column="2" Width="40"  Height="30" Background="Transparent" Command="{Binding ImportCommand}">
+                                    <Button.ToolTip >
+                                        <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="30" Height="20" Source="{StaticResource etats}" />
+                                                     Ce bouton permet de generer  <Bold > <Underline >Journal de Vente </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                      en fonction de la période Choisie
+                                                    <LineBreak/>
+                                                   
+                                        </TextBlock>
+                                    </Button.ToolTip>
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                    <Setter Property="Cursor" Value="Wait"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource run}">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>
+                            <Border Grid.Row="1" Grid.Column="3" Background="Black" Visibility="{Binding ProgressBarVisibility, Converter={StaticResource visibled}}">
+                            <wpfspark:FluidProgressBar 
+                                   HorizontalAlignment="Stretch"
+                                   VerticalAlignment="Stretch"
+                                   Foreground="Cyan" IsEnabled="False"
+                                   DotWidth="6"
+                                   DotHeight="6"
+                                   DotRadiusX="0"
+                                   DotRadiusY="0"
+                                   Oscillate="True"
+                                   TotalDuration="00:00:03.25"
+                                   ReverseDuration="00:00:02.30"
+                                   KeyFrameA="0.3"
+                                   KeyFrameB="0.6"
+                                   DurationA="00:00:00.25"
+                                   DurationB="00:00:01.25"
+                                   DurationC="00:00:00.25"
+                                   Delay="00:00:00.095"  >
+                                </wpfspark:FluidProgressBar>
+                            </Border>
+                            <!--<ProgressBar Grid.Row="1" Grid.Column="3" Width="120" Height="20" HorizontalAlignment="Left" Visibility="{Binding ProgressBarVisibility, Converter={StaticResource visibled}}" IsIndeterminate="{Binding IsBusy}"/>-->
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding MessageGenerate}" Width="auto" Foreground="Green" FontWeight="Bold" />
+                            <TextBlock Text="Mode Génération Journal" Grid.Row="2" Grid.Column="0" Foreground="White" FontWeight="Bold" Background="Gray" Height="30"/>
+                            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+                                <GroupBox Header="Recherche/Facture" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBox Width="130" BorderBrush="Green" Height="25" IsEnabled="True" Text="{Binding NumerofactureSearchby, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                        <Button x:Name="btnSearch"  Grid.Row="1" Grid.Column="2" Width="25"  Height="25" IsEnabled="True" Background="Transparent" Command="{Binding SearchByCommand}">
+                                            <Button.ToolTip >
+                                                <TextBlock  MaxWidth="200" TextWrapping="WrapWithOverflow" >
+                                                  <Image Width="30" Height="20" Source="{StaticResource etats}" />
+                                                     Ce bouton permet faire une recherche precise  <Bold > <Underline >Journal de Vente </Underline> </Bold>
+                                                    <LineBreak >
+                                                    </LineBreak>
+                                                      en fonction de la période Choisie
+                                                    <LineBreak/>
+
+                                                </TextBlock>
+                                            </Button.ToolTip>
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource loupe_petite}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                       
+                                    </StackPanel>
+                                </GroupBox>
+                                <!--<RadioButton x:Name="rdobjet" Checked="rdobjet_Checked" IsEnabled="False"  IsChecked="{Binding IsModeObjet}" Content="Par Objet facture" Foreground="Green" FontWeight="Bold"></RadioButton>
+                                <RadioButton x:Name="rdProduits" Checked="rdProduits_Checked" IsEnabled="False"  IsChecked="{Binding IsModeProduit}" Content="Par Produits" Foreground="Green" FontWeight="Bold"></RadioButton>-->
+                            </StackPanel>
+
+                            <Border Grid.Row="2" Grid.Column="3" Height="auto" HorizontalAlignment="Right" Margin="0,0,0,0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                       
+                                    </Grid.RowDefinitions>
+                                    <TextBox Text="{Binding NomDossier}" Grid.Column="1"   Grid.ColumnSpan="1" FontWeight="Bold" Foreground="Blue" MinWidth="50" Width="auto" Margin="0,0,5,0" HorizontalAlignment="Right"/>
+                                    <Button x:Name="btnDisplay" Grid.Column="2" ToolTip="Export Flat file"  Grid.Row="0" HorizontalAlignment="Right" Width="35"  Height="25" 
+                                        Background="Transparent" Command="{Binding DisplayCommand}">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource sorties}"  Stretch="Fill">
+                                            <Image.Style >
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers >
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                    <Button x:Name="btnChemin" Content="..." ToolTip="chemin de sauvegrade" Grid.Column="3" Width="30" Margin="2" Height="25"
+                                        Click="btnChemin_Click" ></Button>
+                                    <Button x:Name="btnVoirChemin"  Grid.Column="4" Width="auto" Margin="2,0,3,0" Height="30"
+                                        Click="btnVoirChemin_Click" >
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource openbook}" Width="25" Stretch="Fill"  >
+                                            <Image.Style >
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers >
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                    <Separator/>
+                                    <Button x:Name="btnexportCrystal" Visibility="Visible" ToolTip="Imprimer"  Grid.Column="5" Background="Transparent" Width="30" Margin="2,0,10,0" Height="35"
+                                         Command="{Binding PrintCommand}" CommandParameter="crystal">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource print_new}" Width="25" Stretch="Fill"  Height="30">
+                                            <Image.Style >
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers >
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+
+                                    <Button x:Name="btnexportexcel" Visibility="Visible" ToolTip="Export to expert comptable"  Grid.Column="6" Background="Transparent" Width="30" Margin="2,0,10,0" Height="35"
+                                         Command="{Binding PrintCommand}" CommandParameter="excel" >
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Cursor" Value="Arrow"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                        <Setter Property="Cursor" Value="Wait"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <Image Source="{StaticResource excel}" Width="25" Stretch="Fill"  Height="30">
+                                            <Image.Style >
+                                                <Style TargetType="Image">
+                                                    <Style.Triggers >
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Opacity" Value="0.5"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </Button>
+                                    <ProgressBar x:Name="progressBareUpload" Grid.Row="0" Grid.Column="0" 
+                                             Visibility="{Binding ProgressBarToexportVisibility, Converter={StaticResource visibled}}" IsIndeterminate="{Binding IsBusy}"
+                                             Grid.ColumnSpan="2" Height="15" Width="150"/>
+                                </Grid>
+                            </Border>
+                           
+                        </Grid>
+                        
+                    </GroupBox>
+                </controls:OptionsPanel>
+                <Border DockPanel.Dock="Left">
+                    <controls:OptionsPanel HeaderText="Criteria" x:Name="optinalLeft" IsMovable="False" DockPanel.Dock="Top">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                <!--<StackPanel Orientation="Vertical">
+                                   <Label Content="Recherche par facture" Foreground="Green" FontWeight="Bold"/>
+                                  <TextBox x:Name="txtSearch" Text="{Binding NumerofactureSearchby, UpdateSourceTrigger=PropertyChanged}" Width="170"  MaxWidth="200" Height="25"  BorderBrush="Black"/>
+                                </StackPanel>-->
+                                  
+                                <!--<Button x:Name="btnCancelnom"  Width="20" Height="25" Background="Transparent" Margin="0,15"
+                                                 Visibility="{Binding IsVisibleCancelNomClient,Converter={StaticResource visibled}}"
+                                                        Click="btnCancelnom_Click">
+                                    <Button.InputBindings>
+                                        <KeyBinding Key="Enter" Command="{Binding SearchByCommand}"/>
+                                    </Button.InputBindings>
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}"/>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource newCancel}" Stretch="Fill" Width="15" Height="15">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>-->
+                                <!--<Button  ToolTip="Rechercher une facture " Command="{Binding SearchByCommand}"
+                                     Width="30" Height="30" TabIndex="13">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                    <Setter Property="Cursor" Value="Wait"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource loupe_petite}">
+                                        <Image.Style >
+                                            <Style TargetType="Image">
+                                                <Style.Triggers >
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Button>-->
+                            </StackPanel>
+                            <Border  Grid.Row="1">
+                                <StackPanel Orientation="Vertical" >
+                                    <Label Content="Historique(année) :" Foreground="Green" FontWeight="Bold" FontSize="12" Margin="3"/>
+                                    <ig:XamComboEditor x:Name="cmbPeriode"  Margin="3"
+                                                       Width="120" ItemsSource="{Binding PeriodeListes}"  
+                                                       SelectedItem="{Binding PeriodeSelected}"
+                                           DisplayMemberPath="Annee" IsEditable="True"  
+                                            SelectionChanged="cmbPeriode_SelectionChanged" HorizontalAlignment="Left" >
+
+                                    </ig:XamComboEditor>
+                                </StackPanel>
+                            </Border>
+                            <GroupBox Header="Historiques"  Grid.Row="2">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" >
+                                        <Button  ToolTip="Afficher l'historc selectionnée" Width="35" HorizontalAlignment="Left" Height="25" Command="{Binding DisplayHstCommand}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource showops}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        <Separator/>
+                                        <Button  ToolTip="Suppression" Width="35" HorizontalAlignment="Left" Height="25" Command="{Binding DleteHstCommand}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Cursor" Value="Arrow"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                            <Setter Property="Cursor" Value="Wait"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <Image Source="{StaticResource delete}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                        <Separator/>
+                                        <ig:XamComboEditor x:Name="cmbPeriodeMois"  Margin="3"
+                                                       Width="80" ItemsSource="{Binding PeriodeMoisListes}"  
+                                                       SelectedItem="{Binding PeriodeMoisSelected}"
+                                                       DisplayMemberPath="MoisNom" IsEditable="True"  
+                                            SelectionChanged="cmbPeriodeMois_SelectionChanged" HorizontalAlignment="Left" >
+
+                                        </ig:XamComboEditor>
+                                    </StackPanel>
+                                   
+                                    <ListBox x:Name="lixtHistoric" Grid.Row="1" Height="auto" MinHeight="100" 
+                                             ItemsSource="{Binding HistoricJournal}"
+                                              ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                                             ItemTemplate="{StaticResource listBoxTemplate}"
+                                              SelectedItem="{Binding HistoricJournalSelected}"
+                                                
+                                              HorizontalAlignment="Left"
+                                              Width="auto" MinWidth="100" MouseDoubleClick="lixtHistoric_MouseDoubleClick" />
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+                    </controls:OptionsPanel>
+                </Border>
+                <Border DockPanel.Dock="Bottom" Margin="3" HorizontalAlignment="Left" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <!--<StackPanel Orientation="Horizontal" Grid.Row="0">
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="Numéro note crédit" Foreground="Green" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding NumfactureSelected}" Width="auto" Foreground="Orange" FontWeight="Bold" />
+                            </StackPanel>
+
+                            <TextBox  BorderBrush="Black" Text="{Binding NumeroNoteCredit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Width="180" Height="25"  IsEnabled="{Binding IsTextBoxEnable}"/>
+                            <Button ToolTip="Sauvegarder " Command="{Binding UpdateTousCommand}" Visibility="{Binding BtnSaveVisible,Converter={StaticResource visibled}}" Width="30" Height="30">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                                <Setter Property="Cursor" Value="Wait" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource save}">
+                                    <Image.Style>
+                                        <Style TargetType="Image">
+                                            <Style.Triggers>
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.5" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                          
+                        </StackPanel>-->
+                        <TabControl Grid.Row="1">
+                            <TabItem Header="Historic Journal Vente">
+                                <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"  >
+                                    <ac:AdornedControl Name="LoadingAdorner" >
+                                        <ac:AdornedControl.AdornerContent>
+                                            <local:LoadingWait>
+                                            </local:LoadingWait>
+                                        </ac:AdornedControl.AdornerContent>
+
+                                        <ig:XamGrid  x:Name="GridHistorique" AutoGenerateColumns="False" ColumnWidth="*"
+                                 IsAlternateRowsEnabled="True" Width="auto" MinWidth="600" MinHeight="300" Height="auto"
+                                 ItemsSource="{Binding JvHistoricList}"  RowHover="None"
+                                         ActiveItem="{Binding JvHistorictSelected, Mode=TwoWay}"
+                                          >
+                                            <!--<ig:XamGrid.ContextMenu>
+                                        <ContextMenu>
+                                            <MenuItem Header="Edit" Foreground="Blue">
+                                                <MenuItem Command="ApplicationCommands.Copy" Foreground="Black"/>
+                                                <MenuItem Command="ApplicationCommands.Paste"  IsEnabled="False"/>
+                                            </MenuItem>
+                                        </ContextMenu>
+                                    </ig:XamGrid.ContextMenu>-->
+                                            <ig:XamGrid.Columns>
+                                                <!--<ig:ColumnLayout Key="JournalVentesCmpList" HeaderText="Liste des comptes" HeaderVisibility="false"
+                                               >
+                                        <ig:ColumnLayout.Columns>-->
+                                                <ig:TextColumn Key="Datefacture" Width="auto"  ValueConverter="{StaticResource convertDate}"
+                                           ValueConverterParameter="dd/MM/yyyy"  IsFilterable="False" >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Date facture" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="NumeroFacture" Width="auto"   >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Numero facture" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="LibelleClient" Width="auto" MaximumWidth="120"   >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Client#" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+                                                <ig:TextColumn Key="NumCompteGeneral" Width="auto" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Compte Gen" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="NumeroCompteTiers" Width="auto" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Compte Tiers" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="NumeroCompteAnalytique" Width="auto" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Compte Analytique" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="LibelleSectionAnal" Width="auto"  IsFilterable="False" >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Libelle" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="MontantDebit" Width="auto" HorizontalContentAlignment="Right" FormatString="{}{0:### ### ###}" CellStyle="{StaticResource OrangeColumnStyle}"  IsFilterable="False" >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Montant débit" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="MontantCredit" Width="auto" HorizontalContentAlignment="Right"  FormatString="{}{0:### ### ###}" CellStyle="{StaticResource BlueColumnStyle}" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Montant Crédit" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+
+                                                <ig:TextColumn Key="LibelleOpertion" Width="auto" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Libelle compte" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <ig:TextColumn Key="StatutOperation" Width="auto" IsFilterable="False"  >
+                                                    <ig:TextColumn.HeaderTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="Statut" />
+                                                        </DataTemplate>
+                                                    </ig:TextColumn.HeaderTemplate>
+                                                </ig:TextColumn>
+
+                                                <!--</ig:ColumnLayout.Columns>
+                                    </ig:ColumnLayout>-->
+
+                                                <!--<ig:TextColumn Key="CodeJournal" Width="120"   >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Code Journal" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="Numerofacture" Width="auto"   >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Facture#" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+                                    <ig:TextColumn Key="Datefacture" Width="auto"  ValueConverter="{StaticResource convertDate}"
+                                           ValueConverterParameter="dd/MM/yyyy"  >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Date facture" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="Libellefacture" Width="auto"   >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Client" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="LibelleStatut" Width="auto"   >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Statut" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+
+                                    <ig:TextColumn Key="MontantDebit" Width="auto" HorizontalContentAlignment="Right" FormatString="{}{0:### ### ###}"   CellStyle="{StaticResource OrangeColumnStyle}"  >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Montant" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>
+
+                                    <ig:TextColumn Key="LibelleStatutOperation" Width="auto"   >
+                                        <ig:TextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Operation" />
+                                            </DataTemplate>
+                                        </ig:TextColumn.HeaderTemplate>
+                                    </ig:TextColumn>-->
+                                            </ig:XamGrid.Columns>
+                                            <ig:XamGrid.FilteringSettings>
+                                                <ig:FilteringSettings AllowFiltering="FilterMenu" 
+                                                            FilteringScope="ColumnLayout"  />
+                                            </ig:XamGrid.FilteringSettings>
+                                            <ig:XamGrid.PagerSettings>
+                                                <ig:PagerSettings AllowPaging="Bottom" PageSize="70"/>
+                                            </ig:XamGrid.PagerSettings>
+
+                                            <ig:XamGrid.SelectionSettings>
+                                                <ig:SelectionSettings CellClickAction="SelectRow" CellSelection="Single" ColumnSelection="Multiple" RowSelection="Single" />
+                                            </ig:XamGrid.SelectionSettings>
+                                            <ig:XamGrid.RowSelectorSettings>
+                                                <ig:RowSelectorSettings Visibility="Visible"></ig:RowSelectorSettings>
+                                            </ig:XamGrid.RowSelectorSettings>
+
+
+                                            <ig:XamGrid.SortingSettings>
+                                                <ig:SortingSettings AllowSorting="True" ShowSortIndicator="True" AllowMultipleColumnSorting="True"/>
+                                            </ig:XamGrid.SortingSettings>
+                                        </ig:XamGrid>
+                                    </ac:AdornedControl>
+                                </ScrollViewer>
+                            </TabItem>
+                            <TabItem Header="Journal log" Visibility="{Binding IsVisibleLogCompta, Converter={StaticResource visibled}}">
+                                
+                                <ListBox x:Name="lstClintNonfact" ItemsSource="{Binding LogJournalventeList}"
+                                                HorizontalContentAlignment="Stretch" >
+                                    <ListBox.ItemTemplate >
+                                        <DataTemplate >
+
+                                            <Border BorderBrush="Aqua" BorderThickness="1" Padding="5" Margin="5" Background="White"  >
+                                                <Grid>
+                                                    <Grid.RowDefinitions >
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions >
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock Text="Facture :" Grid.Column="0" Grid.Row="0"  FontWeight="Bold"  Foreground="Black"/>
+                                                    <TextBlock Text="{Binding NumFacture}" Grid.Column="1" Grid.Row="0" FontWeight="Bold"  Foreground="Blue"/>
+                                                    <TextBlock Text="{Binding TypeEventMsg}" Grid.Column="2" Grid.Row="0" FontWeight="Bold"  Foreground="Green"/>
+
+                                                    <TextBlock Text="Message  :" Grid.Column="0" Grid.Row="1"  FontWeight="Bold"  Foreground="Blue"/>
+                                                    <TextBlock Text="{Binding MessageError}" Grid.Column="1" Grid.Row="1" FontWeight="Bold"  Foreground="{Binding Colormessage}"/>
+
+
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </TabItem>
+                        </TabControl>
+                       
+                    </Grid>
+                  
+                </Border>
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

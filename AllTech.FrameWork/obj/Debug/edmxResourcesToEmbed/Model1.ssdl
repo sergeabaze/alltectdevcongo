@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sysfactLocalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="sysfactLocalModelStoreContainer">
+    <EntitySet Name="t_facture" EntityType="sysfactLocalModel.Store.t_facture" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+  <EntityType Name="t_facture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Modifie_Par" Type="int" />
+    <Property Name="Cree_Par" Type="int" Nullable="false" />
+    <Property Name="Numero_Facture" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Date_Creation" Type="datetime" Nullable="false" />
+    <Property Name="Date_Modification" Type="datetime" />
+    <Property Name="ID_Objet" Type="int" />
+  </EntityType>
+</Schema>

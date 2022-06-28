@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sysfactLocalModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="sysfactLocalEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="t_facture" EntityType="sysfactLocalModel.t_facture" />
+  </EntityContainer>
+  <EntityType Name="t_facture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="Modifie_Par" Type="Int32" />
+    <Property Name="Cree_Par" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Facture" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Date_Creation" Type="DateTime" Nullable="false" />
+    <Property Name="Date_Modification" Type="DateTime" />
+    <Property Name="ID_Objet" Type="Int32" />
+  </EntityType>
+</Schema>

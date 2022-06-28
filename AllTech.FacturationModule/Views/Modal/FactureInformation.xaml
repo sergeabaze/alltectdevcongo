@@ -1,0 +1,195 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.FactureInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+         xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+          xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+         Title="" Height="300" Width="500" WindowStartupLocation="CenterOwner" WindowStyle="None" Icon="/AllTech.FacturationModule;component/images/mydoc.ico">
+    <Window.Background >
+        <LinearGradientBrush  EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+            <GradientStop Color="#FCFFF5" Offset="0.992"/>
+            <GradientStop Color="#3E606F" Offset="0.185"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Resources >
+        <localVisible:BoolVisibilityConverter x:Key="visibled"/>
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label  Content="Information Entete de facture" Margin="10,0,0,0" 
+                Width="Auto" FontWeight="Bold" Foreground="#FF373737" FontSize="24" FontFamily="Corbel"/>
+        <Button   Background="Transparent"  ToolTip="Close " Margin="440,12,0,0" 
+                  VerticalAlignment="Top"   Width="30" Height="25" HorizontalAlignment="Left"
+                  Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Cursor" Value="Arrow"/>
+
+                </Style>
+            </Button.Style>
+            <Image Source="{StaticResource cancel}"  Stretch="Fill" Width="30"  />
+        </Button>
+        <Border  Margin="0,40,0,0"  >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Border BorderThickness="3" CornerRadius="5" Grid.ColumnSpan="2" BorderBrush="Silver" Background="#DDDCC5" Width="480" >
+                    <Border.Effect>
+                        <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                    </Border.Effect>
+                    <DockPanel >
+                       <ToolBarTray DockPanel.Dock="Top" Margin="0,0,0,0" Width="Auto"  >
+                                    <ToolBar  >
+                                <Button  Background="Transparent"   Width="30" Height="30" ToolTip="Nouvel Objet"   Commands:Click.Command="{Binding NewCommand}" >
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource  new}"/>
+                                        </Button>
+                                <Separator/>
+                                <Button  Background="Transparent"  ToolTip="Sauvegarder" Commands:Click.Command="{Binding SaveCommand}" Width="30" Height="30">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource  save}"/>
+                                           
+                                        </Button>
+                                <Separator/>
+                                <Button  Background="Transparent"  Width="30" Height="30" ToolTip="Supprimer " Commands:Click.Command="{Binding DeleteCommand}" >
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Cursor" Value="Arrow"/>
+
+                                        </Style>
+                                    </Button.Style>
+                                    <Image Source="{StaticResource  delete}"/>
+                                        </Button>
+                                       
+                                    </ToolBar>
+                                </ToolBarTray>
+                      
+                         <StackPanel Orientation="Vertical"  DockPanel.Dock="Top" Background="White"   >
+                            <StackPanel Orientation="Horizontal" >
+                                <Label Foreground="Green"   Margin="5,5,0,0" Content="Objet :" Width="80" FontWeight="Bold"   />
+                                <TextBox IsEnabled="{Binding IstxtEnabled}"  Text="{Binding Path=Objetselected.Libelle, UpdateSourceTrigger=PropertyChanged}" Width="350" Margin="3"  Height="25" BorderBrush="Blue"  BorderThickness="1"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <Label Foreground="Green"   Margin="5,5,0,0" Content="Langue :" Width="80" FontWeight="Bold"   />
+                                <ComboBox IsEnabled="{Binding IstxtEnabled}"  IsEditable="True" Width="100" Height="25" BorderBrush="Blue"
+                                               ItemsSource="{Binding LanguageList}" Margin="0,0,0,0"
+                                                SelectedItem="{Binding LanguageSelected}"  
+                                               DisplayMemberPath="Libelle"/>
+                            </StackPanel>
+                               
+                                </StackPanel>
+                        <controls:SortableListView DockPanel.Dock="Bottom" x:Name="Objetfacture"
+                                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True" 
+                                               ItemContainerStyle="{StaticResource myItemStyle}"
+                                               ItemsSource="{Binding ObjetList}"
+                                    MouseDoubleClick="Objetfacture_MouseDoubleClick"
+                                              AlternationCount="2"   
+                                    >
+                                    <!--<ListView.Resources>
+                                        <Style TargetType="{x:Type ListViewItem}">
+                                            <EventSetter Event="MouseDoubleClick" Handler="Objetfacture_MouseDoubleClick" />
+                                        </Style>
+                                    </ListView.Resources>-->
+                            <controls:SortableListView.View >
+                                        <GridView>
+                                            <GridView.Columns >
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}"
+                                                    Header="Libellé" Width="150" />
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Langues .Libelle }"
+                                                    Header="Langue" Width="100" />
+                                            </GridView.Columns>
+                                        </GridView>
+
+                            </controls:SortableListView.View>
+
+                        </controls:SortableListView>
+                    </DockPanel>
+                      
+                        <!--<TabItem Header="Invoice Exploitation">
+                            <DockPanel >
+                                <ToolBarTray DockPanel.Dock="Top" Margin="0,0,0,0" Width="Auto"  >
+                                    <ToolBar >
+                                        <Button ToolTip="Nouveau" Commands:Click.Command="{Binding NewDCommand}" Width="20" Height="20">
+                                            <Button.Background >
+                                                <ImageBrush ImageSource="{StaticResource  new_add}"/>
+                                            </Button.Background>
+                                        </Button>
+                                        <Button  ToolTip="Sauvegarder " Commands:Click.Command="{Binding SaveDCommand}" Width="20" Height="20">
+                                            <Button.Background >
+                                                <ImageBrush ImageSource="{StaticResource  new_edit}"/>
+                                            </Button.Background>
+                                        </Button>
+                                        <Button ToolTip="Supprimer" Width="20" Height="20" Commands:Click.Command="{Binding DeleteDCommand}" >
+                                            <Button.Background >
+                                                <ImageBrush ImageSource="{StaticResource new_delete}"/>
+                                            </Button.Background>
+                                        </Button>
+                                       
+                                        <Separator />
+                                        <Button Content="Close"   Width="80" Click="Button_Click"></Button>
+                                    </ToolBar>
+                                </ToolBarTray>
+                                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  >
+                                    <Label Margin="5,10,0,0" Content="Exploitation Libéllé :" Width="120" />
+                                    <TextBox Text="{Binding Path=ExploitSelected.Libelle, UpdateSourceTrigger=PropertyChanged}" Width="150" Margin="3"  Height="25" BorderBrush="LightGray" BorderThickness="1"/>
+                                    <ComboBox  IsEditable="True" Width="100" Height="25" 
+                                               ItemsSource="{Binding LanguageList}"
+                                                SelectedItem="{Binding LanguageSelected}"  
+                                               DisplayMemberPath="Libelle"/>
+                                </StackPanel>
+
+                                <ListView DockPanel.Dock="Bottom" x:Name="exploit"
+                                               VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True"  ItemsSource="{Binding ExploitList}"
+                                              >
+                                    <ListView.Resources>
+                                        <Style TargetType="{x:Type ListViewItem}">
+                                            <EventSetter Event="MouseDoubleClick" Handler="exploit_MouseDoubleClick" />
+                                        </Style>
+                                    </ListView.Resources>
+                                    <ListView.View >
+                                        <GridView>
+                                            <GridView.Columns >
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Libelle}"
+                                                    Header="Libéllé" Width="150" />
+                                                <GridViewColumn DisplayMemberBinding="{Binding Path=Langues.Libelle}"
+                                                    Header="Langue" Width="100 " />
+                                            </GridView.Columns>
+                                        </GridView>
+                                    </ListView.View>
+
+                                </ListView>
+                            </DockPanel>
+                        </TabItem>-->
+                     
+                   
+
+                </Border>
+                <Line Grid.ColumnSpan="2" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

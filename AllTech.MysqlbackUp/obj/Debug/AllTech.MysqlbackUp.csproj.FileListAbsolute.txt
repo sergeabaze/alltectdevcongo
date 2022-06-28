@@ -1,0 +1,64 @@
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\AllTech.MysqlbackUp.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySql.Data.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\bin\Debug\MySqlBackup.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.csproj.CoreCompileInputs.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\AllTech.MysqlbackUp\obj\Debug\AllTech.MysqlbackUp.csprojResolveAssemblyReference.cache

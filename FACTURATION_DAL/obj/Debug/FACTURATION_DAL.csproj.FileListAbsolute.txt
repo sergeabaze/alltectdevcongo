@@ -1,0 +1,55 @@
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySql.Data.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\bin\Debug\MySqlBackup.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll.config
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.csprojResolveAssemblyReference.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.csproj.CoreCompileInputs.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\FACTURATION_DAL\obj\Debug\FACTURATION_DAL.pdb

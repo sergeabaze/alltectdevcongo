@@ -1,0 +1,300 @@
+﻿<Window x:Class="AllTech.FacturationModule.Views.Modal.DeataiProduit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+        xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+          xmlns:ig="http://schemas.infragistics.com/xaml"
+        xmlns:controlss="clr-namespace:Infragistics.Samples.Shared.Controls;assembly=Infragistics.Samples.Shared"
+        xmlns:controls="clr-namespace:AllTech.FrameWork.Utils;assembly=AllTech.FrameWork"
+        Title="" Height="550" Width="820" WindowStartupLocation="CenterOwner" WindowStyle="None" Icon="/AllTech.FacturationModule;component/images/mydoc.ico">
+   
+    <Window.Resources >
+        <localVisible:BackgroundConverter  x:Key="convertBack"/>
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <Binding RelativeSource="{RelativeSource Self}" 
+               Converter="{StaticResource convertBack}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Grid.Column="0"  Content="Détail produit"  Margin="10,0,0,0" Width="Auto" FontWeight="Bold" Foreground="#FF373737" FontSize="24" FontFamily="Corbel"/>
+        <DockPanel Margin="0,25"  Height="485">
+            <controlss:OptionsPanel DockPanel.Dock="Top" >
+                <Grid>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+
+                    <ToolBarTray  Grid.Row="0"  >
+                        <ToolBar  >
+                            <Button Width="30" Height="30" ToolTip="Nouveau" Background="Transparent"   Commands:Click.Command="{Binding NewCommand}" >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource new}" Width="30"  />
+                            </Button>
+                            <Separator />
+                            <Button  Background="Transparent"   ToolTip="Sauvegarde " Commands:Click.Command="{Binding SaveCommand}" Width="30" Height="30">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource save}" >
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.3"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator />
+                            <Button  Background="Transparent"  Width="30" Height="30" ToolTip="Suppression " Commands:Click.Command="{Binding DeleteCommand}" >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource delete}">
+                                    <Image.Style >
+                                        <Style TargetType="Image">
+                                            <Style.Triggers >
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Opacity" Value="0.3"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <Separator/>
+                            <Button  Grid.Column="1" Background="Transparent"  ToolTip="Close " Margin="0,0,0,0" 
+                              Width="30" Height="35"  HorizontalAlignment="Right" 
+                              Click="Button_Click">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Cursor" Value="Arrow"/>
+
+                                    </Style>
+                                </Button.Style>
+                                <Image Source="{StaticResource cancel}"  Stretch="Fill"   />
+                            </Button>
+                            <Separator />
+                            <!--<TextBox Width="180" BorderBrush="LightGray" BorderThickness="1" 
+                             Text="{Binding Filtertexte, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBlock Width="30" Height="20">
+                        <TextBlock.Background >
+                            <ImageBrush ImageSource="{StaticResource loupe_petite}"/>
+                        </TextBlock.Background>
+                            </TextBlock>-->
+
+
+
+                        </ToolBar>
+                    </ToolBarTray>
+                    <Border Grid.Row="1"  >
+                        <Grid >
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.ColumnSpan="5" Margin="5,0,0,0" BorderBrush="Black" BorderThickness="2" Width="760"  HorizontalAlignment="Center">
+                                <Border.Effect>
+                                    <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                                </Border.Effect>
+                                <Grid Width="auto">
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Produit Sélectionné"  Width="120" Height="25" Grid.Row="0" Grid.Column="0" Foreground="Green"   />
+                                    <TextBlock Foreground="Green"  Margin="2,0,11,3"  Text="{Binding Produitselected.Libelle}"  Grid.Row="1"  Height="25" Width="129"/>
+                                    <TextBlock Text="Prix Unitaire Origine" Grid.Row="0" Grid.Column="1" Foreground="Green"/>
+                                    <TextBlock Foreground="Green"   Margin="11,0,19,3"  Text="{Binding Produitselected.PrixUnitaire}" Grid.Row="1" Grid.Column="1" Width="77"  />
+                                    <TextBlock Text="{Binding LabelExonere}" Grid.Column="5" Grid.ColumnSpan="2" Width="220" Margin="9,0,28,3" Foreground="Blue" />
+
+                                    <TextBlock Text="Clients :" Grid.Column="5" Margin="0,0,0,0" Foreground="Green" Grid.Row="1"  HorizontalAlignment="Right" />
+                                    <ig:XamComboEditor x:Name="cmbClient"  ItemsSource="{Binding ClientList}" 
+                                           IsEditable="True" Height="25" Grid.Row="1" Width="225" Grid.ColumnSpan="2"  IsEnabled="{Binding TxtEnable_a}"
+                                           Grid.Column="6" Margin="5,0,0,3" SelectionChanged="cmbClient_SelectionChanged"
+                                   SelectedItem="{Binding Clientselected}"
+                                           DisplayMemberPath="NomClient">
+
+                                    </ig:XamComboEditor>
+                                </Grid>
+
+                            </Border>
+                            <Border Grid.Row="1" Grid.ColumnSpan="5" BorderBrush="Black" BorderThickness="2" Margin="5,5,0,0" Width="760" HorizontalAlignment="Center">
+                                <Border.Effect>
+                                    <DropShadowEffect Direction="195" BlurRadius="10" Opacity="0.305" ShadowDepth="6"/>
+                                </Border.Effect>
+                                <Grid >
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Foreground="Green" Margin="0,6,0,7" Content="Nouvelle Quantité :" Width="100" Height="19" />
+                                    <TextBox  IsEnabled="{Binding TxtEnable_a}"  Grid.Row="0" Grid.Column="1" Text="{Binding Path=QuantiteChoisie, UpdateSourceTrigger=PropertyChanged}" Width="80" Margin="3"  BorderBrush="Black"  BorderThickness="1" Height="26" />
+                                    <Label Foreground="Green" Grid.Column="2" Margin="5,7,0,8" Content="Prix Unitaire :" Width="80" Height="17" />
+                                    <TextBox IsEnabled="{Binding TxtEnable_a}" Grid.Row="0" Grid.Column="3" Text="{Binding Path=DetailProduitSelect.Prixunitaire , StringFormat='{}{0:0.###}', UpdateSourceTrigger=PropertyChanged}" Width="130" Margin="3"  BorderBrush="Black"  BorderThickness="1"/>
+                                    <CheckBox  IsEnabled="{Binding TxtEnable_a}" Grid.Row="0" Grid.Column="4" Content="Px cal./qte moy" Margin="5,0" Foreground="Blue" IsChecked="{Binding Path=IsSpecialFacture, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <!--<CheckBox Foreground="Green" IsEnabled="{Binding TxtEnable_taxes}" Content="Exonéré" Grid.Column="0" Grid.Row="1" IsChecked="{Binding IsExonereSelected, UpdateSourceTrigger=PropertyChanged}" Height="26" Margin="5,5,0,1" />
+                                    <CheckBox Foreground="Green" IsEnabled="{Binding TxtEnable_prorata}" Content="Prorata" Grid.Column="1" Grid.Row="1" IsChecked="{Binding Path=IsproataSelected, UpdateSourceTrigger=PropertyChanged}" Height="26" Margin="0,5,0,1" />-->
+                                    <Label Foreground="Green" Grid.Column="2" Grid.Row="1"  Margin="5,7,0,8" Content="Exploitation :" Width="80" Height="17" />
+                                    <ig:XamComboEditor x:Name="cmbExploitation" Grid.Column="3" Grid.Row="1" Width="auto" MaxWidth="220"  Height="25" ItemsSource="{Binding ExploitationList}"
+                                          DisplayMemberPath="Libelle"  IsEnabled="{Binding TxtEnable_a}"
+                                           SelectedItem="{Binding ExploitationSelected}"
+                                          SelectionChanged="cmbExploitation_SelectionChanged"
+                                          />
+                                    <StackPanel Orientation="Vertical" Grid.Column="4" Grid.Row="1" >
+                                        <CheckBox  ToolTip="spécifier une exploitation à ce produit" IsChecked="{Binding CheckAppliqueExploit,UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding TxtEnable_a}"  Content="Appliquer" Foreground="Green"  Margin="5,2" />
+                                        <Button  ToolTip="Annuler l'exploitation affecter à ce produit" Commands:Click.Command="{Binding AnnulerExploitCommand}" 
+                                              HorizontalAlignment="Left" Margin="3,0"
+                                             Height="20" Width="20" Background="Transparent" >
+                                            <Image Source="{StaticResource delete}">
+                                                <Image.Style >
+                                                    <Style TargetType="Image">
+                                                        <Style.Triggers >
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Opacity" Value="0.3"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Button>
+                                    </StackPanel>
+
+                                </Grid>
+                            </Border>
+
+
+
+                        </Grid>
+                    </Border>
+
+
+
+                </Grid>
+            </controlss:OptionsPanel>
+
+            <controls:SortableListView DockPanel.Dock="Bottom" x:Name="DetailView" Height="255" Width="auto"
+                                               HorizontalAlignment="Left"  VerticalAlignment="Stretch" 
+                                               IsSynchronizedWithCurrentItem="True" AlternationCount="2" 
+                                                     ItemContainerStyle="{StaticResource myItemStyle}"     
+                                             MouseDoubleClick="DetailView_MouseDoubleClick_1" 
+                                               ItemsSource="{Binding DetailProduitlist}" Margin="5">
+                <controls:SortableListView.Resources>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <EventSetter Event="MouseDoubleClick" Handler="DetailView_MouseDoubleClick" />
+                    </Style>
+                </controls:SortableListView.Resources>
+                <controls:SortableListView.GroupStyle >
+                    <GroupStyle >
+                        <GroupStyle.ContainerStyle >
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Margin"
+                                                Value="0,0,0,5" />
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </controls:SortableListView.GroupStyle>
+                <controls:SortableListView.View >
+                    <GridView>
+                        <GridView.Columns >
+                           
+                            <GridViewColumn DisplayMemberBinding="{Binding Path=Customer.NomClient}"
+                                                    Header="Client" Width="150" />
+                            <GridViewColumn DisplayMemberBinding="{Binding Path=NomProduit}"
+                                                    Header="Produit" Width="110" />
+                            <GridViewColumn 
+                                                    Header="Quantité" Width="80" >
+                                <GridViewColumn.CellTemplate >
+                                    <DataTemplate >
+                                        <TextBlock Foreground="{Binding BackGround, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Path=Quantite, StringFormat={}{0:0.###}}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+
+                            </GridViewColumn>
+                            <GridViewColumn DisplayMemberBinding="{Binding Path=Prixunitaire, StringFormat={}{0:0.###}}"
+                                                    Header="Prix unitaire" Width="90" />
+                            <GridViewColumn 
+                                                    Header="Exonéré" Width="60">
+                                <GridViewColumn.CellTemplate >
+                                    <DataTemplate >
+                                        <CheckBox IsChecked="{Binding Path=Exonerer}" IsEnabled="False" />
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            
+
+                            <GridViewColumn  Header="Prx calc/qte moy" Width="100"   >
+                                <GridViewColumn.CellTemplate  >
+                                    <DataTemplate >
+                                        <CheckBox IsChecked="{Binding Path=Specialfact}" IsEnabled="False"   />
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="exploitation" Width="120"
+                                                DisplayMemberBinding="{Binding Exploitation.Libelle}" >
+
+                            </GridViewColumn>
+                        </GridView.Columns>
+
+                    </GridView>
+
+                </controls:SortableListView.View>
+
+            </controls:SortableListView>
+        </DockPanel>
+
+
+       
+     
+     
+
+
+
+    </Grid>
+</Window>

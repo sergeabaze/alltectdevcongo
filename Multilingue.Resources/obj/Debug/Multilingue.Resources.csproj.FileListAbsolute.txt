@@ -1,0 +1,231 @@
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\Lastest\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+C:\Documents and Settings\abaze serge\Mes documents\Visual Studio 2010\Projects\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact gabon\SYSFACT_GABON\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.fr.resources
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\fr\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact V1\Release compta archive\New Archives\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact V1\New Archives\SYSFACT_V1_NEW _ARCHIVECompta\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\New Archive\Release 15032015 Modifprofils\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Archive_prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\Sysfact_Douala\Archive Prod\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\Sysfact Douala\Release  0805202015\SYSFACT_DLA_ARCHIVE\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Newproject\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\ResolveAssemblyReference.cache
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.read.1.tlog
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\GenerateResource.write.1.tlog
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+D:\Autre Projets\personnal\SYSFACT\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csprojResolveAssemblyReference.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csproj.GenerateResource.Cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csproj.CoreCompileInputs.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGO\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.pdb
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\bin\Debug\en\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csprojResolveAssemblyReference.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.Langues.en.resources
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csproj.GenerateResource.Cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.csproj.CoreCompileInputs.cache
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\en\Multilingue.Resources.resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.dll
+E:\Application\SYSFACT DLA\sysfact_congo\SYSFACT_NEW_CONGOold\AllTech_Facturation\Multilingue.Resources\obj\Debug\Multilingue.Resources.pdb

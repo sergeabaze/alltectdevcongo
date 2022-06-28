@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ADB22F4-24D5-465A-93F7-B553A3B0490C}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllTech.FrameWork</RootNamespace>
+    <AssemblyName>AllTech.FrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavior\DataGridCustomCommandBehavior.cs" />
+    <Compile Include="Controls\BrushCollectionViewer.cs" />
+    <Compile Include="Controls\OptionsPanel.cs" />
+    <Compile Include="Converter\BackgroundConverter .cs" />
+    <Compile Include="Converter\BinaryImageConverter .cs" />
+    <Compile Include="Converter\DecimalConverter.cs" />
+    <Compile Include="Converter\ErrorConverter.cs" />
+    <Compile Include="Converter\MenuBoolVisibilityConverter.cs" />
+    <Compile Include="Converter\StringToNullableNumberConverter.cs" />
+    <Compile Include="Global\CacheDatas.cs" />
+    <Compile Include="Global\ExtensionClass.cs" />
+    <Compile Include="Global\GlobalDatas.cs" />
+    <Compile Include="Global\Utils.cs" />
+    <Compile Include="Helpers\ConstString.cs" />
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Logger\LibraryLoggerAdapter.cs" />
+    <Compile Include="Logger\Log4NetLogger .cs" />
+    <Compile Include="Models\Common\BrushPalettes.cs" />
+    <Compile Include="Models\Common\DataPoint.cs" />
+    <Compile Include="Models\Common\DataSettings.cs" />
+    <Compile Include="Models\Common\ObservableDataModel.cs" />
+    <Compile Include="Models\Common\ObservableModel.cs" />
+    <Compile Include="Models\ConnectionModel.cs" />
+    <Compile Include="Models\DateTimeData.cs" />
+    <Compile Include="Models\DrillDownModels.cs" />
+    <Compile Include="Models\EmployeeModel.cs" />
+    <Compile Include="Models\GeoLocation.cs" />
+    <Compile Include="Models\NodeModel.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\SalesDataSample.cs" />
+    <Compile Include="Models\Seller.cs" />
+    <Compile Include="Models\Series\BubbleDataModel.cs" />
+    <Compile Include="Models\Series\BubbleDataSample.cs" />
+    <Compile Include="Models\Series\CategoryDataModel.cs" />
+    <Compile Include="Models\Series\CategoryDataSample.cs" />
+    <Compile Include="Models\Series\EconomicDataModel.cs" />
+    <Compile Include="Models\Series\FinancialDataModel.cs" />
+    <Compile Include="Models\Series\Functions\ExponentialFunctions.cs" />
+    <Compile Include="Models\Series\Functions\Function.cs" />
+    <Compile Include="Models\Series\Functions\LogaritmicFunctions.cs" />
+    <Compile Include="Models\Series\Functions\NumericFunctions.cs" />
+    <Compile Include="Models\Series\Functions\PeriodicFunctions.cs" />
+    <Compile Include="Models\Series\Functions\PolynomialFunctions.cs" />
+    <Compile Include="Models\Series\Functions\RandomFunctions.cs" />
+    <Compile Include="Models\Series\NumericDataModel.cs" />
+    <Compile Include="Models\Series\NumericDataSample.cs" />
+    <Compile Include="Models\Series\PolarDataModel.cs" />
+    <Compile Include="Models\Series\PolarDataSample.cs" />
+    <Compile Include="Models\Series\RadialDataModel.cs" />
+    <Compile Include="Models\Series\RadialDataSample.cs" />
+    <Compile Include="Models\Series\RandomDataModel.cs" />
+    <Compile Include="Models\Series\ScatterDataModel.cs" />
+    <Compile Include="Models\Series\ScatterDataSample.cs" />
+    <Compile Include="Models\Series\StockMarketDataModel.cs" />
+    <Compile Include="Models\Series\StockMarketDataSample.cs" />
+    <Compile Include="Models\Series\TimelineDataModel.cs" />
+    <Compile Include="Models\SimpleGraphData.cs" />
+    <Compile Include="Models\SparklineData.cs" />
+    <Compile Include="Models\TreemapModel.cs" />
+    <Compile Include="Model\ClassUtilsModel.cs" />
+    <Compile Include="Model\ClientModel.cs" />
+    <Compile Include="Model\ComptabiliteModel.cs" />
+    <Compile Include="Model\CompteAnalClientModel.cs" />
+    <Compile Include="Model\CompteAnalytiqueModel.cs" />
+    <Compile Include="Model\CompteGenralModel.cs" />
+    <Compile Include="Model\CompteModel.cs" />
+    <Compile Include="Model\CompteOhadaModel.cs" />
+    <Compile Include="Model\CompteTiersModel.cs" />
+    <Compile Include="Model\DataProviderObject.cs" />
+    <Compile Include="Model\DepartementModel.cs" />
+    <Compile Include="Model\DetailProductModel.cs" />
+    <Compile Include="Model\DeviseModel.cs" />
+    <Compile Include="Model\DroitModel.cs" />
+    <Compile Include="Model\EnteteFactureModel.cs" />
+    <Compile Include="Model\ExonerationModel.cs" />
+    <Compile Include="Model\ExploitationFactureModel.cs" />
+    <Compile Include="Model\FactureModel.cs" />
+    <Compile Include="Model\JournalVenteCmptAnalityqueViewModel.cs" />
+    <Compile Include="Model\JournalventesDatesModel.cs" />
+    <Compile Include="Model\JournalVentesGroupeModel.cs" />
+    <Compile Include="Model\JournalVentesModel.cs" />
+    <Compile Include="Model\LangueModel.cs" />
+    <Compile Include="Model\LibelleModel.cs" />
+    <Compile Include="Model\LibelleTermeModel.cs" />
+    <Compile Include="Model\LicenseModel.cs" />
+    <Compile Include="Model\LigneFactureModel.cs" />
+    <Compile Include="Model\LogExportIportModel.cs" />
+    <Compile Include="Model\ModePaiementModel.cs" />
+    <Compile Include="Model\ObjetFactureModel.cs" />
+    <Compile Include="Model\ObjetGenericModel.cs" />
+    <Compile Include="Model\OverviewFactureModel.cs" />
+    <Compile Include="Model\ParametresModel.cs" />
+    <Compile Include="Model\PrestationModel.cs" />
+    <Compile Include="Model\ProduitModel.cs" />
+    <Compile Include="Model\ProfileDateModel.cs" />
+    <Compile Include="Model\ProfileModel.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Model\SettingsModel.cs" />
+    <Compile Include="Model\SocieteModel.cs" />
+    <Compile Include="Model\StatutModel.cs" />
+    <Compile Include="Model\TaxeModel.cs" />
+    <Compile Include="Model\UtilisateurModel.cs" />
+    <Compile Include="Ressources\CommonStrings.Designer.cs" />
+    <Compile Include="Ressources\DataChartStrings.Designer.cs" />
+    <Compile Include="Ressources\FinancialStrings.Designer.cs" />
+    <Compile Include="Ressources\PivotGridStrings.Designer.cs" />
+    <Compile Include="Ressources\SeriesStrings.Designer.cs" />
+    <Compile Include="Ressources\SparklineStrings.Designer.cs" />
+    <Compile Include="UIControl\ComboBoxClientSelector.cs" />
+    <Compile Include="Utils\AutoCompleteEntry.cs" />
+    <Compile Include="Utils\AutoCompleteTextBox.xaml.cs">
+      <DependentUpon>AutoCompleteTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CheckedListItem.cs" />
+    <Compile Include="Utils\Common.cs" />
+    <Compile Include="Utils\Communicator.cs" />
+    <Compile Include="Utils\EvenRefreshGridDataRef.cs" />
+    <Compile Include="Utils\EventClientNonFacturees.cs" />
+    <Compile Include="Utils\EventHSTList.cs" />
+    <Compile Include="Utils\EventRefreshGridHistoric.cs" />
+    <Compile Include="Utils\IInjectSingleViewService.cs" />
+    <Compile Include="Utils\InjectSingleViewService.cs" />
+    <Compile Include="Utils\LanguageTemplateSelector.cs" />
+    <Compile Include="Utils\Mail.cs" />
+    <Compile Include="Utils\RegionControlHelper.cs" />
+    <Compile Include="Utils\SortableListView .cs" />
+    <Compile Include="Utils\TimerModel.cs" />
+    <Compile Include="Utils\TimerModelEventArgs.cs" />
+    <Compile Include="Utils\UserInterfaceUtilities.cs" />
+    <Compile Include="ValidationRules\DateValidationRule.cs" />
+    <Compile Include="ValidationRules\DecimalValidation.cs" />
+    <Compile Include="ValidationRules\NotNullOrEmptyValidationRule.cs" />
+    <Compile Include="ValidationRules\NumericValidationRule.cs" />
+    <Compile Include="Views\CustomExceptionView.xaml.cs">
+      <DependentUpon>CustomExceptionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomExceptionViewModel.cs.cs" />
+    <Compile Include="Views\LoadingWait.xaml.cs">
+      <DependentUpon>LoadingWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StyledMessageBoxView.xaml.cs">
+      <DependentUpon>StyledMessageBoxView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StyledMessageBoxViewModel.cs" />
+    <Compile Include="Command\RelayCommand.cs" />
+    <Compile Include="Converter\BoolVisibilityConverter.cs" />
+    <Compile Include="Converter\DateConverter.cs" />
+    <Compile Include="PropertyChange\ObservableBase.cs" />
+    <Compile Include="PropertyChange\ObservableBaseExtension.cs" />
+    <Compile Include="PropertyChange\ViewModelBase.cs" />
+    <Compile Include="Region\RegionNames.cs" />
+    <Compile Include="UIControl\PasswordBoxAssistant.cs" />
+    <Compile Include="Views\UserAffiche.xaml.cs">
+      <DependentUpon>UserAffiche.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\CommonStrings.resx" />
+    <EmbeddedResource Include="Ressources\DataChartStrings.resx" />
+    <EmbeddedResource Include="Ressources\FinancialStrings.resx" />
+    <EmbeddedResource Include="Ressources\PivotGridStrings.resx" />
+    <EmbeddedResource Include="Ressources\SeriesStrings.resx" />
+    <EmbeddedResource Include="Ressources\SparklineStrings.resx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FACTURATION_DAL\FACTURATION_DAL\FACTURATION_DAL.csproj">
+      <Project>{D67AB8C0-E889-46B7-86E8-A049B3884579}</Project>
+      <Name>FACTURATION_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Multilingue.Resources\Multilingue.Resources.csproj">
+      <Project>{786DA212-B441-42EE-8088-42CB49C96798}</Project>
+      <Name>Multilingue.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\FACTURATION_DAL\FACTURATION_DAL\bin\Debug\FACTURATION_DAL.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Chart.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Charts.XamGauge.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Charts.XamSparkline.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Charts.XamTreemap.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Editors.XamComboEditor.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Grids.XamGrid.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.Controls.Menus.XamMenu.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.DataManager.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.DataPresenter.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.DataVisualization.v12.1.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Infragistique\InfragisticsWPF4.v12.1.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Microsoft.Practices.Prism.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Microsoft.Practices.Prism.UnityExtensions.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\Microsoft.Practices.Unity.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\Multilingue.Resources\bin\Debug\Multilingue.Resources.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\MySql.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Management.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Security.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\WindowsBase.dll" />
+    <ReferencePath Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech_Facturation\lib\WPFAutoCompleteBox.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Utils\AutoCompleteTextBox.g.cs" />
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\CustomExceptionView.g.cs" />
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\LoadingWait.g.cs" />
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\StyledMessageBoxView.g.cs" />
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\Views\UserAffiche.g.cs" />
+    <Compile Include="D:\Newproject\SYSFACT\Sysfact V1\SYSFACT_V1Compta\AllTech_Facturation\AllTech.FrameWork\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

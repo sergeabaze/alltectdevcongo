@@ -1,0 +1,350 @@
+﻿<Window x:Class="AllTech_Facturation.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:localVisible="clr-namespace:AllTech.FrameWork.Converter;assembly=AllTech.FrameWork"
+         xmlns:prisme="http://www.codeplex.com/prism" 
+           xmlns:langue="clr-namespace:Multilingue.Resources;assembly=Multilingue.Resources"
+          xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+        Title="" Height="700" MinHeight="600" Width="1000" MinWidth="700" Loaded="Window_Loaded" 
+        Icon="/AllTech_Facturation;component/Resources/Images/1348241726_application-x-executable-script.ico" SizeChanged="Window_SizeChanged_1" Unloaded="Window_Unloaded">
+    <Window.Resources >
+        <localVisible:MenuBoolVisibilityConverter x:Key="visibled"/>
+    </Window.Resources>
+    <Window.Background >
+        <ImageBrush ImageSource="{StaticResource background}" />
+    </Window.Background>
+    <Grid>
+        <DockPanel>
+            <Border DockPanel.Dock="Top"  Visibility="{Binding Path=BorderVisibility, Converter={StaticResource visibled} }" >
+                <Menu Name="Mainmenu" Height="Auto" >
+                    <MenuItem Header="{x:Static langue:LanguageHelper.MNuFile}" Width="150">
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuFile_fermer}" Width="150" Command="{Binding LogginOfCommand}"  >
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/logoff.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuFile_quitter}" Width="150" Command="{Binding ExitCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/exitApplication.ico" Width="17" Height="17" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    
+                    <!-- menu operation -->
+                    <MenuItem Header="{x:Static langue:LanguageHelper.MNuOperation}" Width="150"   Visibility="{Binding Path=MenuOperationVisibility, Converter={StaticResource visibled}}">
+                        <!--<MenuItem Header="Nouvelle Facture" Visibility="{Binding Path=FactureVisibility, Converter={StaticResource visibled} }" Command="{Binding FacturationCommand}"/>
+                        <Separator Visibility="{Binding Path=SeparatorOperationVisibility, Converter={StaticResource visibled} }" />-->
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuOperation_Hst}" Visibility="{Binding Path=HistoricFactureVisibility, Converter={StaticResource visibled} }" Width="150" Command="{Binding HistoricfacturationCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/historyfacture.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Visibility="{Binding Path=SeparatorSortieVisibility, Converter={StaticResource visibled} }"/>
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuOperation_Sorties}" Visibility="{Binding Path=SortieFactureVisibility, Converter={StaticResource visibled} }" 
+                                    Command="{Binding SortiefacturationCommand}"
+                                  Width="150" >
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/sortiefacture.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                      
+
+                        <Separator Visibility="{Binding Path=SeparatorJv, Converter={StaticResource visibled} }"/>
+
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuOperation_Jventes}" 
+                                   Command="{Binding JournalVenteCommand}"  Visibility="{Binding Path=JournalVenteVisibility, Converter={StaticResource visibled} }"
+                                  Width="150"
+                                 >
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/factures.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    
+                    <MenuItem Header="{x:Static langue:LanguageHelper.MNuAdmin}" Width="150" Visibility="{Binding Path=MenuManagementVisibility, Converter={StaticResource visibled} }">
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuAdmin_Parametres}" Visibility="{Binding Path=ParametersVisibility, Converter={StaticResource visibled} }" Command="{Binding ParameterCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/parameters.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Visibility="{Binding Path=SeparatormanagementVisibility, Converter={StaticResource visibled} }"  />
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuAdmin_Datarefs}" Visibility="{Binding Path=DatarefVisibility, Converter={StaticResource visibled} }"
+                                  Command="{Binding DatasRefsCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/datarefs.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+
+                        </MenuItem>
+                        <Separator Visibility="{Binding Path=SeparatorDatarefAdmin, Converter={StaticResource visibled} }" />
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuAdminAdmin_Datarefs}" Command="{Binding AdminCommand}" Visibility="{Binding Path=AdminVisibility, Converter={StaticResource visibled} }">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/administration.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator Visibility="{Binding Path=SeparatorDataVisibility, Converter={StaticResource visibled} }"/>
+
+                        <MenuItem Header="{x:Static langue:LanguageHelper.MNuOperation_Extract}" 
+                                   Command="{Binding AdministrationCommand}"  Visibility="{Binding Path=AdministrationVisibility, Converter={StaticResource visibled} }"
+                                  Width="150"
+                                 >
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/administration.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    
+                    <!--<MenuItem Header="Style">
+                        <MenuItem Command="{Binding NormaleStyleCommand}"
+                          CommandParameter="Bureau" Header="Bureau" />
+                        <MenuItem Command="{Binding NormaleStyleCommand}" 
+                          CommandParameter="Shiny" Header="Shiny" />
+                    </MenuItem>-->
+
+                        <MenuItem  Header="?">
+                        <MenuItem ToolTip="{x:Static langue:LanguageHelper.MNuAide}" Command="{Binding AproposCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/about.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem ToolTip="{x:Static langue:LanguageHelper.MNuApropos}" Command="{Binding UserGuideCommand}">
+                            <MenuItem.Icon>
+                                <Image Source="/AllTech_Facturation;component/Resources/Icones/help.ico" Width="20" Height="20" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator/>
+                       
+                    </MenuItem>
+                    <Separator />
+                    <Border >
+                        <TextBlock Text="{Binding Version}" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold"  FontSize=" 13"  Margin="100,0"/>
+                    </Border>
+                  
+                </Menu>
+                
+            </Border>
+            <!-- Toolbar-->
+            <ToolBar DockPanel.Dock="Top" Visibility="{Binding Path=ToolbarVisibility, Converter={StaticResource visibled} }" >
+                <Button Height="32" Width="32" ToolTip="{x:Static langue:LanguageHelper.TooltipDeconecter}"  Command="{Binding LogginOfCommand}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="{StaticResource logOff}" />
+                    </Button.Background>
+                </Button>
+                <!--nouvelle facture-->
+                <Separator Visibility="{Binding Path=SeparatortoolB_1, Converter={StaticResource visibled}}" />
+                <Button Height="32" Width="32"  Visibility="{Binding Path=FactureVisibility, Converter={StaticResource visibled}}" Command="{Binding FacturationCommand}">
+                    <Button.ToolTip >
+                        <TextBlock  MaxWidth="100" TextWrapping="WrapWithOverflow" >
+                            <Image Width="10" Height="10" Source="{StaticResource etats}" />
+                            Creation nouvelle <Bold > <Underline >facture</Underline> </Bold>
+                        </TextBlock>
+                    </Button.ToolTip>
+                    <Button.Background>
+                        <ImageBrush ImageSource="{StaticResource etats}" />
+                    </Button.Background>
+                </Button>
+                <Separator Visibility="{Binding Path=SeparatortoolB_2, Converter={StaticResource visibled}}"/>
+                <Button Height="32" Width="50"  ToolTip="{x:Static langue:LanguageHelper.TooltipHst}" Visibility="{Binding Path=HistoricFactureVisibility, Converter={StaticResource visibled} }" Command="{Binding HistoricfacturationCommand}">
+                    <Button.Background>
+                        
+                        <ImageBrush ImageSource="{StaticResource historic}" />
+                    </Button.Background>
+                </Button>
+                <Separator Visibility="{Binding Path=SeparatortoolB_4, Converter={StaticResource visibled}}"/>
+                <Button Height="32" Width="50"  ToolTip="{x:Static langue:Langues.tooltipJvente}" Visibility="{Binding Path=JournalventeToolbarVisibility, Converter={StaticResource visibled} }" Command="{Binding JournalVenteCommand}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="{StaticResource facturejv}" />
+                    </Button.Background>
+                </Button>
+
+            </ToolBar>
+            <Border DockPanel.Dock="Bottom">
+                <DockPanel >
+                    <!--<ContentControl DockPanel.Dock="Top"   prisme:RegionManager.RegionName="ContentRegion"/>-->
+                    <ContentPresenter DockPanel.Dock="Top" x:Name="contentheight"  Content="{Binding ContenRegion}" VerticalAlignment="Top"/>
+
+                    <StatusBar    VerticalAlignment="Bottom "  DockPanel.Dock="Bottom"  Visibility="{Binding Path=BorderVisibility, Converter={StaticResource visibled} }" >
+                        <StatusBarItem >
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="{x:Static langue:LanguageHelper.ToolbarUserConnecter}"/>
+                                <TextBlock Text="{Binding UserSelected.Nom}"/>
+                                <TextBlock Text=" - "/>
+                                <TextBlock Text="{Binding UserSelected.Prenom}"/>
+                            </StackPanel>
+                         
+                        </StatusBarItem>
+                        <Separator />
+                        <StatusBarItem >
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="{x:Static langue:LanguageHelper.ToolbarProfile}"/>
+                                <TextBlock Text="{Binding UserSelected.Profile .Libelle }"/>
+                            </StackPanel>
+                            
+                        </StatusBarItem>
+                        <Separator />
+                        <Button  ToolTip="Langues" x:Name="btnLangue" FontSize="8" Content="" Width="35" Height="15">
+                            <Button.ContextMenu >
+                                <ContextMenu >
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.ToolbarLangueFr}" Foreground="Black" x:Name="menuFrancais" Click="menuFrancais_Click" />
+                                    <Separator />
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.ToolbarLangueEn}" Foreground="Black" x:Name="menuAglais" Click="menuAglais_Click"/>
+                                    <Separator />
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.ToolbarLanguePt}" x:Name="menuPotugais" Click="menuAglais_Click" IsEnabled="False"/>
+                                    <Separator />
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.ToolbarLangueEs}" x:Name="menuEspagne" Click="menuAglais_Click" IsEnabled="False"/>
+                                </ContextMenu>
+                            </Button.ContextMenu>
+
+                        </Button>
+                        <Separator />
+                        <Button Width="35" Height="15" FontSize="8" Content="{x:Static langue:LanguageHelper.MNuFile}" x:Name="btnDeconnecte" >
+                            <Button.ContextMenu >
+                                <ContextMenu>
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.MNuFile_fermer}" Foreground="Black" Command="{Binding ExitCommand}"/>
+                                    <MenuItem Header="{x:Static langue:LanguageHelper.MNuFile_quitter}" Foreground="Black" Command="{Binding LogginOfCommand}"/>
+                                </ContextMenu>
+                            </Button.ContextMenu>
+
+                        </Button>
+                        <Button Content="teste" HorizontalAlignment="Right" x:Name="btnleft"  Margin="0,0,-500,0" Visibility="Hidden" />
+                    </StatusBar>
+                </DockPanel>
+
+                   
+               
+                
+               
+                
+            </Border>
+        </DockPanel>
+      
+        <Popup Height="Auto" Width="Auto" Name="MyToolTip" PlacementTarget="{Binding ElementName=btnDeconnecte}" 
+               StaysOpen="True"  PopupAnimation="Slide" AllowsTransparency="True">
+            <Border BorderThickness="1" Background="Azure" >
+                <StackPanel Margin="30"  Orientation="Vertical">
+                    <StackPanel.Background >
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.3">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="LightGray" Offset="0"/>
+                                <GradientStop Color="WhiteSmoke" Offset="1"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                      
+                    <TextBlock  >
+                          <Image Width="20" Height="15" Source="{StaticResource tips}" />
+                        Bienvenu à Cette Nouvelle Installation:
+                    </TextBlock>
+                    <TextBlock  Name="MyFirstPopupTextBlock" MaxWidth="150"  TextWrapping="WrapWithOverflow" 
+                                Text=""/>
+                </StackPanel>
+            </Border>
+        </Popup>
+
+
+        <Popup Height="Auto" Width="Auto" Name="MyToolTipTemporaire" PlacementTarget="{Binding ElementName=btnDeconnecte}" 
+               StaysOpen="True"  PopupAnimation="Slide" AllowsTransparency="True" Margin="1392,218,-1392,-218">
+            <Border BorderThickness="1" Background="Azure" >
+                <StackPanel Margin="30"  Orientation="Vertical">
+                    <StackPanel.Background >
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.3">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="LightGray" Offset="0"/>
+                                <GradientStop Color="WhiteSmoke" Offset="1"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+
+                    <TextBlock  >
+                          <Image Width="20" Height="15" Source="{StaticResource tips}" />
+                         COMPTE TEMPORAIRE:
+                    </TextBlock>
+                    <TextBlock  Name="MyFirstPopupTex" MaxWidth="210"  TextWrapping="WrapWithOverflow" 
+                                Text=""/>
+                </StackPanel>
+            </Border>
+        </Popup>
+
+     
+
+        <Popup Height="auto" MaxHeight="300" Width="auto" MinWidth="200" MaxWidth="400" Name="popPopListeclientNonFActurer" PlacementTarget="{Binding ElementName=btnLangue}" 
+               StaysOpen="True"  PopupAnimation="Slide" AllowsTransparency="True" Margin="1392,218,-1392,-218">
+            <Border BorderThickness="1" Background="#FFA9C3D4" >
+                <StackPanel Margin="5"  Orientation="Vertical">
+                    <StackPanel.Background >
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.3">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="LightGray" Offset="0"/>
+                                <GradientStop Color="WhiteSmoke" Offset="1"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  FontWeight="Bold" FontSize="13" Foreground="Green" >
+                          <Image Width="20" Height="15" Source="{StaticResource tips}" />
+                         CLIENTS NON ENCORE FACTURES CE MOIS
+                        </TextBlock>
+                        <Button Background="Transparent" x:Name="btnClientClose" Click="btnClientClose_Click" Width="20" Height="20" ToolTip="fermer"  Margin="10,0">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Cursor" Value="Arrow"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsBusy}" Value="True">
+                                            <Setter Property="Cursor" Value="Wait"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Image Source="{StaticResource new_delete}">
+                                <Image.Style >
+                                    <Style TargetType="Image">
+                                        <Style.Triggers >
+                                            <Trigger Property="IsEnabled" Value="False">
+                                                <Setter Property="Opacity" Value="0.5"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </Button>
+                    </StackPanel>
+                   
+                    <ListBox x:Name="lstClintNonfact" MaxHeight="270" MaxWidth="370">
+                        <ListBox.ItemTemplate >
+                            <DataTemplate >
+
+                                <Border BorderBrush="Aqua" BorderThickness="1" Padding="5" Margin="5" Background="White" Width="360" >
+                                    <Grid>
+                                        <Grid.RowDefinitions >
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions >
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="Client :" Grid.Column="0" Grid.Row="0"  FontWeight="Bold"  Foreground="Black"/>
+                                        <TextBlock Text="{Binding NomClient}" Grid.Column="1" Grid.Row="0" FontWeight="Bold"  Foreground="Blue"/>
+
+                                        <TextBlock Text="Produit :" Grid.Column="0" Grid.Row="1"  FontWeight="Bold"  Foreground="Black"/>
+                                        <TextBlock Text="{Binding NumemroImat}" Grid.Column="1" Grid.Row="1" FontWeight="Bold"  Foreground="Blue"/>
+
+
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+
+            </Border>
+        </Popup>
+
+
+    </Grid>
+</Window>
